@@ -4,9 +4,6 @@
 
 Fuzzing (sandsifter), make and alts, etc.
 
-## Continuous Integration 
+## Continuous Integration
 
 ## Continuous Deployment
-
-
-

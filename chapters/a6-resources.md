@@ -94,13 +94,10 @@ https://github.com/jagracey/Awesome-Unicode#readme
 
 https://github.com/netspooky/Simple-Virtual-CPU
 
-
-
 ## Books and Papers
 
 https://github.com/EbookFoundation/free-programming-books#readme
 https://scihub.org/
-
 
 ## Blogs
 
@@ -117,7 +114,9 @@ https://www.metafilter.com/
 https://relevant.community/relevant/top
 
 ## Some really cool, inspirational people
+
 # Security
+
 Netspooky @ https://twitter.com/netspooky , https://twitter.com/netspooky
 LiveOverflow @ https://twitter.com/LiveOverflow
 https://twitter.com/ANDnXOR
@@ -131,13 +130,17 @@ https://twitter.com/da_667
 https://twitter.com/0xCODEs
 https://twitter.com/zerosum0x0
 https://twitter.com/x0rz -- https://discord.0day.rocks/
+
 # Programming/Live coding
+
 RavenKwok @ https://twitter.com/RavenKwok
 Neauoire & RekkaBell @ https://merveilles.town/@neauoire , http://100r.co/
 https://twitter.com/RavenKwok
 https://twitter.com/generateme_blog
 https://twitter.com/manoloidee
+
 # Just generally nerdy
+
 https://twitter.com/Level1Techs / https://twitter.com/tekwendell
 https://twitter.com/Snowden
 https://twitter.com/oshpark

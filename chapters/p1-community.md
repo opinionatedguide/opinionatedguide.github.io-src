@@ -29,30 +29,30 @@ Oh, and to mention it now
 Yes, there is always a relevant XKCD, and yes, you will always feel like everyone knows more than you. Don't stress about asking stupid questions:
 
 > Frequently in chats, whether telegram, IRC, slack, or discord, someone says something like this:
->
+> 
 > <AnonOtter> Anyone know rust? Having an issue.
->
+> 
 > How that question is often read:
->
+> 
 > <AnonOtter> Can someone to commit to being able to solve my problem with rust, spending as much time as necessary, without them even knowing what the actual problem is or if it's even a rust problem?
->
+> 
 > Hopefully it's clear why questions like this rarely result in direct answers.
->
+> 
 > - There are very few people who could be called experts in every facet of whatever is being asked
 > - Imposter syndrome is common
 > - Most people won't write that blank check for time/help commitment
->
+> 
 > Instead, share:
->
+> 
 > - The goal - "Trying to query for a list of tags on a post" - See [The XY Problem](http://xyproblem.info/)
 > - The problem - "I'm getting back these results"
 > - The expectation - "but it should be these results"
 > - Any context or previous research you've done
 > - If possible, a simplified example. 3v4l for php, jsfiddle for html/js/css, etc. are great, otherwise a paste site.
 > - What you've already tried
->
+> 
 > This allows anyone there to try to help. Many skills transfer well to other languages or platforms. At minimum, you might get an idea for something you haven't tried yet. Sometimes you'll even solve your own problem while narrowing down the simplest possible test case.
->
+> 
 > Oh, and don't snark at well-intentioned answers. It's rude and discourages participation.
 
 --from https://bad.pet/q/
@@ -85,12 +85,8 @@ In general I've found site specific forms and Reddit to be the best platforms fo
 
 No matter what you care about, know there's a [wide range of communities](https://www.youtube.com/watch?v=0QO0yZldC2M&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=229&t=0s) that would be thrilled to have you, and you can always combine what you learn here with any of the other interests you have to make the things your passionate about better!
 
-
-
 Further reading:
 
 [Assholes: A Probing Examination][https://www.nomachetejuggling.com/2019/06/03/dont-hire-assholes/] 
 
 [Death to Bullshit](https://deathtobullshit.com/) [(mirror)](https://web.archive.org/web/20191217003321/http://deathtobullshit.com/)
-
-

@@ -1,6 +1,7 @@
 # Chapter 7 - Let's write some python
 
 From https://wiki.xxiivv.com/#development:
+
 > Prototype before polishing. Get it working before optimizing it.
 > Separate policy from mechanism; separate interfaces from engines.
 > Write simple modular parts connected by clean interfaces.
@@ -44,12 +45,15 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'hello' is not defined
 ```
+
 As you can see Python failed to print hello because the variable was not defined. Now lets try assigning a value to the hello variable before printing:
+
 ```python
 >>> hello = "Hello World!"
 >>> print(hello)
 Hello World!
 ```
+
 Anything you write to the interpreter can also be added to a file and ran that way. Try saving the examples above to a file called test.py, opening a terminal and running it with `python test.py`. 
 
 [TODO]
@@ -68,9 +72,11 @@ try/catch
 ## Some simple programs
 
 ### Hello World
+
 As seen in the example above, the following will print `Hello World!`:
 `print('Hello World!')`
 Lets get some input aswell: 
+
 ```python
 print('What\'s your name?')
 # This prints the question. Notice the escape character \ is used to avoid stopping the string. 
@@ -80,6 +86,7 @@ print('Hello ' + input())
 ```
 
 ### Even or Odd
+
 Below is an example of a Python script which checks if the input number is odd or even.
 
 ```python
@@ -93,6 +100,7 @@ else:
 ```
 
 ### Prime Numbers
+
 Prime number is a number greater than 1 whose only factors are 1 and itself. Few instances of prime numbers include 2, 3, 5, 11. Below is an example of python function which defines whether the given input number is prime or not. 
 
 ```python
@@ -141,6 +149,7 @@ for now, everything should be strictly command line arguments and print statment
 ## More advanced topics
 
 ### Lambdas
+
 A lambda expression is used to create a a small anonymous function. It can take any number of arguments, but can only have one expression.
 Below is an example of a lambda expression which can be used to compute cube of any given number.
 
@@ -164,5 +173,3 @@ threads/ parrallelization(high level only), interupts (actually, let's save this
 
 https://www.youtube.com/watch?v=Cp5WWtMoeKg
 https://www.youtube.com/watch?v=M3iI2l0ltbE
-
-

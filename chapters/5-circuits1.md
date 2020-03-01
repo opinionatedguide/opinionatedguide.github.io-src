@@ -8,7 +8,7 @@ Building, fixing, and analyzing circuitry requires the use of a few tools and ap
 
 [TODO]
 
-![multimeter]({static}/openg/multimeter.jpg)
+![multimeter](/home/vega/git/local/openg2/content/openg/multimeter.jpg)
 
 ## Resistance and the OHM meter
 
@@ -66,27 +66,25 @@ https://en.wikipedia.org/wiki/Arbitrary_waveform_generator
 
 The osciliscope (or OScope or simply Scope) allows you to see an AC signal and how it varies over time as a plot of Voltage on the Y axis and time on the X, Most OScopes will allow you to look at multiple signals at once, with one overlaid on the other. Furthermore, most support X-Y mode, where the plot is actually the voltage of one input as the X axis and the voltage of another as the Y, moving a dot and it's trail around the screen. In fact, this is how the first computer monitors worked:
 
-![Image result for asteroids game]({static}/openg/oscopeastroids.jpeg)
+![Image result for asteroids game](/home/vega/git/local/openg2/content/openg/oscopeastroids.jpeg)
 
 Modern OScopes look much different than their phosphorescent green ancestors though:
 
-![Image result for oscilloscope]({static}/openg/modernscope.jpeg)
+![Image result for oscilloscope](/home/vega/git/local/openg2/content/openg/modernscope.jpeg)
 
 However, a decent 'Digital Storage Oscilloscope' or DSO like the one above run a minimum of \$300 at the time of writing, so many hobbyist opt for older scopes like this one:
 
-![Image result for oscilloscope]({static}/openg/oldscope.jpeg)
+![Image result for oscilloscope](/home/vega/git/local/openg2/content/openg/oldscope.jpeg)
 
 or a cheap, low resolution, low speed one from Ebay. For most uses, both of these will be perfectly fine. For just starting out though I'd recommend a logic analyzer (I'll talk about that next) and oscilloscope combo tool, like the **LHT00SU1** which can be found on Ebay pretty easily. Be aware they can fry your USB port or worse though.
 
 But what are these actually used for day to day, and why would you want one? [TODO]
 
-
-
 ### The Logic Analyzer
 
 Logic Analyzers... analyze logic. Who knew? But what does that mean? Well, in reality they are *somewhat* similar to an oscilloscope in that they show a voltage over time, the difference is they only show either on or off over time based on the set TTL (Transistor–transistor logic) voltage. This lets you eavesdrop on the digital communication going on over a wire. Here's an example output:
 
-![logic]({static}/openg/logic.png)
+![logic](/home/vega/git/local/openg2/content/openg/logic.png)
 
 In this particular encoding, the longer high bumps represent a 1 and the short high bumps a 0, so you're looking at the binary that was sent over a wire. It's actually pretty rare that a wire sends raw high for a 1 and low for 0 so other schemes, like the one above, are used. For most schemes the software can actually be used to decode the received data into raw binary or if it was human readable characters even that.
 
@@ -153,5 +151,3 @@ How to read logorithmic first
 https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/voltage
 
 https://en.wikipedia.org/wiki/Fourier_transform
-
-

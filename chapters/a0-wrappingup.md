@@ -7,5 +7,3 @@
 ## Projects to work on
 
 ## Contributing to Open Source
-
-

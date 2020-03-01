@@ -5,5 +5,3 @@
 Otherwise known as the chapter about sanitizing your inputs.
 
 // insert xkcd drop tables
-
-

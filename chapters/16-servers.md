@@ -2,7 +2,7 @@
 
 [TODO]
 
-##
+## 
 
 What's a homelab?
 
@@ -25,5 +25,3 @@ Before we get to business there's some necessary viewing: http://motherfuckingwe
 ## Containerization
 
 ## Fault tollerence
-
-

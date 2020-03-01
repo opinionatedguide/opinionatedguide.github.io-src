@@ -6,7 +6,7 @@ This struggle is part of learning and proof that you're doing well. These experi
 
 To quote someone much smarted than myself:
 
-![Live Overflow Tips]({static}/openg/lotips.png)
+![Live Overflow Tips](/home/vega/git/local/openg2/content/openg/lotips.png)
 
 Finally, there's
 
@@ -16,8 +16,7 @@ but note, you should keep in mind the standard warning that comes when first usi
 
 > We trust you have received the usual lecture from the local System
 > Administrator. It usually boils down to these three things:
->
+> 
 > 1) Respect the privacy of others.
 > 2) Think before you type.
 > 3) With great power comes great responsibility.
-

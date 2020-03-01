@@ -7,5 +7,3 @@
 ## Planning
 
 ## Software Engineering
-
-

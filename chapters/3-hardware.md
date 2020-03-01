@@ -4,7 +4,7 @@ One of the nifty things about Linux is you don't need to install extra software 
 
 ## The CPU
 
-![CPUS]({static}/openg/cpus.jpg)
+![CPUS](/home/vega/git/local/openg2/content/openg/cpus.jpg)
 
 These are CPUS or Central Processing Units. They're the beating heart of your computer, doing the day-to-day number crunching. The rectangular one of one of the first CPU's in the lineage leading up to CPU's like the ones used in desktop's today, with further sucessors shown in order from top left to the bottom right. The metal-capped one at the bottom right, while old, is visulally quite representative of a moden desktop CPU, though the CPUs in a laptop or smart phone do look quite differnt still.
 
@@ -65,7 +65,7 @@ Each of these things is very important, but I'm going to start with cpu MHz as i
 
 ### Clock Speed
 
-![transistor]({static}/openg/transistor.jpg)
+![transistor](/home/vega/git/local/openg2/content/openg/transistor.jpg)
 
 However, to get to that we've gotta go just a bit further down the rabbit hole to the relay. Relays are super simple to understand, they're just a metal switch that is pulled open or closed using another input signal (usually a magnet pulling/pushing the switch closed/open) basically imagine a light switch, where the switch itself is controlled by yet another electrical signal. Relays are slow though, they require a physical metal plate to move to change the connection. Because of this they have limited reliability and worth note they're actually loud. You can hear an audible click of the switch as they change state.
 
@@ -120,7 +120,7 @@ As you can see, this is incredibly difficult to read to a 'normal' person, so ev
 
 This in turn gets turned into binary as can bee seen by this screenshot generated using https://godbolt.org/
 
-![2019-02-08-145014_2400x522_scrot]({static}/openg/godbolt.png)
+![2019-02-08-145014_2400x522_scrot](/home/vega/git/local/openg2/content/openg/godbolt.png)
 
 See the weird numbers next to each instruction? like 4004b255? That's a base 16 number or hexadecimal usually refered to as 'Hex'. Hex is what is used by most computer guys to represent numbers because computers operate in base 2, or binary- like 01001100, which is very difficult to read and type accurately, however, base 10, the normal numbering system your used to, makes translating between binary and decimal a bit uncomfortable as the common factor is 5, an number that is both odd and in turn not a factor of two, where as 16 is $2^4$ so that means we can easily represent binary like this:
 
@@ -165,7 +165,7 @@ Put simply, just as with adding more Random Access Memory (RAM) to your system, 
 
 Let's take a look. install the `hwloc` package using yay and then run `lstopo` and you should get an output that looks a bit like this
 
-![lstopo]({static}/openg/lstopo.png)
+![lstopo](/home/vega/git/local/openg2/content/openg/lstopo.png)
 
 The stuff on the right are connections around the system, you can ignore those for now, but see the various cache layers, designated by L3, L2, L1d and L1i, and you can see how each core has it's own cache. Finally, you can see that each core has two processing units? Hey, wait, what's that all about?
 
@@ -175,11 +175,11 @@ Hyper threading, or SMT, or whatever the new term is for it, is a way of adding 
 
 While not listed in the /proc/cpuinfo output , it's still relevant to bring up CPU interrupts, which are, fittingly, listed in /proc/interupts
 
-![procint]({static}/openg/procint.png)
+![procint](/home/vega/git/local/openg2/content/openg/procint.png)
 
 > Output of `cat /proc/interupts` on my system
 
-![netdataint]({static}/openg/netdataint.png)
+![netdataint](/home/vega/git/local/openg2/content/openg/netdataint.png)
 
 > Output of information for the first 3 cores on my system displayed graphically using Netdata
 
@@ -193,7 +193,7 @@ the CPU is one of the most power hungry parts of your computer, and as such it d
 
 I very strongly recommend looking into this on any system though, as by default some CPUs will run at the minimum frequency only.
 
-![cpupower]({static}/openg/cpupower.png)
+![cpupower](/home/vega/git/local/openg2/content/openg/cpupower.png)
 
 We'll talk about delivering power to the CPU in a bit, when we talk about the Voltage Regulation Module (VRM) on the Motherboard.
 
@@ -203,7 +203,7 @@ The CPU is on a square or rectangular board that is usually covered by a large h
 
 ## RAM
 
-![RAM]({static}/openg/ram.jpg)
+![RAM](/home/vega/git/local/openg2/content/openg/ram.jpg)
 
  This is RAM or Random Access Memory. The above two sticks are the normal sized used in desktop PCs, this form factor is called a DIM while the bottom two are from laptops and are called SO-DIMS, the placement of the notch is an indicator of the generation of RAM, with neraly all modern ram being a consecutive generation of the DDR standard. At the time of writing (Q2,2019) DDR4 is common in new, medium to high end devices, with many DDR3 devices still being used. Of note many more compact devices solder the ram chips directly to the board, meaning there is no form factor to consider.
 
@@ -215,7 +215,7 @@ While support for this will vary depending on your motherboard, you should be ab
 
 The output will probably repeat multiple times, printing once for each physical stick of ram in your system. I actually have 4 sticks, but I'll just be showing one:
 
-![dmiram]({static}/openg/dmiram.png)
+![dmiram](/home/vega/git/local/openg2/content/openg/dmiram.png)
 
 You should note that many of the things mentioned above can be seen here, though I do want to look at some things here.
 
@@ -252,7 +252,7 @@ Going back to when cache was mentioned though, RAM's primary job is to hold bulk
 
 ## The Motherboard
 
-![mobo]({static}/openg/mobo.jpg)
+![mobo](/home/vega/git/local/openg2/content/openg/mobo.jpg)
 
 This is an older motherboard, but still new enough to have modern parts. Let's start by looking at the the most obvious physical features and move to smaller things from there.
 
@@ -260,11 +260,11 @@ The most obvious thing to point out is the size of the motherboard. This is a mA
 
 The large, white square is the CPU socket. This is an older board made for an AM3+ processor. The AM3+ processor line, as well as most consumer processors from AMD use a PGA or Pin Grid Array socket. these CPUs have many pins on the bottom which fall into these holes to make contact. Before the CPU is inserted the metal leaver arm, seen at the bottom of the socket if you look carefully, is raised and the CPU should smoothly plop right in, after which the arm can be lowered. Modern Intel CPUs follow a similar-ish mechanism, only instead of having a bunch of pins that go into holes the 'pins' are actually tiny springy pieces of metal on the motherboard which make contact with pads on the CPU, that socket looks a bit like this, albeit this is an old one:
 
-![File:CPU Socket 775 T.jpg]({static}/openg/581px-CPU_Socket_775_T.jpg)
+![File:CPU Socket 775 T.jpg](/home/vega/git/local/openg2/content/openg/581px-CPU_Socket_775_T.jpg)
 
 ([img source](https://commons.wikimedia.org/wiki/File:CPU_Socket_775_T.jpg))
 
-If you're looking at a server or high end workstation you may actually run into a single motherboard with multiple CPU sockets. These are becoming less common with time, but even though there are multiple CPUs the system still operates as one larger system. For example, I have access to a system with 4, 8 core, 16 thread cpu's to give for a total of of 64 threads. Giving this beautiful sight:![64t]({static}/openg/64thread.png)
+If you're looking at a server or high end workstation you may actually run into a single motherboard with multiple CPU sockets. These are becoming less common with time, but even though there are multiple CPUs the system still operates as one larger system. For example, I have access to a system with 4, 8 core, 16 thread cpu's to give for a total of of 64 threads. Giving this beautiful sight:![64t](/home/vega/git/local/openg2/content/openg/64thread.png)
 
 Clearly, a server with that much horsepower will use a lot of electricity though, and there is some overhead for the system when getting information from one physical CPU to another.
 
@@ -288,7 +288,7 @@ Finally, along the top of the back left edge you'll see the metal tops of the ma
 
 So, how do we get any information from the motherboard? Well, in case it wasn't already obvious, the motherboard isn't really one thing. It's more a common interconnect point and routing system than anything; however, it does have some of it's own responsibilities. To start small let's look at one small, but exceedingly import role of the motherboard: fan and temperature control.
 
-To see what your fans are doing on Linux you'll need to grab the package `lm_sensors` with yay, then you can run run `sudo sensors-decect` and mash enter until it's done. After this you should be able to run `sensors` and see an output similar to this one:![sense]({static}/openg/sensors.png)
+To see what your fans are doing on Linux you'll need to grab the package `lm_sensors` with yay, then you can run run `sudo sensors-decect` and mash enter until it's done. After this you should be able to run `sensors` and see an output similar to this one:![sense](/home/vega/git/local/openg2/content/openg/sensors.png)
 
 Of note, depending on your system, there's a small chance nothing will be detected at all or that some information will be wrong. Even in my case this is true as my CPU fan is reporting 0 RPM. Actually entering your motherboard's UEFI or BIOS settings may expose more information, but we'll talk about that more later.
 
@@ -370,7 +370,7 @@ If you continue down this list you'll see there's yet another USB controller and
 
 What's cool is this information relates back to something we saw earlier when looking at the CPU:
 
-![lstopo2]({static}/openg/lstopo.png)
+![lstopo2](/home/vega/git/local/openg2/content/openg/lstopo.png)
 
 See all those PCI ids on the right side, those directly correlate with a lot of the above.
 
@@ -439,17 +439,17 @@ For the most part, the chipset on a motherboard will match a certain CPU socket,
 
 Finally, it's notable that the chipset typically acts as a PCIe lane 'splitter' of sorts, turning (usually) 4 lanes into may more so that more devices may be attached. This can be particularly important when many high bandwidth devices are attached though, as even though these lanes are split, there's still only that original 4 lanes of bandwidth to go around.
 
-![Chipset]({static}/openg/Chipset.png)
+![Chipset](/home/vega/git/local/openg2/content/openg/Chipset.png)
 
 > [Source](https://www.intel.com/content/dam/www/public/us/en/documents/product-briefs/z370-chipset-product-brief.pdf)
 
-![chipsetamd]({static}/openg/chipsetamd.png)
+![chipsetamd](/home/vega/git/local/openg2/content/openg/chipsetamd.png)
 
 > [Source](https://en.wikichip.org/wiki/amd/microarchitectures/zen)
 
 ### Expansion slots
 
-![pciep]({static}/openg/pciep.jpg)
+![pciep](/home/vega/git/local/openg2/content/openg/pciep.jpg)
 
 > Two PCI-e 1x expansion cards, one for USB 3.0 and one for audio. Of note, most motherboards have both functions built in.
 
@@ -477,10 +477,10 @@ Older standards such as PCI, AGP, and ISA were all used before the widespread ad
 
 Both AGP and ISA have been phased out a long time ago, but very old cards may poke up now and then. If you're into vintage computers you may want to look the standards up to learn more.
 
-![pciecards]({static}/openg/pciecards.jpg)
+![pciecards](/home/vega/git/local/openg2/content/openg/pciecards.jpg)
 
 > Top: a 16x pci-e graphics card and a 1x pcie networking card
->
+> 
 > Bottom: an ISA networking card and an AGP graphics card, not pictured is the PCI connector
 
 ### ROM/BIOS/UEFI
@@ -507,7 +507,7 @@ You can typically tell how strong a particular VRM is by counting the number of 
 
 ## Graphics Card (or integrated graphics)
 
-![gcards]({static}/openg/gcards.jpg)
+![gcards](/home/vega/git/local/openg2/content/openg/gcards.jpg)
 
 > A wide array of graphics cards spanning multiple generations. The majority pictured are made by Nvidia
 
@@ -531,7 +531,7 @@ Both Intel and Amd offer integrated graphics of various capability that usually 
 
 Finally, it should be noted the iGPUs share system memory for graphics memory, which is actually one of their most limiting factors- as system memory (RAM) is optimized for a different kind of access pattern, it is not nearly as fast as GDDR or HMB2, both of which are memory technologies that have been optimized for use with graphics devices. 
 
-![1900px-raven_ridge_die_(annotated)]({static}/openg/1900px-raven_ridge_die_(annotated).png)
+![1900px-raven_ridge_die_(annotated)](/home/vega/git/local/openg2/content/openg/1900px-raven_ridge_die_(annotated).png)
 
 > [Source](https://en.wikichip.org/wiki/amd/microarchitectures/zen)
 
@@ -539,7 +539,7 @@ Moving on to graphics cards, Looking above at the stacks of graphics cards above
 
 ## Storage
 
-![disks]({static}/openg/hdds.jpg)
+![disks](/home/vega/git/local/openg2/content/openg/hdds.jpg)
 
 > Pictured here are 3 hard drives, 2 of which are 'full size' at 3.5" and the the other a 'laptop drive' at 2.5", the left most hard drive has been opened up, which has certainly ruined it as dust has gotten in. Below the smaller Hard drive is an NVMe ssd, a micro sd card, and a flash drive. All of which are examples of solid state storage
 
@@ -561,7 +561,7 @@ At the end of the day, for bulk media storage that you still want to be able to 
 
 Most hard drives connect though either SATA or SAS, with almost all consumer drives being SATA, and enterprise drives using a mix. SAS has some extra features and depending on the drive may be capable of writing an reading at the same time, a nifty trick SATA drives can't do without alternating between the two rapidly.
 
-For bulk storage servers you can get insane capacities, and building one yourself isn't all that hard. Here's mine:![powervault]({static}/openg/powervault.jpg)
+For bulk storage servers you can get insane capacities, and building one yourself isn't all that hard. Here's mine:![powervault](/home/vega/git/local/openg2/content/openg/powervault.jpg)
 
 > A modified powervault MD1000 with a hard drive poking out and the computer - being used an archive server - it connects to. It currently is only housing three, 3Tb SAS hard drives.
 
@@ -578,7 +578,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 
 Alright, so I already have the disk 62% used, let's give that a closer look by firing up `ncdu` at the mount point. This will take a little while to scan, the more files the longer it will take. After spending a few minutes to analyze the disk I'm greeted with this:
 
-![ncdu]({static}/openg/ncdu.png)
+![ncdu](/home/vega/git/local/openg2/content/openg/ncdu.png)
 
 From this you should be able to plainly see that the majority of the hard drive is taken up by Archived files, Music, Games, Videos, and Pictures. Pretty Mundane, but I could easily dive into the Archives and see why they're so big and save myself some space
 
@@ -590,7 +590,6 @@ This gives:
 /dev/sdg:
  Timing cached reads:   22946 MB in  2.00 seconds = 11492.36 MB/sec
  Timing buffered disk reads: 556 MB in  3.01 seconds = 184.91 MB/sec
-
 ```
 
 You should immediately notice that cached reads are absolutely insanely high compared to buffered, in reality it's because it was using RAM for cache, and RAM really is that fast. The reads of bulk data on the other hand? A little under 200MB/sec is actually quite fast for a hard drive. Anything between 1-200 is normal. You'll soon see that compared to SSDs though, this is kind of disappointing.
@@ -601,12 +600,14 @@ This begs the obvious question: what are cylinders, heads, and sectors
 
 Another thing of note is S.M.A.R.T tests, while not exclusive to hard drives, they're particularly useful for them as most hard drives give a lot of warning signs before failing out right. In
 order to get in-depth S.M.A.R.T info on your drive, you'll likely need to run a test first, after which you can view the results. To do this on Linux you can run
+
 ```bash
 yay -S smartmontools
 sudo smartctl -i path/to/disk
 ```
 
 Finally, a quick note about Western Digital Green drives: Linux eats them. Thankfully you can use hdparm to fix this. From the man page:
+
 > -J
 > Get/set the Western Digital (WD) Green Drive's "idle3" timeout value.  This timeout controls how often the drive parks its heads and enters a low power  consumption  state.
 > The  factory  default is eight (8) seconds, which is a very poor choice for use with Linux.  Leaving it at the default will result in hundreds of thousands of head load/un‐
@@ -655,7 +656,7 @@ Zfs, hardware raid, software raid, emulated hardware (bios), etc.
 
 ## Network Interfaces
 
-![NICS]({static}/openg/nics.jpg)
+![NICS](/home/vega/git/local/openg2/content/openg/nics.jpg)
 
 Pictured here are three Network Interface cards or a NIC. The three on the left are for WiFi (though some of this form factor may include bluetooth as well) while the one on the right has an ethernet port for wired access. Most computer's will not have a separate card for the wired interface though, as most motherboard's have a wired network interface built in.
 
@@ -726,4 +727,3 @@ Parallel, Serial, Tape, CD, gameport
 ## How to know what to buy
 
 [TODO - possibly move]
-

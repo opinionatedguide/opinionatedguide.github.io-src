@@ -33,4 +33,3 @@ I recommend this overview of the topics covered in CS: [Map of Computer Science]
 Also by Walliman, a video on [How to Read Math](https://www.youtube.com/watch?v=Kp2bYWRQylk) and the cheat sheet from it:
 
 [How To Read Math, Cheat Sheet](https://live.staticflickr.com/4671/40544016221_61cf8944d1_h.jpg)
-

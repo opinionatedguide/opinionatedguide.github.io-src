@@ -85,5 +85,3 @@ Relate back to things like ADRS, Distortion, Reverb / Echo, Decibels (audio), et
 At this point I highly recommend *'Practical Electronics for Inventors'* ISBN 978-1259587542, namely chapters 2-12, and 15-16. It's a very large, detailed book that does it's best to keep things, well, practical.
 
 https://taleri.files.wordpress.com/2014/02/practical_electronics_for_inventors_-_scherz_paul.pdf
-
-

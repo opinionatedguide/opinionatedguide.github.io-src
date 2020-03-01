@@ -638,31 +638,31 @@ once it installs go ahead and open it up
 
 you should see something like this:
 
-![2019-02-08-194336_3836x2042_scrot]({static}/openg/2019-02-08-194336_3836x2042_scrot.png)
+![2019-02-08-194336_3836x2042_scrot](/home/vega/git/local/openg2/content/openg/2019-02-08-194336_3836x2042_scrot.png)
 
 This is a super powerful equivalent to task manager from windows. You can see the load on all 16 of my cpu threads, the memory usage on the system, uptime, loadavg, and number of tasks running here, but best of all we can see a nice tree of all the processes, and how each one of them is impacting the system. (you may need to press f5 to put it in tree mode) From here you can also see the Process's ID known as the PID, these numbers should directly corolate with those visable in /proc
 
 Leaving that windows open lets open up two more terminals, in one navigate to /proc and in the other start up python:
 
- ![2019-02-08-194844_3241x2113_scrot]({static}/openg/2019-02-08-194844_3241x2113_scrot.png)
+ ![2019-02-08-194844_3241x2113_scrot](/home/vega/git/local/openg2/content/openg/2019-02-08-194844_3241x2113_scrot.png)
 
 from here go back to the window running htop and use f3 to search for python if there are multiple processes that come up just keep pressing i3 until you find one that has a tree that looks like:
 
 (note your terminal will probably be named either konsole or xterm, not deepin-terminal)
 
-![2019-02-08-195158_1685x128_scrot]({static}/openg/2019-02-08-195158_1685x128_scrot.png)
+![2019-02-08-195158_1685x128_scrot](/home/vega/git/local/openg2/content/openg/2019-02-08-195158_1685x128_scrot.png)
 
 and look to the left to find the pid of the running python process, in my case it's 754.
 
 Go over to the terminal where you navigated to /proc and now navigate to the folder with the id of your process, in my case i'd run `cd 754`  then run 'ls' and look at everything in this folder:
 
-![2019-02-08-195440_1912x424_scrot]({static}/openg/2019-02-08-195440_1912x424_scrot.png)
+![2019-02-08-195440_1912x424_scrot](/home/vega/git/local/openg2/content/openg/2019-02-08-195440_1912x424_scrot.png)
 
 now, we're gonna run one more thing before we leave, and we'll come back to it later, but I want to show you now, so you can appreciate how cool it is later: go ahead and run `sudo cat stack`
 
 you should see something like:
 
- ![2019-02-08-200152_831x306_scrot]({static}/openg/2019-02-08-200152_831x306_scrot.png)
+ ![2019-02-08-200152_831x306_scrot](/home/vega/git/local/openg2/content/openg/2019-02-08-200152_831x306_scrot.png)
 
 but when we run this in the python terminal:
 
@@ -673,7 +673,7 @@ while(1):
 
 and read the stack again we'll see:
 
-![2019-02-08-200307_427x115_scrot]({static}/openg/2019-02-08-200307_427x115_scrot.png)
+![2019-02-08-200307_427x115_scrot](/home/vega/git/local/openg2/content/openg/2019-02-08-200307_427x115_scrot.png)
 
 Which while may not look overly interesting, I assure you will be something of interest later.
 
@@ -741,6 +741,7 @@ Some of the more interesting things in `/etc` are:
 `/host.conf` & `/resolv.conf` are used for resolver configuration. More in networking [TODO]
 `/hosts` local host configuration file. Very useful, in networking again [TODO]
 `/httpd/`, and specifically `/httpd/conf/httpd.conf` is used to conigure a local web server like Apache. Refrenced in Networking [TODO] and Servers [TODO]
+
 ## /home, /mnt, /run
 
 [TODO]
@@ -802,5 +803,3 @@ init system: https://www.lifewire.com/how-to-use-the-init-command-in-linux-40669
 https://github.com/KnowNo/How-Linux-Works-2nd-Edition/blob/master/How.Linux.Works.What.Every.Superuser.Should.Know.2nd.Edition.PDF.pdf
 
 We'll explore more of the OS later, but for now I think the information overload is a bit much anyway, so lets move away from screens and into the world of hardware
-
-

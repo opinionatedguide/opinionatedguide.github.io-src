@@ -15,5 +15,3 @@
 ## Making an Embeded System project - 3 - Stepper Motor Music
 
 adapted from floppy drives, but less expensive
-
-

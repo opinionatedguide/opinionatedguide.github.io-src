@@ -62,7 +62,8 @@ The OSI model of networking is
 
 ### HTTP
 
-![Codes]({static}/openg/http-status-codes.png)
+![Codes](/home/vega/git/local/openg2/content/openg/http-status-codes.png)
+
 > https://www.monkeyuser.com/2017/http-status-codes/
 
 ### FTP
@@ -92,5 +93,3 @@ Real time clocks, timezones, utc, etc.
 ## Really weird Networking, because why not!
 
 Netsukuku, cjdns + hyperboria, Dat / Beaker, https://readhacker.news/s/3WJ75
-
-

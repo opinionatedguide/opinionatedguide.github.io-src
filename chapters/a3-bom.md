@@ -67,5 +67,3 @@ You can find a used Dell Poweredge r610 or poweredge 1950. Many of these will co
 ## Getting things for cheap
 
 salvage, auctions
-
-

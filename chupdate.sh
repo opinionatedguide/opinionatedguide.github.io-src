@@ -1,5 +1,12 @@
 #/bin/bash
 
+#add 3 newlines to all .md files
+#echo "\n\n\n" >> ./chapters/*.md
+#change paths to correct for pelican
+for i in ./chapters/*md; do
+    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/openg/{static}\/openg/g' $i
+done
+
 #Build Chapters
 cat ./chapters/p?-* > ./chapters/x1.md
 wait
@@ -35,3 +42,10 @@ mv ./chapters/y.md ./content/opinionatedeng.md
 #echo "opininionatedeng.md replaced"
 
 make html
+sleep 1
+echo "sed paths back for editing"
+
+#Put back to normal syntax
+for j in ./chapters/*.md; do
+    sed -i 's/{static}\/openg/\/home\/vega\/git\/local\/openg2\/content\/openg/g' $j
+done

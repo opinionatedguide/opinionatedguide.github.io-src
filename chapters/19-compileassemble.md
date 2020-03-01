@@ -13,5 +13,3 @@ https://medium.freecodecamp.org/the-programming-language-pipeline-91d3f449c919
 ## Continued Reading
 
 At this point I highly recommend '[The Art of Exploitation](https://nostarch.com/hacking2.htm)' by Jon Erickson
-
-
