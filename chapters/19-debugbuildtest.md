@@ -1,4 +1,4 @@
-# Chapter 18 - Debugging, Automated Building and Testing
+# Chapter 19 - Debugging, Automated Building and Testing
 
 ## Automated Building
 
@@ -19,3 +19,13 @@ common interfaces, simulation, serial/print debugging (slow), internal data logg
 ### Software Testing
 
 ### Hardware Testing
+
+## Automated Building and Testing
+
+[TODO]
+
+Fuzzing (sandsifter), make and alts, etc.
+
+## Continuous Integration
+
+## Continuous Deployment

@@ -2,4 +2,4 @@
 
 [TODO]
 
-Finite State Machines
+Finite State Machines, VHDL, Verilog, FPGA & CPLD internals
