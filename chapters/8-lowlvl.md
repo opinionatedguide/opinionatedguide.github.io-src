@@ -14,6 +14,8 @@ fully discect each line and call and why each line is used, ASCII table
 
 add greating and input
 
+### Bit Operations
+
 ### Even or Odd, prime,
 
 ### Calculating sine and pi
