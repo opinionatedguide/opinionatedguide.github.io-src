@@ -6,13 +6,13 @@ ignoring the analog world (10%/90%)
 
 ### Truth Tables, K-Maps
 
-min/max terms, Don't cares
+min/max terms, Don't cares, SOP/POS, multiple out
 
 ## Basic Logic Gates
 
 #### Not
 
-Truth table, transistor implimentation, cost, power consumption at switch
+Truth table, transistor implimentation pmos/nmos, cost, power consumption at switch
 
 #### And, Nand
 
@@ -22,19 +22,19 @@ Truth table, transistor implimentation, cost, power consumption at switch
 
 #### Transmission,
 
-#### Mux, Demux
+#### Mux, Demux, encoders
 
 ## Basic combonational logic
 
-propogation delay, fan in/out
+propogation delay, fan in/out, POS/POS 
 
-### 2's Compliment, Adders
+### 2's Compliment, Floating Pt, Math
 
-overflow, carry, 
+overflow, carry, ripple, fast, mul, shift-and-add mult, divider,
 
 ## Latches and Flip Flops
 
-SR, Dl, Dff, Tff, JKff,
+SR, Dl, edge triggering, Dff, Tff, JKff,
 
 ### Registers
 

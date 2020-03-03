@@ -1,6 +1,5 @@
 DELIMITEDFORTOC
 
-
 # Preface
 
 Hey there.
@@ -58,30 +57,30 @@ Oh, and to mention it now
 Yes, there is always a relevant XKCD, and yes, you will always feel like everyone knows more than you. Don't stress about asking stupid questions:
 
 > Frequently in chats, whether telegram, IRC, slack, or discord, someone says something like this:
->
+> 
 > <AnonOtter> Anyone know rust? Having an issue.
->
+> 
 > How that question is often read:
->
+> 
 > <AnonOtter> Can someone to commit to being able to solve my problem with rust, spending as much time as necessary, without them even knowing what the actual problem is or if it's even a rust problem?
->
+> 
 > Hopefully it's clear why questions like this rarely result in direct answers.
->
+> 
 > - There are very few people who could be called experts in every facet of whatever is being asked
 > - Imposter syndrome is common
 > - Most people won't write that blank check for time/help commitment
->
+> 
 > Instead, share:
->
+> 
 > - The goal - "Trying to query for a list of tags on a post" - See [The XY Problem](http://xyproblem.info/)
 > - The problem - "I'm getting back these results"
 > - The expectation - "but it should be these results"
 > - Any context or previous research you've done
 > - If possible, a simplified example. 3v4l for php, jsfiddle for html/js/css, etc. are great, otherwise a paste site.
 > - What you've already tried
->
+> 
 > This allows anyone there to try to help. Many skills transfer well to other languages or platforms. At minimum, you might get an idea for something you haven't tried yet. Sometimes you'll even solve your own problem while narrowing down the simplest possible test case.
->
+> 
 > Oh, and don't snark at well-intentioned answers. It's rude and discourages participation.
 
 --from https://bad.pet/q/
@@ -114,8 +113,6 @@ In general I've found site specific forms and Reddit to be the best platforms fo
 
 No matter what you care about, know there's a [wide range of communities](https://www.youtube.com/watch?v=0QO0yZldC2M&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=229&t=0s) that would be thrilled to have you, and you can always combine what you learn here with any of the other interests you have to make the things your passionate about better!
 
-
-
 # Ⅱ - Learn how to learn
 
 I'm going to keep this short and sweet: Nobody learns (effectively) by being shown what to do. You can watch hundreds of hours of people playing guitar, even explaining how they do it, but you wont be able to randomly pick one up and play if you never have before. Furthermore, as much as you can learn from direct reading and instruction, it has it's place and limits. This guide, book, whatever you want to call it, was never meant to be followed like instructions. You should go out on your own and poke around as you go though. If you find a topic dull, don't read it as in depth. I don't want you wasting your time. Break things. Make mistakes. By the end of this you should know what a burning resistor smells like, what it's like to try to recover a slightly busted linux system, and how it feels when a bug has been eluding you for hours and your code still doesn't work. The only way that happens (unless I made a mistake which is also probable) is if you try ideas when you get them and do more than what's in this book.
@@ -134,7 +131,7 @@ but note, you should keep in mind the standard warning that comes when first usi
 
 > We trust you have received the usual lecture from the local System
 > Administrator. It usually boils down to these three things:
->
+> 
 >     #1) Respect the privacy of others.
 >     #2) Think before you type.
 >     #3) With great power comes great responsibility.
@@ -144,19 +141,18 @@ but note, you should keep in mind the standard warning that comes when first usi
 Every journey needs a place to start, and while many may like to start slow I think a head first approach is best. So that's exactly what we're gonna do. The very first thing we're going to do is install a new operating system (OS) on your computer.
 
 > Quote boxes like these will provide notes throughout the guide, often definitonal. If you already understand everything prior to each box, you can probably safely ignore it, though it will occasionally be used for actual quotes as seen prior to this
->
+> 
 > Operating System: According to wikipedia, "An operating system (OS) is system software that manages computer hardware and software resources and provides common services for computer programs." put simply on your hardware this is probably Windows or Mac OS, and it's what everything else runs on top of
 
 You should really make a full backup of your computer before doing this, as installing an operating system can rather easily lead to lost files when you reformat or reparation your drive or when you change settings in the BIOS/UEFI and swap the bootloader.
 
 > Reformat: the bulk storage device in your computer, the hard drive or solid state drive, needs to be formated before use, this sets up a way for the computer and the drive to agree on a base system for how partitions should be setup, speaking of which:
->
+> 
 > Repartion: To partition a drive means to take all the space on the hard drive and divide it into partitions onto which you can put a file system. Most operating systems like Windows, Mac OsX, or Linux, use multiple partitions for the operating system to function. Usually a filesystem is set up on each of these partitions, in windows this is typically NTFS for Hard Drives and FAT32 for flash drives, these file systems are effectively the index for all the files you'll put on the drive, and as you may have multiple partitions and multiple file systems on one disk each will have an index to match. As complicated as it may seem this means the partition table can be seen as an 'index of inecies' of sorts. Don't worry if that's a lot to understand right now, we'll come back to this topic in depth.
 > BIOS/UEFI: The Binary Input Output System or Unified Extensible Firmware Interface is the thing you see before you computer loads the operating system, usually prompting to press delete or f2 to change settings. This is the system that is used to change the way all the components around the computer talk to one another and at what speed.
 > Bootloader: The bootloader sits at a special place on the hard drive selected for boot in the UEFI or BIOS, and is what the computer uses to load the full operating system, most will let you chose what operating system you want to boot if you have multiple installed on you computer at once
 
  Alright, so why do I want you to install a new OS to begin with? Well, the OS we'll be using is called Linux. Linux is actually what powers both android and chomeOS, and is a common descendant of the same system as Mac OsX as well as almost all of the servers on the internet from massive website like Facebook and Google to small Minecraft servers you can rent online to play with friends. What's cool about Linux is it lets you get much closer to the hardware and see what's going on, and it just generally makes writing code much easier. Furthermore, it's super easy to set up an amazing development environment in Linux for getting work done with code or electronics, and at the end of the day you can still watch YouTube, play *most* games that are on steam, or open up an office suite, just like Windows or Mac. Unlike Windows and (to a lesser extent) Mac though the system is laid out in way so that all the moving parts are exposed and able to be tinkered with. No setting or configuration is locked in and you have total control over your computer with Linux. Furthermore, it's not just easier to run and use software and tools for doing hardware and programming development on Linux, but it's also easier to find and install the tools, as you'll see shortly. Finally, linux has a great track record of stability, as there are many linux servers that run 24/7/365 to serve web pages, host services like games, and crunch big data in real time. In fact, all of the world's top 500 super computers use Linux.
-
 
 # Chapter 2 - Let's do it then, Installing Arch Linux
 
@@ -258,8 +254,6 @@ Now you should be good to carry on with the guide
 
 > of note, the following guide will be assuming you're installing Linux on the same drive as Windows or MacOS, making it applicable for most systems right away; however, I strongly recommend getting an extra SSD and giving Linux it's own disk outright instead. This is far easier to do in a desktop, but if you have a laptop with a CD drive you may be able to put a SSD in it's place. SSD prices have been steadily declining over the pas few years, but as of the time of writing a 250Gb ssd should be available for under 50 USD. I'd recommend a larger disk though, with 500Gb being plenty for most people
 
-
-
 While this guide should lead you though step by step, it may be helpful to follow the offical installation guide as well, which is available at https://wiki.archlinux.org/index.php/installation_guide. Furthermore, while slightly outdated, this flow chat is a nice refrence as well: https://i.imgur.com/Hokk8sK.jpg
 
 despite the technically complexity to get to it, the best place for Arch Linux support, even for installation, is in the IRC (Internet Relay Chat) channel #archlinux on Freenode. https://wiki.archlinux.org/index.php/Arch_IRC_channels
@@ -271,7 +265,7 @@ Obviously if you need this you'll need IRC open on a differnt device than the on
 > ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 > Seriously, backup your shit. I've done this countless times and have still managed to accidentally wipe a drive. There's a good chance you're about to completely murder your windows install. This is a necssary evil to learn, and I assure you'll be happy you've done all this, but this next bit is actual hell for people. I'm sorry it gets so bad so early. I promise it's worth it, okay?
 > ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
->
+> 
 > The next section requires a lot of reboots and has steps where you can't have this guide open on the computer you're working on. Don't be stupid.
 
 ---
@@ -985,7 +979,6 @@ But more than that, Linux actually exposes the system to the user and doesn't tr
 
 You'll start to see this more as we move forward though these next few chapters. Speaking of...
 
-
 Chapter 3 - Into the hardware
 
 One of the nifty things about Linux is you don't need to install extra software to check out the deeper parts of your hardware. While on windows you might need a tool like CPU-Z to look at information about the CPU on Linux you can do it out of the box. Let's get started on that then!
@@ -1508,7 +1501,6 @@ This gives:
 /dev/sdg:
  Timing cached reads:   22946 MB in  2.00 seconds = 11492.36 MB/sec
  Timing buffered disk reads: 556 MB in  3.01 seconds = 184.91 MB/sec
-
 ```
 
 You should immediately notice that cached reads are absolutely insanely high compared to buffered, in reality it's because it was using RAM for cache, and RAM really is that fast. The reads of bulk data on the other hand? A little under 200MB/sec is actually quite fast for a hard drive. Anything between 1-200 is normal. You'll soon see that compared to SSDs though, this is kind of disappointing.
@@ -1522,6 +1514,7 @@ order to get in-depth S.M.A.R.T info on your drive, you'll likely need to run a 
 [TODO]
 
 Finally, a quick note about Western Digital Green drives: Linux eats them. Thankfully you can use hdparm to fix this. From the man page:
+
 > -J
 >  Get/set the Western Digital (WD) Green Drive's "idle3" timeout value.  This timeout controls how often the drive parks its heads and enters a low power  consumption  state.
 >  The  factory  default is eight (8) seconds, which is a very poor choice for use with Linux.  Leaving it at the default will result in hundreds of thousands of head load/un‐
@@ -2365,6 +2358,7 @@ Some of the more interesting things in `/etc` are:
 `/host.conf` & `/resolv.conf` are used for resolver configuration. More in networking [TODO]
 `/hosts` local host configuration file. Very useful, in networking again [TODO]
 `/httpd/`, and specifically `/httpd/conf/httpd.conf` is used to conigure a local web server like Apache. Refrenced in Networking [TODO] and Servers [TODO]
+
 ## /home, /mnt, /run
 
 [TODO]
@@ -2418,7 +2412,6 @@ init system: https://www.lifewire.com/how-to-use-the-init-command-in-linux-40669
 https://github.com/KnowNo/How-Linux-Works-2nd-Edition/blob/master/How.Linux.Works.What.Every.Superuser.Should.Know.2nd.Edition.PDF.pdf
 
 We'll explore more of the OS later, but for now I think the information overload is a bit much anyway, so lets move away from screens and into the world of hardware
-
 
 # Chapter 5 - Resistance, Capacitance, and Inductance
 
@@ -2502,8 +2495,6 @@ or a cheap, low resolution, low speed one from Ebay. For most uses, both of thes
 
 But what are these actually used for day to day, and why would you want one? [TODO]
 
-
-
 ### The Logic Analyzer
 
 Logic Analyzers... analyze logic. Who knew? But what does that mean? Well, in reality they are *somewhat* similar to an oscilloscope in that they show a voltage over time, the difference is they only show either on or off over time based on the set TTL (Transistor–transistor logic) voltage. This lets you eavesdrop on the digital communication going on over a wire. Here's an example output:
@@ -2575,7 +2566,6 @@ How to read logorithmic first
 https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/voltage
 
 https://en.wikipedia.org/wiki/Fourier_transform
-
 
 # Chapter 6 - Let's work on how we work
 
@@ -2691,31 +2681,31 @@ Before moving forward though, I think it would make sense to talk about some of 
 > Resolution of a display refers to the number of pixels, HD technically starts at 720p, or 720 pixels across, though this is generally rather low by modern standards, with acceptable usually considered 1080p, which is technically 1920x1080. You may also see 1080i, this is a strange concept, not actually related to resolution, and we'll come back to it in a moment
 
 > The interface on your dispaly matters greatly as well, the most common at the are HDMI, Display Port, DVI, and VGA
->
+> 
 > VGA is the worst option here, as it's an analog signal. This means the signal can do strange things, getting corrputed between your computer and the monitor. Typically this is a blue, screw in connection with many pins
->
+> 
 > DVI is still pretty common and looks like an even larger VGA connection, with a typically white, screw in connector. This signal is normally digital, though there is a varient of DVI that can be adapted into VGA. Of note, DVI can also be adapted to HDMI though you will not have audio, as DVI does not carry sound
->
+> 
 > HDMI, probably the most well known connector, has multiple revisions, the revision determines many things such as the maximum resolution, refresh rate, and weather or not more obsucre things such as HDR are supported. HDMI is usually considered the best of these three options
->
+> 
 > Taking the crown however, is Display Port (DP). Like HDMI display port does have multiple revisions which do differentiate similar things; however, Display Port will genearlly support high resolutions and more features at any given point. Assuming you're runnig a bog-standard 60hz 1080p display however, you'll find no difference between DVI, HDMI, and DP - unless you need sound.
 
 > Next, you'll want to note the refresh rate of your monitor. This is how many times per second your monitor refreshes the screen. Typically monitors run at 60hz and TVs at 30 or 60. Because unlike a TV you're causing things on screen to change though, 30hz is generally considered bad and can even cause motion sickness. While 60hz may be standard, going for something even higher, with many displays offering well above 120hz, is something you may want to consider, espically if you plan on gaming.
->
+> 
 > Newer displays may support Freesync or Gsync, and both of these technologies require a supported graphics card in the system as well. These allow the display and computer to adaptively change the refresh rate so the monitor and computer both send and display frames in sync, which can make even a low refresh rate 'feel' much higher. This is a feature typically marketed to gamers and only supported in video games, but this has been changing. Gsync monitors genearlly have a much better implimentation of the technology but it requires an Nvidia graphics card. As of the time of writing both Freesync and GSync are supported on linux, but quite rough around the edges.
 
 > related to refresh rate is latency. In general this can actually mean two things, one is how long it takes for an image sent to the screen to actually be displayed. The lower this time the better, with good screens being sub 10 milisecond. Unfortuately, there's no standard among the industry to measure this and many get it wrong.
->
+> 
 > Also with latency theres grey to grey times, this is a measure of how long it takes a pixel to go from one shade to another. The lower this is the less motion blur the screen will exhibit
 
 > The color depth of the display determines how percisely a color may be displayed. The higer this is the better, but almost all modern displays will be the same, and unless you're an artist or creative professional you're unlikely to notice a difference
->
+> 
 > On the other hand, you are likely to notice the color gamut or what range of colors the display is actually capable of displaying.
->
+> 
 > For example, two displays may both be capable of displaying 255 levels of red, but if one display's range is only from a dingy red to a dark-ish red, while the other is from a brillinat red to a deep dark red, there's a massive differnce in color availability. If this is imporant to you, notably as a creative professionaly in photo or video, you may want to read more at https://en.wikipedia.org/wiki/Gamut
 
 > The next obvious thing to mention is dynamic range, or how deep the blacks are and how vivid the whites are. Again, this is simple, the higher the better. Many display types (LCD, TN-Panel) will have similar specifacions in all these areas, but particularly here. OLED is probaly the best when it comes to dynamic range as it can display true black by actually turning the soucre of the light off, but unfortuately these are quite susiptiable to burn in and image presistance.
->
+> 
 > There are some newer displays which feature HDR or High Dynamic Range, which allows the panel to selective change the brightness in an area of the screen, giving much better dynamic range in supported applications than a normal display
 
 > burnin and image presistance are both negitive effects on many displays where a pixel etither permantanly or temporarily resists change in color. This can lead to being able to read previously displayed bright white text on a now black image for example. Mor commonly you'll find TVs which have a particualr station's logo 'burnt in' to one corner of the screen, presisting even after changing channels
@@ -2850,10 +2840,10 @@ Vivaldi, Firefox, Syncthing, Beaker, IPFS, IRC - irssi, Telegram, Etherape, Wire
 
 [TODO]
 
-
 # Chapter 7 - Let's write some python
 
 From https://wiki.xxiivv.com/#development:
+
 > Prototype before polishing. Get it working before optimizing it.
 > Separate policy from mechanism; separate interfaces from engines.
 > Write simple modular parts connected by clean interfaces.
@@ -2923,7 +2913,6 @@ lambdas(high level only), threads/ parrallelization(high level only), interupts 
 
 https://www.youtube.com/watch?v=Cp5WWtMoeKg
 https://www.youtube.com/watch?v=M3iI2l0ltbE
-
 
 # Chapter 8 - Low Level Programming
 
@@ -3027,7 +3016,6 @@ https://doc.rust-lang.org/book/foreword.html
 
 https://tour.golang.org/welcome/1
 
-
 # Chapter 9 - Finishing up the project
 
 ## Part 3, more advanced high level
@@ -3041,8 +3029,6 @@ Finally, let's go back and add a com port to the C code and send data to an ardu
 ## Part 5, Coding practice and compititons
 
 https://www.youtube.com/watch?v=rwOI1biZeD8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=15&t=0s Obvuscated C, https://www.ioccc.org/
-
-
 
 # Chapter 10 - Networking
 
@@ -3109,6 +3095,7 @@ The OSI model of networking is
 ### HTTP
 
 ![Codes](../imgs/openg/http-status-codes.png)
+
 > https://www.monkeyuser.com/2017/http-status-codes/
 
 ### FTP
@@ -3139,7 +3126,6 @@ Real time clocks, timezones, utc, etc.
 
 Netsukuku, cjdns + hyperboria, Dat / Beaker, https://readhacker.news/s/3WJ75
 
-
 # Chapter 11 - High Level Overview of Math, Physics, and Chemistry (Sorry...)
 
 [TODO]
@@ -3165,7 +3151,6 @@ Imaginary numbers, systems of equations
 ## Ⅱ - Physics
 
 ## Ⅲ - Chem
-
 
 # Chapter 12 - Diodes,  Transistors, and Integrated Circuits
 
@@ -3255,7 +3240,6 @@ At this point I highly recommend *'Practical Electronics for Inventors'* ISBN 97
 
 https://taleri.files.wordpress.com/2014/02/practical_electronics_for_inventors_-_scherz_paul.pdf
 
-
 # Chapter 13 - Embedded Systems
 
 [TODO]
@@ -3273,7 +3257,6 @@ https://taleri.files.wordpress.com/2014/02/practical_electronics_for_inventors_-
 ## Making an Embeded System project - 3 - Stepper Motor Music
 
 adapted from floppy drives, but less expensive
-
 
 # Chapter 14 - Discrete Math and Algorithms
 
@@ -3299,7 +3282,6 @@ trees, hashtables/maps, stacks
 
 Fib, some pracice logical equliv, base conversion algo, overlapping lines, matrix multiplication
 
-
 # Chapter 15 - Writing a larger program
 
 [TODO]
@@ -3310,12 +3292,11 @@ Fib, some pracice logical equliv, base conversion algo, overlapping lines, matri
 
 ## Software Engineering
 
-
 # Chapter 16 - Servers!
 
 [TODO]
 
-##
+## 
 
 What's a homelab?
 
@@ -3339,7 +3320,6 @@ Before we get to business there's some necessary viewing: http://motherfuckingwe
 
 ## Fault tollerence
 
-
 # Chapter 17 - Databases
 
 [TODO]
@@ -3347,7 +3327,6 @@ Before we get to business there's some necessary viewing: http://motherfuckingwe
 Otherwise known as the chapter about sanitizing your damn inputs.
 
 // insert xkcd drop tables
-
 
 # Chapter 18 - Debugging, Automated Building and Testing
 
@@ -3371,7 +3350,6 @@ common interfaces, simulation, serial/print debugging (slow), internal data logg
 
 ### Hardware Testing
 
-
 # Chapter 19 - Compilers and Assemblers
 
 [TODO]
@@ -3388,13 +3366,11 @@ https://medium.freecodecamp.org/the-programming-language-pipeline-91d3f449c919
 
 At this point I highly recommend '[The Art of Exploitation](https://nostarch.com/hacking2.htm)' by Jon Erickson
 
-
 # Chapter 20 - Automated Building and Testing
 
 [TODO]
 
 Fuzzing (sandsifter), make and alts, etc.
-
 
 # Chapter 21 - Exploitation
 
@@ -3533,16 +3509,15 @@ https://microcorruption.com/ , https://ctftime.org/ ,
 CTF time,
 
 ## Some Hacking Community Fun
+
 https://www.youtube.com/watch?v=Jwpg-AwJ0Jc
 https://www.youtube.com/watch?v=UBaVek2oTtc
 https://www.youtube.com/watch?v=bouYRMItWnI
 https://www.youtube.com/watch?v=RDZnlcnmPUA
 
-
 Never claim something is 'unhackable':
 https://techcrunch.com/2019/05/10/eyedisk-encrypted-flash-drive-unhackable/,
 ![unhackable](../imgs/openg/unhackable1.jpg)
-
 
 # Chapter 22 - Security
 
@@ -3550,13 +3525,11 @@ https://techcrunch.com/2019/05/10/eyedisk-encrypted-flash-drive-unhackable/,
 
 focus on how to write secure programs, protect hardware, etc.
 
-
 # Chapter 23 - Open Source, Licences, and Copyright
 
 [TODO]
 
 actually contribute on github, make an issue, submit a pull request, make a custom repo,
-
 
 # Chapter 24 - Let's make our own PCB
 
@@ -3566,12 +3539,9 @@ First things first, we're going to be using Kicad, so you'll want to go grab tha
 
 https://www.youtube.com/watch?v=zK3rDhJqMu0&index=8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&t=0s
 
-
-
 # Chapter 25 - We've got cores, let's use em'
 
 [TODO]
-
 
 # Chapter 26 - Graphical Programming
 
@@ -3579,9 +3549,7 @@ https://www.youtube.com/watch?v=zK3rDhJqMu0&index=8&list=PL5cGwrD7cv8hK-qxPqRB25
 
 C++ from scratch, JS electron app, Processing creative coding, Python Kivy or similar, Flutter (google lang), shaders
 
-
 ## GP-GPU
-
 
 # Chapter 27 - (((())(()((()(()))))))
 
@@ -3589,13 +3557,11 @@ C++ from scratch, JS electron app, Processing creative coding, Python Kivy or si
 
 Functional Programming, and other paradigms : lisp, haskell, luna-lang.org
 
-
 # Chapter 28 - Let's try out programmable logic
 
 [TODO]
 
 Finite State Machines
-
 
 # Chapter 29 - Let's make our own CPU
 
@@ -3603,16 +3569,13 @@ Before we start, I'll warn you this isn't easy, but it's also not as bad as it s
 
 [TODO]
 
-
 # Chapter 30 - 3D printing, cases, and making real things
 
 [TODO]
 
 While this book/guide/thing primarily focuses on the less mechancial-engieering-y side of things, it wouldn't make sense not to include at least a little about 3D printing, molding, materials, gears, springs, and the like. So, here goes:
 
-
 # Chapter 31 - Fine, I'll talk about AI
-
 
 # Wrapping up - Where to go from here
 
@@ -3623,7 +3586,6 @@ While this book/guide/thing primarily focuses on the less mechancial-engieering-
 ## Projects to work on
 
 ## Contributing to Open Source
-
 
 # Appendix A- Using the Linux Shell
 
@@ -3671,11 +3633,11 @@ While this book/guide/thing primarily focuses on the less mechancial-engieering-
 ## Tab Completion and faster navigation
 
     Probably the most useful shortcut for using the shell is tab completion. This is used when you need to type a really long command or chain of commands, say I want to run ncmpcpp, a name that is both long and hard to remember, instead of just typing the full name I can type ```ncm``` and press tab, and ta-da suddenly the full name is inserted. If you happen to have another package that has multiple possible endings say you want to run ``lstopo`` but you have `ls, lsusb, lstopo` all on your system, most shells will display a menu underneath with all the possible options. This is nice for commands, but the true power comes in file names, say I want to run ``cat /etc/pacman.d/mirrorlist`` while that's not too awful to type out, you could easily type `cat /e` press tab, get `cat /etc/` add pac to get `cat /etc/pac` press tab, get `cat /etc/pacman.d/` type mir and tab and get the full command, while that sounds complicated it actually speeds using the command line up rather significantly and prevents spelling mistakes
-
+    
     Next up for navigation is directory shortcuts, these can be massive time savers, the most obvious is `~` which is just short hand for the location of the current shell users home directory, so in my case `~` is the exact same as typing out `/home/vega`. The next two have already been touched on which are `.` for the current directory and `..` for the previous directory. Depending on the shell and arbitrary number of dots may take you back and arbitary number of directories. Give it a shot! If nothing else you can always use `../../..` to navigate back as necessary. Finally, `-` represents the last directory you were in so if your in `~/Downloads` and then `cd /etc/pacman.d/`, running `cd -` will bring you back to downloads.
-
+    
     The most advanced form of bult in linux navigation comes in the form of `pushd` and `popd`, which as their names imply push and pop directories to a stack (a special kind of list) of directories. Like a stack of any item you can put or 'push' an item on top, and take or 'pop' an item off. Running `dirs -v` will show you a numberd list of the stack, you can navigate to the top item with `popd` or and abitrary item with `cd ~#` where # is the number as shown by `dirs -v`.
-
+    
     Finally, there's one more super handy way to get around your file system but it's a non-standard tool so most systems or servers you use other than your own will not have it installed, and that's autojump. Put simply it takes a good guess about where you want to go by only typing part of the name of a folder you've navigated to before, so say you have a long file path `/mnt/data/archived/january2000/pictures/family/vacation/` you can get back to it again by simply running `j vac` which is obviously much simpiler. It works the vast majority of the time in practice, only having issues if you don't include enough letters leading to ambuguity.
 
 ## I/O redirection
@@ -3701,7 +3663,7 @@ Note, `&>` redirects both stderr and stdout
 Finally, the weirdest and rarely used `<>` operator can be used to directly attch file descriptions and read/write files dirctly, this is rearely used as it's kind of a pita, but if you need to script something advanced it's available. Stollen from the above advanced link:
 
 >    [j]<>filename
->
+> 
 >       #  Open file "filename" for reading and writing,
 >       #+ and assign file descriptor "j" to it.
 >       #  If "filename" does not exist, create it.
@@ -3792,76 +3754,129 @@ When we installed arch we actually changed the default shell from bash to zsh, b
 ## Useful Non-Stock CLI Tools
 
 * tldr
+  
   * tldr, 'for too long didn't read' provides a quick, easy to read version of the man page for many common linux commands. Forget how to use `tar` ? just run `tldr tar`
+
 * autojump
+  
   * refrence above description in faster navigation
+
 * mpd + ncmpcpp
+  
   * 'music player daemon' and 'ncurses music player client plus plus' are two cli tools that work in tandem to provide an experiance that I presonally find superiour to any graphical music player
+
 * irssi
+  
   * full featured IRC client, chat right from your terminal
+
 * screenfetch
+  
   * get some nift stats about your terminal, add to your shell's RC file to be one of the cool kids
+
 * [moreutils](https://joeyh.name/code/moreutils/)
+  
   * "moreutils is a growing collection of the unix tools that nobody thought to write long ago when unix was young."
+
 * [hr](https://github.com/octobanana/hr)
+  
   * Need some way to visually seperate things, this literally just makes a horizontal line in the terminal
+
 * [fltrdr](https://github.com/octobanana/fltrdr)
+  
   * Wanna read at 1000wpm, this is the tool for you.
+
 * [crex]( https://github.com/octobanana/crex)
+  
   * test regular expressions in the terminal
+
 * lynx, w3m, browsh
+  
   * Browse the web from a terminal (not a joke and actually useful)
+
 * entr
+  
   * monitor file system for changes
+
 * noti
+  
   * send a graphical system notification when a command finishes
+
 * progress
+  
   * start a command and have no way to see what its doing (rsync, cp, etc)? This is your tool
+
 * figlet, toilet, banner
+  
   * makes big text, run `figlet Your Text Here` and see your text in big, ascii letters
+
 * no more secrets
+  
   * reveal text in a martix effect.. I'm streching the meaning of useful here
+
 * stress-ng
+  
   * stresstest your system in pretty much any super specific way you can think of, or hammer your cpu to test an overclock
+
 * pandoc
+  
   * convert between damn near any text format to any other format
+
 * taskwarrior
+  
   * keep track of To-Do's and tasks, can also be paired with timewarrior for timetracking
+
 * waifu2x (many forks available)
+  
   * Upscale and de-noise images zoom-and-enhance style but for real-    this ones' a bit GPU intensive because it uses AI
+
 * youtube-dl
+  
   * despite the name this tool can download videos or audio from almost any page on the internet, even supporting playlists in many cases too.
+
 * [rat](https://github.com/ericfreese/rat)
+  
   * "Compose shell commands to build terminal applications"
+
 * magic-wormhole
+  
   * tool for getting a file between two systems easily and secure, just run `wormhole send` and `wormhole recive` on the respective systems
+
 * Ix, Gist
+  
   * Paste tools, like pastebin
+
 * DMIDecode
+  
   * get info from BIOS
+
 * hexyl
+  
   * pretty terminal based hex viewer
+
 * [UXY](https://github.com/sustrik/uxy)
+  
   * "UXY tool also wraps some common UNIX tools and exports their output in UXY format."
-
+    
     "UXY is a tool to manipulate UXY format, which is a basically a two-dimenstional table that's both human- and machine-readable."
-
+    
     This gives a nice format for manipulation of commands though pipes for super complex shell scripting
+
 * lsof
+  
   * list what files a runnig process has open
 
 While some of these may be included, they're some of the OG addons or tools to make included things better:
 
 * tmux
-
+  
   * multiplex your termianal, open multiple terminals in your terminal, usefull in non-graphicas ttys espically
 
 * vim + extensions (neovim, spacevim, etc)
-
+  
   * the old school text editor meets new school
 
 * GDB + gef
-
+  
   * GDB, the original debugger, has it's faults. GEF, a config file for GDB on steroids, fixes many of them. While orgiginally made for exploit developers, many people use it for everyday debugging
 
 ## Common Graphical Linux Utils
@@ -4028,7 +4043,6 @@ Mathics
 
 TaskWeb (TaskWarrior)
 
-
 # Appendix B - Common electrical parts (appearence and numbers)
 
 [TODO]
@@ -4038,9 +4052,8 @@ TaskWeb (TaskWarrior)
 * reading specs
 
 * datasheets
-
+  
   *
-
 
 # Appendix C - BOM
 
@@ -4112,7 +4125,6 @@ You can find a used Dell Poweredge r610 or poweredge 1950. Many of these will co
 
 salvage, auctions
 
-
 # Appendix D - Polotics and Ethics
 
 > Don't feed the Trolls
@@ -4128,6 +4140,7 @@ Many in the tech community are on the heartbeat of issues surounding copyright, 
 Moving on from that though, there is increasingly a concern about energy consumption and enviormental consequences of technology use. Data centers alone are already consuming over 2% of the worlds electricity and that number is set to grow exponentially in the coming years. Becuase of this having a light, fast, http://motherfuckingwebsite.com/ instead of a bloated, javascript heavy page actually matters. http://gauthierroussilhe.com/en/posts/convert-low-tech as well as https://solar.lowtechmagazine.com/2016/05/how-to-go-off-grid-in-your-apartment.html are good sites that go more in depth on this issue. Now, at the same time, I'm not going to act all high and mighty, my desktop and monitors use in excess of 300w, but it is still something to be mindful of.
 
 From https://wiki.xxiivv.com/#development:
+
 > The Four Essential Freedoms
 > The freedom to run the program as you wish, for any purpose.
 > The freedom to study how the program works, and change it.
@@ -4141,60 +4154,58 @@ The hacker and information freedom community has multiple 'sacred texts' if you 
 > in books and journals, is increasingly being digitized and locked up by a handful of
 > private corporations. Want to read the papers featuring the most famous results of the
 > sciences? You'll need to send enormous amounts to publishers like Reed Elsevier.
->
+> 
 > There are those struggling to change this. The Open Access Movement has fought
 > valiantly to ensure that scientists do not sign their copyrights away but instead ensure
 > their work is published on the Internet, under terms that allow anyone to access it. But
 > even under the best scenarios, their work will only apply to things published in the future.
 > Everything up until now will have been lost.
->
+> 
 > That is too high a price to pay. Forcing academics to pay money to read the work of their
 > colleagues? Scanning entire libraries but only allowing the folks at Google to read them?
 > Providing scientific articles to those at elite universities in the First World, but not to
 > children in the Global South? It's outrageous and unacceptable.
->
+> 
 > "I agree," many say, "but what can we do? The companies hold the copyrights, they
 > make enormous amounts of money by charging for access, and it's perfectly legal —
 > there's nothing we can do to stop them." But there is something we can, something that's
 > already being done: we can fight back.
->
+> 
 > Those with access to these resources — students, librarians, scientists — you have been
 > given a privilege. You get to feed at this banquet of knowledge while the rest of the world
 > is locked out. But you need not — indeed, morally, you cannot — keep this privilege for
 > yourselves. You have a duty to share it with the world. And you have: trading passwords
 > with colleagues, filling download requests for friends.
->
->
->
+> 
 > Meanwhile, those who have been locked out are not standing idly by. You have been
 > sneaking through holes and climbing over fences, liberating the information locked up by
 > publishers and sharing them with your friends.
->
+> 
 > But all of this action goes on in the dark, hidden underground. It's called stealing or
 > piracy, as if sharing a wealth of knowledge were the moral equivalent of plundering a
 > ship and murdering its crew. But sharing isn't immoral — it's a moral imperative. Only
 > those blinded by greed would refuse to let a friend make a copy.
->
+> 
 > Large corporations, of course, are blinded by greed. The laws under which they operate
 > require it — their shareholders would revolt at anything less. And the politicians they
 > have bought off back them, passing laws giving them the exclusive power to decide who
 > can make copies.
->
+> 
 > There is no justice in following unjust laws. It's time to come into the light and, in the
 > grand tradition of civil disobedience, declare our opposition to this private theft of public
 > culture.
->
+> 
 > We need to take information, wherever it is stored, make our copies and share them with
 > the world. We need to take stuff that's out of copyright and add it to the archive. We need
 > to buy secret databases and put them on the Web. We need to download scientific
 > journals and upload them to file sharing networks. We need to fight for Guerilla Open
 > Access.
->
+> 
 > With enough of us, around the world, we'll not just send a strong message opposing the
 > privatization of knowledge — we'll make it a thing of the past. Will you join us?
->
+> 
 > Aaron Swartz
->
+> 
 > July 2008, Eremo, Italy
 
 If you'd like more information on Swartz's infulence you can watch a documentry on him [here](https://www.youtube.com/watch?v=vXr-2hwTk58&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=367&t=0s)
@@ -4204,48 +4215,48 @@ Another important document is "The Conscience of a Hacker" written by "The Mento
 >    Another one got caught today, It's all over the papers.
 > "Teenager Arrested in Computer Crime Scandal", "Hacker arrested
 > after Bank Tampering"...
->
+> 
 >    Damn kids. They're all alike.
->
+> 
 >    But did you, in your three-piece psychology and 1950's
 > technobrain, ever take a look behind the eyes of a hacker? did
 > you ever wonder what made him tick, what forces shaped him, what
 > may have molded him?
->
+> 
 >    I am a hacker. Enter my world.
->
+> 
 >    Mine is a world that begins with school... I'm smarter than
 > most of the other kids, this crap they teach us bores me...
 >                     Come on...  Ain't Got All Day!!
 >    Damn underachiever. They're all alike.
->
+> 
 >    I'm in junior high or high school. I've listened to the
 > teachers explain for the fifteenth time how to reduce a
 > fraction. I understand it. "No Ms. Smith, I didn't show my work.
 > I did it in my head..."
->
+> 
 >    Damn kid. Probably copied it. They're all alike.
->
+> 
 >    I made a discovery today. I found a computer. Wait a xecond,
 > this is cool. It does what I want it to. if it makes a mistake,
 > it's because I screwed it up. Not Because it doesn't like me...
 > Or feels threatend by me...
 > Or thinks I'm a smart ass...
 > Or doesn't like teaching and shouldn't be here...
->
+> 
 >    Damn kid. All he does is play games. They're all alike.
->
+> 
 >    And then it happened... a door opened to a world... rushing
 > through the phone line like junk through an addict's veins, an
 > electronic impulse is sent out, a refuge from the day-to-day
 > incompetencies is sought... a board is found.
->
+> 
 >    "this is it... this is wwhere I belong..."
->
+> 
 >    I know everyone herre... even if I've never met them, never
 > talked to them, may never hear from them again... I know you
 > all...
->
+> 
 >    Damn kid. tying up the phone line again. They're all alike...
 >                     Come on...  Ain't Got All Day!!
 >    You bet your ass we're all alike... we've been spoon-fed baby
@@ -4254,7 +4265,7 @@ Another important document is "The Conscience of a Hacker" written by "The Mento
 > We've been dominated by sadist, or ignored by the apathetic. The
 > few that had something to teach us found us willing pupils, but
 > those few are like drops of water in the desert.
->
+> 
 >    This is our world now... the world of the electron and the
 > switch, the beauty of the baud. We make use of a service already
 > existing without paying for what could be dirt-cheap if it
@@ -4265,26 +4276,23 @@ Another important document is "The Conscience of a Hacker" written by "The Mento
 > call us criminals. You build atomic bombs, you wage wars, you
 > murder, cheat, and lie to us and try to make us believe it's for
 > our own good, yet we're the criminals.
->
+> 
 >    Yes, I am a criminal. My crime is that of curiosity. My crime
 > is that of judging people by what they say and think, not what
 > they look like. My crime is that of outsmarting you, something
 > that you will never forgive me for.
->
+> 
 >                     Come on...  Ain't Got All Day!!
->
+> 
 > I am a hacker, and this is my manifesto. You may stop this
 > individual, but you can't stop us all... after all, we're all alike.
->
+> 
 > +++The Mentor+++
 >    Racketeers
->
 
 Finally, I'd like to make a few notes about online communities, trolling, hate speech, and the like. Clearly the tech industry leans significantly on the liberal/libertarian side; however, most of us also strongly support your right to say whatever you like even if we don't support it. This is particually frustrating when it comes to large, non-grouped online communities like Twitter or Tumblr where except by blocking, everyone is in the same public sphere instead of isolated. While the isolation can have negitive effects too, like echo chambers where false information and hate breed, the samller communities are also benefical as they allow for a better sense of community and for individual moderation policies decided by the useres instead of awkward rules like [Tumblr's](https://gizmodo.com/tumblrs-porn-filter-flags-its-own-examples-of-permitted-1831151178?utm_source=gizmodo_twitter&utm_medium=socialflow&utm_campaign=socialflow_gizmodo_twitter&fbclid=IwAR2cfAMZ5IpJLINVt6WSuLCcu7KX5D83FQ8F4J-DTxbyJFMZ4704-VxTbN4) [NSFW](https://staff.tumblr.com/post/181199101690/hey-tumblr-a-couple-of-weeks-ago-we-announced-an) ban and the chaos that insued. Clearly the lines between hate speech and trolling and free speech are a problem online, and frankly the internet is young. We haven't really figured out the right way to handle it yet. Should Twitter have the right to remove the Alt-Right or are they to important of a polticial forum to deny freedom of speech despite being a public company? Is it ethically okay to use services like Tor for privacy when by doing so you're indirectly helping people get away with things like child ... abuse (I don't want this document getting flagged by something, ironically). Or because the tools are going to exist regardless and criminals will always find another way is it okay? The truth is, it's not black and white, and it's well worth your time to sit down and consider what you are personally okay with and what you think, as a society, we need to change and how we might go about doing that. Personally, I think services like Mastodon which offer security and privacy while keeping individual communities free to handle themselves are the best option, but they're also more complicated. Just know that decesion you make online can have real world consequences, and that at the end of the day, there's a human on the other side of that screen.
 
 ## Localization
-
-
 
 https://shinesolutions.com/2018/01/08/falsehoods-programmers-believe-about-names-with-examples/
 https://www.youtube.com/watch?v=-5wpm-gesOY
@@ -4298,6 +4306,7 @@ Names, Timezones, unicode, maps (Tiwan v china)
 The engineering community is strangly divided, the 'old gaurd' is actually realitively conservative and professional, but as time has moved forward it's quite the opposite. Unsuprisingly, this corolates with religion as well. The main way this plays into politics is a general hard stance for the separation of church and state. This is in part due to a past of religoutly motivated legilation negitively impacting copyright law, but also just generally an understood ideal that is beneficial to democracy. Furthermore, it would probably be worth your time to look into basics of most world religions, as engineering is incressingly a global field where you will have no choice but to work with people from diverse backgrounds across the globe.
 
 ## Other interesting Case Studdies
+
 https://www.nytimes.com/2017/04/30/business/traffic-light-fine.html
 https://arstechnica.com/tech-policy/2018/08/verizon-throttled-fire-departments-unlimited-data-during-calif-wildfire/
 
@@ -4311,17 +4320,20 @@ Also, because this got a bit heavy for a bit, let's touch on Rule 34. We all kno
 ![irules](.../imgs/openg/irules.jpg)
 
 ## Thank you
+
 If you've made it this far I just want to say thank you. We need more people to really consider the ethics of technology as we design it and procede with it. DeepFakes, Automated driving, and even more mass online censorship are issues we're only going to face more with time and it's people like you who are going to help make sure we take the best path we can. So, from the bottom of my heart, thank you.
 
 ## Political rambalings from hackers solarpunks and engineers
+
 https://ameyama.com/#/blog/2018/11/18/values-update
 
 ## TODO
+
 Education, college, prices, highschool homework and personal time, Drugs,# Appendix E - Fixing issues
 
 [TODO]
-## Fix by working comparison
 
+## Fix by working comparison
 
 # Other Great Resources
 
@@ -4419,13 +4431,10 @@ https://github.com/jagracey/Awesome-Unicode#readme
 
 https://github.com/netspooky/Simple-Virtual-CPU
 
-
-
 ## Books and Papers
 
 https://github.com/EbookFoundation/free-programming-books#readme
 https://scihub.org/
-
 
 ## Blogs
 
@@ -4442,7 +4451,9 @@ https://www.metafilter.com/
 https://relevant.community/relevant/top
 
 ## Some really cool, inspirational people
+
 # Security
+
 Netspooky @ https://twitter.com/netspooky , https://twitter.com/netspooky
 LiveOverflow @ https://twitter.com/LiveOverflow
 https://twitter.com/ANDnXOR
@@ -4456,26 +4467,30 @@ https://twitter.com/da_667
 https://twitter.com/0xCODEs
 https://twitter.com/zerosum0x0
 https://twitter.com/x0rz -- https://discord.0day.rocks/
+
 # Programming/Live coding
+
 RavenKwok @ https://twitter.com/RavenKwok
 Neauoire & RekkaBell @ https://merveilles.town/@neauoire , http://100r.co/
 https://twitter.com/RavenKwok
 https://twitter.com/generateme_blog
 https://twitter.com/manoloidee
+
 # Just generally nerdy
+
 https://twitter.com/Level1Techs / https://twitter.com/tekwendell
 https://twitter.com/Snowden
 https://twitter.com/oshpark
 https://twitter.com/climagic
 https://archive.org/
 https://media.ccc.de/v/31c3_-_6373_-_en_-_saal_6_-_201412291600_-_the_only_thing_we_know_about_cyberspace_is_that_its_640x480_-_olia_lialina#t=621
+
 # History
+
 [TODO] Move this elsewhere
 
 https://www.youtube.com/watch?v=TfwKYUmoC-k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=17&t=0s
 
 ## Perserving data
+
 https://media.ccc.de/v/31c3_-_6373_-_en_-_saal_6_-_201412291600_-_the_only_thing_we_know_about_cyberspace_is_that_its_640x480_-_olia_lialina#t=3641
-
-
-

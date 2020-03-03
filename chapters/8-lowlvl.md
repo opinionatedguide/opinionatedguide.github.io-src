@@ -28,6 +28,10 @@ mention efficenecy, analysis later
 
 ### Cypher
 
+## System Calls
+
+## Interupt & Signal handeling
+
 ### Part 2, Going Deeper
 
 [TODO] Interacting with the above, this program should run in the background and update the data, based on window focus events

@@ -3150,6 +3150,8 @@ fully discect each line and call and why each line is used, ASCII table
 
 add greating and input
 
+### Bit Operations
+
 ### Even or Odd, prime,
 
 ### Calculating sine and pi
@@ -3161,6 +3163,10 @@ mention efficenecy, analysis later
 ### Palindromes
 
 ### Cypher
+
+## System Calls
+
+## Interupt & Signal handeling
 
 ### Part 2, Going Deeper
 
@@ -3491,7 +3497,52 @@ Relate back to things like ADRS, Distortion, Reverb / Echo, Decibels (audio), et
 At this point I highly recommend *'Practical Electronics for Inventors'* ISBN 978-1259587542, namely chapters 2-12, and 15-16. It's a very large, detailed book that does it's best to keep things, well, practical.
 
 https://taleri.files.wordpress.com/2014/02/practical_electronics_for_inventors_-_scherz_paul.pdf
-# Chapter 13 - Embedded Systems
+# Chapter 13 - Digital Logic
+
+## What is digital logic?
+
+ignoring the analog world (10%/90%)
+
+### Truth Tables, K-Maps
+
+min/max terms, Don't cares, SOP/POS, multiple out
+
+## Basic Logic Gates
+
+#### Not
+
+Truth table, transistor implimentation pmos/nmos, cost, power consumption at switch
+
+#### And, Nand
+
+#### Or, Nor, Exnor
+
+### Xor, Exor
+
+#### Transmission,
+
+#### Mux, Demux, encoders
+
+## Basic combonational logic
+
+propogation delay, fan in/out, POS/POS 
+
+### 2's Compliment, Floating Pt, Math
+
+overflow, carry, ripple, fast, mul, shift-and-add mult, divider,
+
+## Latches and Flip Flops
+
+SR, Dl, edge triggering, Dff, Tff, JKff,
+
+### Registers
+
+### Counters
+
+## More Digital Logic resources
+
+We'll come back to look at more complex digital logic in ****chapter 28 "Let's try out programmable logic"**** and **29 "Let's make our own SOC"** , but if you're hungry for even more, here are some resources
+# Chapter 14 - Embedded Systems
 
 [TODO]
 
@@ -3508,7 +3559,7 @@ https://taleri.files.wordpress.com/2014/02/practical_electronics_for_inventors_-
 ## Making an Embeded System project - 3 - Stepper Motor Music
 
 adapted from floppy drives, but less expensive
-# Chapter 14 - Discrete Math and Algorithms
+# Chapter 15 - Discrete Math and Algorithms
 
 [TODO]
 
@@ -3558,7 +3609,7 @@ trees, hashtables/maps, stacks
 ## Practice
 
 Fib, some pracice logical equliv, base conversion algo, overlapping lines, matrix multiplication
-# Chapter 15 - Writing a larger program
+# Chapter 16 - Writing a larger program
 
 [TODO]
 
@@ -3567,7 +3618,7 @@ Fib, some pracice logical equliv, base conversion algo, overlapping lines, matri
 ## Planning
 
 ## Software Engineering
-# Chapter 16 - Servers!
+# Chapter 17 - Servers!
 
 [TODO]
 
@@ -3594,14 +3645,14 @@ Before we get to business there's some necessary viewing: http://motherfuckingwe
 ## Containerization
 
 ## Fault tollerence
-# Chapter 17 - Databases
+# Chapter 18 - Databases
 
 [TODO]
 
 Otherwise known as the chapter about sanitizing your inputs.
 
 // insert xkcd drop tables
-# Chapter 18 - Debugging, Automated Building and Testing
+# Chapter 19 - Debugging, Automated Building and Testing
 
 ## Automated Building
 
@@ -3622,7 +3673,17 @@ common interfaces, simulation, serial/print debugging (slow), internal data logg
 ### Software Testing
 
 ### Hardware Testing
-# Chapter 19 - Compilers and Assemblers
+
+## Automated Building and Testing
+
+[TODO]
+
+Fuzzing (sandsifter), make and alts, etc.
+
+## Continuous Integration
+
+## Continuous Deployment
+# Chapter 20 - Compilers and Assemblers
 
 [TODO]
 
@@ -3637,15 +3698,6 @@ https://medium.freecodecamp.org/the-programming-language-pipeline-91d3f449c919
 ## Continued Reading
 
 At this point I highly recommend '[The Art of Exploitation](https://nostarch.com/hacking2.htm)' by Jon Erickson
-# Chapter 20 - Automated Building and Testing
-
-[TODO]
-
-Fuzzing (sandsifter), make and alts, etc.
-
-## Continuous Integration
-
-## Continuous Deployment
 # Chapter 21 - Exploitation
 
 Often when we think about Exploitation, better known as hacking, we conjur images of a more-punk-than-cyber cyberpunk person clicking away wildly on a keyboard as code flies by, like the [1995 movie, Hackers](https://en.wikipedia.org/wiki/Hackers_(film)), and to some extent this isn't wrong, as one look around the floor at [DefCon](https://www.defcon.org/), will show you. And honestly, that's to by accident. While there are strictly professional security experts, those that work at corperations and banks, a large number do it for the lolz, for fun, and to bring a little fun back into computing. Calling exploitation 'hacking' is almost a misnome, as hacking encompases a lot more than exploitation, and exploitation a lot more than hacking. For that reason, before we start, I recomend you watch [this video](https://www.youtube.com/watch?v=wjge1bVobN0), on speed running Super Mario 64, this is a prime example of exploitation in a non-harmful manner done for fun.
@@ -3887,8 +3939,8 @@ Functional Programming, and other paradigms : lisp, haskell, luna-lang.org
 
 [TODO]
 
-Finite State Machines
-# Chapter 29 - Let's make our own CPU
+Finite State Machines, VHDL, Verilog, FPGA & CPLD internals
+# Chapter 29 - Let's make our own SOC
 
 Before we start, I'll warn you this isn't easy, but it's also not as bad as it sounds, and it's certainly not as [bad](https://www.youtube.com/watch?v=C8txvmXUIJQ&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=141&t=0s) as it used to be
 
@@ -4829,3 +4881,30 @@ https://www.youtube.com/watch?v=TfwKYUmoC-k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLW
 ## Perserving data
 
 https://media.ccc.de/v/31c3_-_6373_-_en_-_saal_6_-_201412291600_-_the_only_thing_we_know_about_cyberspace_is_that_its_640x480_-_olia_lialina#t=3641
+# Other odd things:
+
+// Potentially move these elsewhere
+
+## Polygot Files
+
+elf hacking, POC||GTFO
+
+## Strange thought
+
+Main not fn
+
+order of variable declaration (paged out 001 pg 33)
+
+generic midi use (paged out 002 pg 24)
+
+rop
+
+## Ham Radio
+
+LORA
+
+2.4Ghz patch antenna
+
+electronically tunable filters
+
+
