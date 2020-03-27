@@ -56,10 +56,42 @@ Hello World!
 
 Anything you write to the interpreter can also be added to a file and ran that way. Try saving the examples above to a file called test.py, opening a terminal and running it with `python test.py`. 
 
+
+### Conditions using `if`, `elif` and `else`
+
+You often want code only to be executed, if a certain condition is met. For example, take a look at the following code:
+
+```python
+a = 13
+b = 27
+if a > b:
+    print("a is bigger")
+else:
+    print("b is bigger")
+```
+
+Using the `if` statement, connected with a logical condition, you can control the program flow. In this case, `a` is smaller than `b`, so python will skip the code inside of the `if` case and only execute what is within the `else` part.
+
+You can also combine multiple if cases like this:
+
+```python
+a = 3
+if a < 0:
+    print("a is negative")
+elif a == 0:
+    print("a is zero")
+else:
+    print("a is positive")
+```
+
+Using the `elif` statement, you can check for another condition if the one in the `if` statement was `false`.
+
+
 [TODO]
-if, while, for (and specialized), assignment, comparison, combined ops (+=), mod, exponent, floor,
+while, for (and specialized), assignment, comparison, combined ops (+=), mod, exponent, floor,
 in/not in, is/is not, data types, functions
 libraries
+
 
 ## Common methods used
 
@@ -68,6 +100,7 @@ print debugging
 Recursion, object orientation
 while(true)
 try/catch
+
 
 ## Some simple programs
 
