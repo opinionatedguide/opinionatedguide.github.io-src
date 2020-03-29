@@ -2912,6 +2912,14 @@ Taskweb
 
 Ranger, THunar, Nautilius, Baobab, Gparted
 
+if you use Nautilius, you may want to run
+
+```bash
+dconf write /org/gnome/nautilus/preferences/always-use-location-entry true
+```
+
+so that the file paths are displayed in full
+
 **Media (Music, Video, PDF,)**
 
 [TODO]
@@ -3542,6 +3550,9 @@ SR, Dl, edge triggering, Dff, Tff, JKff,
 ## More Digital Logic resources
 
 We'll come back to look at more complex digital logic in ****chapter 28 "Let's try out programmable logic"**** and **29 "Let's make our own SOC"** , but if you're hungry for even more, here are some resources
+
+(TODO) https://twitter.com/Foone/status/1240011033395073024
+
 # Chapter 14 - Embedded Systems
 
 [TODO]

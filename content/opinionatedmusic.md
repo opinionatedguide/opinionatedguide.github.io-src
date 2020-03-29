@@ -25,8 +25,6 @@ Go download VCV Rack from https://vcvrack.com/ and depending on your OS you'll n
 Go ahead and fire up VCV and a template patch should have opened up that looks some thing like this:
 ![vcv1default]({static}/opmusic/vcv1default.png)
 
-
-
 Windows guys, set your sound device to ASIO and fiddle around until you have sound working, Linux people RTFM, Mac people ヽ( ´¬`)ノ.
 That default patch should respond to input when you mash keys so you can test your sound settings
 
@@ -162,8 +160,6 @@ Panning, Widening
 
 ## Glitch, Granular, and Pitch
 
-
-
 # Compression
 
 ![compression]({static}/gifs/compression.gif)
@@ -221,12 +217,13 @@ Modular, semi-modular, software
 
 ## Headphones/speakers
 
-
-
 # List of All link mentioned
+
 ## Software and tools
+
 \$ - Paid
 ! - Require paid software
+
 * - Has paid features
 
 https://github.com/cannc4/Siren -Siren- Tracker meets live coding
@@ -243,6 +240,7 @@ https://tidalcycles.org/index.php/Welcome -Tidal- Live coding enviroment
 \$ -FL Studio-
 
 ## Cool People
+
 https://twitter.com/RichardDevine
 https://twitter.com/LOOKMUMNOCMPUTR
 
@@ -261,6 +259,5 @@ Rob Scallon https://www.youtube.com/watch?v=JeB3JnKp8To&list=FLFMnqfaTa1se1LfbCB
 Reddit: https://www.reddit.com/r/vcvrack/ , https://www.reddit.com/r/synthesizers/ , https://www.reddit.com/r/synthdiy/ , https://www.reddit.com/r/modular/
 
 ## Other Resources
+
 https://learningmusic.ableton.com/
-
-

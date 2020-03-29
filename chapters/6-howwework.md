@@ -223,6 +223,14 @@ Taskweb
 
 Ranger, THunar, Nautilius, Baobab, Gparted
 
+if you use Nautilius, you may want to run
+
+```bash
+dconf write /org/gnome/nautilus/preferences/always-use-location-entry true
+```
+
+so that the file paths are displayed in full
+
 **Media (Music, Video, PDF,)**
 
 [TODO]
