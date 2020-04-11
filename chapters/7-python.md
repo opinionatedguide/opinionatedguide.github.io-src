@@ -56,10 +56,90 @@ Hello World!
 
 Anything you write to the interpreter can also be added to a file and ran that way. Try saving the examples above to a file called test.py, opening a terminal and running it with `python test.py`. 
 
+
+### Conditions using `if`, `elif` and `else`
+
+You often want code only to be executed, if a certain condition is met. For example, take a look at the following code:
+
+```python
+a = 13
+b = 27
+if a > b:
+    print("a is bigger")
+else:
+    print("b is bigger")
+```
+
+Using the `if` statement, connected with a logical condition, you can control the program flow. In this case, `a` is smaller than `b`, so python will skip the code inside of the `if` case and only execute what is within the `else` part.
+
+You can also combine multiple if cases like this:
+
+```python
+a = 3
+if a < 0:
+    print("a is negative")
+elif a == 0:
+    print("a is zero")
+else:
+    print("a is positive")
+```
+
+Using the `elif` statement, you can check for another condition if the one in the `if` statement was `false`.
+
+
+### Loops
+
+Some lines of codes have to be repeated very often. Instead of typing the same line over and over again, you can use loops.
+There are two types of loops: The `for` and the `while` loop. While they both basically do the same thing, sometimes it is more intuitive to use one over the other.
+
+
+#### The `for` loop
+
+The `for` loop iterates over a list of items and stores the current element in a variable.
+This is especially useful when working with lists, for example.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print("I am eating a " + fruit)
+```
+
+If you are familiar with loops in other programming languages (such as Java or C), you're probably thinking: "That's not a for loop, that's a for-each!". This is true, in python all for loops are for-each loops. If you want to iterate over a range of numbers, use pythons `range()` function:
+
+```python
+for i in range(0, 100):
+    print(i)
+```
+
+
+#### The `while` loop
+
+The `for` loop is very useful, but sometimes, using the `while` loop is easier and more straightforward.
+For example, if you want to repeat something until a certain condition is met, using this loop is simple:
+
+```python
+i = 0
+while i < 10:
+    print(i)
+    i += 1
+```
+
+You can also combine the condition after the `while` keyword with an `else` statement:
+
+```python
+i = 11
+while i < 10:
+    print(i)
+    i += 1
+else:
+    print("i is bigger than 10!")
+```
+
 [TODO]
-if, while, for (and specialized), assignment, comparison, combined ops (+=), mod, exponent, floor,
+assignment, comparison, combined ops (+=), mod, exponent, floor,
 in/not in, is/is not, data types, functions
 libraries
+
 
 ## Common methods used
 
@@ -68,6 +148,7 @@ print debugging
 Recursion, object orientation
 while(true)
 try/catch
+
 
 ## Some simple programs
 
