@@ -114,6 +114,8 @@ And honestly? That's about all you need to know. Basically music is math and mat
 
 Oh, and the circle of fiths is a thing [TODO]
 
+[TODO] Just V equal Temperment here is confusing
+
 # Back To VCV Rack
 
 Now that we have that mess out of the way let's talk shop and drop back into our rack. This time Let's start with a mostly clean slate. Make sure you can still get sound out, then remove every module except the Audio module. Alrighty, now we can get to business
@@ -261,3 +263,5 @@ Reddit: https://www.reddit.com/r/vcvrack/ , https://www.reddit.com/r/synthesizer
 ## Other Resources
 
 https://learningmusic.ableton.com/
+
+https://codepen.io/teropa/full/bRqYVj/

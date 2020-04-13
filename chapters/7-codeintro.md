@@ -1,4 +1,4 @@
-# Chapter 7 - Let's write some python
+# Chapter 7 - Let's write some Code
 
 From https://wiki.xxiivv.com/#development:
 
@@ -14,6 +14,10 @@ From https://wiki.xxiivv.com/#development:
 > Write big programs only when it is clear by demonstration that nothing else will do.
 
 Programming can seem scary at first but the more you exercise, the easier and more exciting it gets. After all, practice makes perfect! :)
+
+## Python
+
+[TODO] Why start with python
 
 ## The building blocks of programming
 
@@ -148,6 +152,8 @@ for now, everything should be strictly command line arguments and print statment
 
 ## More advanced topics
 
+[TODO] Move this section
+
 ### Lambdas
 
 A lambda expression is used to create a a small anonymous function. It can take any number of arguments, but can only have one expression.
@@ -170,6 +176,18 @@ And here is the other example of a lambda expression with three arguments.
 threads/ parrallelization(high level only), interupts (actually, let's save this until embbeded), apis,
 
 ## A little more practice
+
+Weird projects
+
+https://twitter.com/Foone/status/1245610381600382976
+
+## Easing int Grahical Programming with Creative Coding
+
+http://feed.grantcuster.com/
+
+
+
+
 
 https://www.youtube.com/watch?v=Cp5WWtMoeKg
 https://www.youtube.com/watch?v=M3iI2l0ltbE

@@ -96,6 +96,10 @@ source patching, binary patching
 
 ## C, C++, Rust, Go, ?
 
+## File formats
+
+[TODO] wav is easy, mp3 is hard.. show this. WAV format on 767 of POC||GTFO
+
 ## Where to get more pracice with low level programming
 
 [TODO]

@@ -15,3 +15,13 @@
 ## Making an Embeded System project - 3 - Stepper Motor Music
 
 adapted from floppy drives, but less expensive
+
+## Real Time Operating Systems
+
+RIOT-OS, MBED, etc
+
+## Other weird and cool projects:
+
+https://twitter.com/Foone/status/1247233159596367883
+
+[Of Course It Leaks!](https://groups.google.com/forum/message/raw?msg=comp.lang.ada/E9bNCvDQ12k/1tezW24ZxdAJ)

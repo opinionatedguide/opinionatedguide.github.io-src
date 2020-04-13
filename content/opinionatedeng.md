@@ -2892,7 +2892,9 @@ Noise isolation both electrical and physical, headphone types (over, on, in), am
 
 [TODO]
 
-Show how to setup SSH keys, mention git kracken
+Show how to setup SSH keys, mention graphical git tools
+
+https://dhwthompson.com/2019/my-favourite-git-commit
 
 **Markdown**
 
@@ -2967,7 +2969,7 @@ Vivaldi, Firefox, Syncthing, Beaker, IPFS, IRC - irssi, Telegram, Etherape, Wire
 **Shell Scripts**
 
 [TODO]
-# Chapter 7 - Let's write some python
+# Chapter 7 - Let's write some Code
 
 From https://wiki.xxiivv.com/#development:
 
@@ -2983,6 +2985,10 @@ From https://wiki.xxiivv.com/#development:
 > Write big programs only when it is clear by demonstration that nothing else will do.
 
 Programming can seem scary at first but the more you exercise, the easier and more exciting it gets. After all, practice makes perfect! :)
+
+## Python
+
+[TODO] Why start with python
 
 ## The building blocks of programming
 
@@ -3117,6 +3123,8 @@ for now, everything should be strictly command line arguments and print statment
 
 ## More advanced topics
 
+[TODO] Move this section
+
 ### Lambdas
 
 A lambda expression is used to create a a small anonymous function. It can take any number of arguments, but can only have one expression.
@@ -3140,9 +3148,20 @@ threads/ parrallelization(high level only), interupts (actually, let's save this
 
 ## A little more practice
 
+Weird projects
+
+https://twitter.com/Foone/status/1245610381600382976
+
+## Easing int Grahical Programming with Creative Coding
+
+http://feed.grantcuster.com/
+
+
+
+
+
 https://www.youtube.com/watch?v=Cp5WWtMoeKg
-https://www.youtube.com/watch?v=M3iI2l0ltbE
-# Chapter 8 - Low Level Programming
+https://www.youtube.com/watch?v=M3iI2l0ltbE# Chapter 8 - Low Level Programming
 
 the stack, pointers, etc.
 
@@ -3239,6 +3258,10 @@ Cutter, TIS-100, Shenzhen IO,
 source patching, binary patching
 
 ## C, C++, Rust, Go, ?
+
+## File formats
+
+[TODO] wav is easy, mp3 is hard.. show this. WAV format on 767 of POC||GTFO
 
 ## Where to get more pracice with low level programming
 
@@ -3424,6 +3447,10 @@ https://en.wikibooks.org/wiki/Signals_and_Systems
 
 Show everything in a circuit sim, fix heading levels (this is a mess)
 
+Possibly break up this chapter? Transistors, the opamp, etc alone may each justify their own chapters
+
+That said, I don't want to get to in the mud of transistor physics. I really want to focus on how/when/why to use what, not how they work as the physics is both pretty hard to grasp and not super useful. Still would like to mention that switching is what uses power and like processe size things, but maybe not the chemistry or electron tunneling effects
+
 ## Transformers, Variacs
 
 [TODO]
@@ -3480,6 +3507,8 @@ https://www.youtube.com/watch?v=wcJXA8IqYl8&t=474s
 
 ## Active Filters
 
+http://sim.okawa-denshi.jp/en/
+
 [TODO]
 
 ## Audio Devices
@@ -3497,6 +3526,10 @@ add motors, analog meters, various connection standards, radio, flex/pressure se
 [TODO]
 
 Relate back to things like ADRS, Distortion, Reverb / Echo, Decibels (audio), etc. Use VCV RACK
+
+## 
+
+
 
 ## Continued Reading:
 
@@ -3570,7 +3603,16 @@ We'll come back to look at more complex digital logic in ****chapter 28 "Let's t
 ## Making an Embeded System project - 3 - Stepper Motor Music
 
 adapted from floppy drives, but less expensive
-# Chapter 15 - Discrete Math and Algorithms
+
+## Real Time Operating Systems
+
+RIOT-OS, MBED, etc
+
+## Other weird and cool projects:
+
+https://twitter.com/Foone/status/1247233159596367883
+
+[Of Course It Leaks!](https://groups.google.com/forum/message/raw?msg=comp.lang.ada/E9bNCvDQ12k/1tezW24ZxdAJ)# Chapter 15 - Discrete Math and Algorithms
 
 [TODO]
 
@@ -3851,6 +3893,8 @@ https://microcorruption.com/ , https://ctftime.org/ ,
 
 CTF time,
 
+https://nagarrosecurity.com/blog/interactive-buffer-overflow-exploitation
+
 ## Some Hacking Community Fun
 
 https://www.youtube.com/watch?v=Jwpg-AwJ0Jc
@@ -3858,10 +3902,15 @@ https://www.youtube.com/watch?v=UBaVek2oTtc
 https://www.youtube.com/watch?v=bouYRMItWnI
 https://www.youtube.com/watch?v=RDZnlcnmPUA
 
+https://twitter.com/Foone/status/910217984098017281
+
+[Does register selection matter to performance on x86 CPUs? ](https://readhacker.news/s/4hqd9)
+
+[Leap Day Bugs](https://codeofmatt.com/list-of-2020-leap-day-bugs/)
+
 Never claim something is 'unhackable':
 https://techcrunch.com/2019/05/10/eyedisk-encrypted-flash-drive-unhackable/,
-![unhackable]({static}/openg/unhackable1.jpg)
-# Chapter 22 - Security
+![unhackable]({static}/openg/unhackable1.jpg)# Chapter 22 - Security
 
 [TODO]
 
@@ -3878,10 +3927,16 @@ actually contribute on github, make an issue, submit a pull request, make a cust
 First things first, we're going to be using Kicad, so you'll want to go grab that from the repos. While that's downloading and installing give this a watch to get the basics down:
 
 https://www.youtube.com/watch?v=zK3rDhJqMu0&index=8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&t=0s
-# Chapter 25 - We've got cores, let's use em'
+
+
+
+https://github.com/badgeek/svg2shenzhen
+
+https://llllllll.co/t/pcb-art-artfully-shaped-copper-traces/22027/2# Chapter 25 - We've got cores, let's use em'
 
 [TODO]
-# Chapter 26 - Graphical Programming
+
+https://lemire.me/blog/2020/01/30/cost-of-a-thread-in-c-under-linux/# Chapter 26 - Graphical Programming
 
 Let's start in a way that's incredibly simple, and abstract away all the hard stuff at first by using a tool kit called 'Processing', which is available under that name from the community repo in arch. The default IDE that comes with it is awful to work in though, so go ahead and open up VSCode and grab the [Processing Language](https://marketplace.visualstudio.com/items?itemName=Tobiah.language-pde) add on, then in VSCode open up a new workspace folder and make a file called processing.pde, then open VSCode's command pallete (CTRL+Shift+P) and run 'Processing: create task file', after that you'll want to open the tasks.json file and change the `command:` line to have `"command": "/usr/bin/processing-java",` after that you can easily try new code just by re-building project the project with CTRL+Shift+B
 
@@ -4121,6 +4176,10 @@ regex can be used with a bunch of common tools like awk, sed, and grep. This mea
 
 [TODO] xargs, sed, awk, fzf, grep,
 
+https://shellmagic.xyz/
+
+https://wiki.bash-hackers.org/
+
 ## Alternative Shells
 
 When we installed arch we actually changed the default shell from bash to zsh, but there are other options such as fish, csh, and xonsh among others
@@ -4144,6 +4203,8 @@ When we installed arch we actually changed the default shell from bash to zsh, b
   * alternative to `diff`, but fancy
 * ncdu
   * while much slower than `du` it's great for finding out what's eating storage space
+* [choose](https://github.com/theryangeary/choose)
+  * user friendly, simple alternative to awk/cut
 
 ## Useful Non-Stock CLI Tools
 
@@ -4726,6 +4787,10 @@ If you've made it this far I just want to say thank you. We need more people to 
 
 [How to Dropout](http://ranprieur.com/essays/dropout.html)
 
+[A Sick Giant](https://waitbutwhy.com/2020/01/sick-giant.html)
+
+[Metaphors We Believe By](https://aaronzlewis.com/blog/2019/07/25/metaphors-we-believe-by/)
+
 ## TODO
 
 Education, college, prices, highschool homework and personal time, Drugs,
@@ -4917,5 +4982,11 @@ LORA
 2.4Ghz patch antenna
 
 electronically tunable filters
+
+## Blog posts that dont fit anywhere eles but that you should totally read
+
+https://hackaday.com/2020/02/20/we-ruined-status-leds-heres-why-that-needs-to-change/
+
+[Foone one weird adapters](https://twitter.com/Foone/status/1224206741602062336)
 
 

@@ -24,4 +24,10 @@ LORA
 
 electronically tunable filters
 
+## Blog posts that dont fit anywhere eles but that you should totally read
+
+https://hackaday.com/2020/02/20/we-ruined-status-leds-heres-why-that-needs-to-change/
+
+[Foone one weird adapters](https://twitter.com/Foone/status/1224206741602062336)
+
 

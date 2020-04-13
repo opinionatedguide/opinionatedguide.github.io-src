@@ -22,14 +22,34 @@ Dark Patterns -- don't be that guy
 
 Screen Considerations
 
+http://rainworldgame.com/
+
 
 
 # Blending the two
 
 # Links
+
+https://colors.lol/
+
+https://lospec.com/palette-list
+
 ## Software
 
 ## Inspirational Artists
+
+https://twitter.com/FogleBird/status/954464508705234944
+
+https://twitter.com/mwichary/status/898656890237759489
+
+https://twitter.com/tomality/status/875432469092331520
+
+https://twitter.com/more8bit/status/904107654196469761
+
+https://twitter.com/ShadowDropDev/status/898427789728137220
+
+https://elosilla.tumblr.com/post/84414400172/pixel-art-by-mark-ferrari
+
  /// Caution some are NSFW ///
 https://twitter.com/halphelt
 https://twitter.com/Hushabye_Valley

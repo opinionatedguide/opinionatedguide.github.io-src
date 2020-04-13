@@ -204,6 +204,10 @@ If you've made it this far I just want to say thank you. We need more people to 
 
 [How to Dropout](http://ranprieur.com/essays/dropout.html)
 
+[A Sick Giant](https://waitbutwhy.com/2020/01/sick-giant.html)
+
+[Metaphors We Believe By](https://aaronzlewis.com/blog/2019/07/25/metaphors-we-believe-by/)
+
 ## TODO
 
 Education, college, prices, highschool homework and personal time, Drugs,

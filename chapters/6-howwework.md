@@ -203,7 +203,9 @@ Noise isolation both electrical and physical, headphone types (over, on, in), am
 
 [TODO]
 
-Show how to setup SSH keys, mention git kracken
+Show how to setup SSH keys, mention graphical git tools
+
+https://dhwthompson.com/2019/my-favourite-git-commit
 
 **Markdown**
 

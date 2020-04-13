@@ -148,6 +148,10 @@ regex can be used with a bunch of common tools like awk, sed, and grep. This mea
 
 [TODO] xargs, sed, awk, fzf, grep,
 
+https://shellmagic.xyz/
+
+https://wiki.bash-hackers.org/
+
 ## Alternative Shells
 
 When we installed arch we actually changed the default shell from bash to zsh, but there are other options such as fish, csh, and xonsh among others
@@ -171,6 +175,8 @@ When we installed arch we actually changed the default shell from bash to zsh, b
   * alternative to `diff`, but fancy
 * ncdu
   * while much slower than `du` it's great for finding out what's eating storage space
+* [choose](https://github.com/theryangeary/choose)
+  * user friendly, simple alternative to awk/cut
 
 ## Useful Non-Stock CLI Tools
 
