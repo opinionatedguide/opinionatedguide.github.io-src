@@ -1004,6 +1004,9 @@ Frankly the answer is complicated. The gist of it is that Linux actually exposes
 But more than that, Linux actually exposes the system to the user and doesn't try to hide it's inner workings, rather, for many things Linux implies that you should manually edit the config files, look at how programs use various resources, and peer into how the system actually handles any given task.
 
 You'll start to see this more as we move forward though these next few chapters. Speaking of...
+
+
+
 # Chapter 3.1 - Legacy Hardware
 
 [TODO]
@@ -2828,12 +2831,16 @@ Before moving forward though, I think it would make sense to talk about some of 
 > For example, two displays may both be capable of displaying 255 levels of red, but if one display's range is only from a dingy red to a dark-ish red, while the other is from a brilliant red to a deep dark red, there's a massive difference in color availability. If this is important to you, notably as a creative professionally in photo or video, you may want to read more at https://en.wikipedia.org/wiki/Gamut
 
 > The next obvious thing to mention is dynamic range, or how deep the blacks are and how vivid the whites are. Again, this is simple, the higher the better. Many display types (LCD, TN-Panel) will have similar specifications in all these areas, but particularly here. OLED is probably the best when it comes to dynamic range as it can display true black by actually turning the source of the light off, but unfortunately these are quite susceptible to burn in and image persistence.
-> 
+>
+> Actually, display technology overall (OLED, LCD, TN, CRT, etc.) will have more of an impact than anything else. But, this is also getting really into the weeds, and I don't want to recomend one technology over the other since depending on many other factors on each display theres no clear winner.
+>
 > There are some newer displays which feature HDR or High Dynamic Range, which allows the panel to selective change the brightness in an area of the screen, giving much better dynamic range in supported applications than a normal display
 
 > burn in and image persistence are both negative effects on many displays where a pixel either permanently or temporarily resists change in color. This can lead to being able to read previously displayed bright white text on a now black image for example. More commonly you'll find TVs which have a particular station's logo 'burnt in' to one corner of the screen, persisting even after changing channels
 
 > Brightness is obvious, how bright or dim is the display. The big thing to note here is weather the brightness is PWM or DC controlled. Displays with PWM controlled brightness are much more common, however, it's a bit of a cheat. Instead of actually changing the intensity of the back light directly, they're simply strobing the light on and off to fast for the eye to see. This can cause eye strain over time though, and generally DC control, which actually does change the brightness directly is preferred. If you have a PWM display and don't mind it at full brightness, this should help with eyes strain, as there is no longer a strobe effect as the display's backlight is just constantly on.
+
+> Finally, if fonts look bad on a screen, it may be due to Sub-pixel rendering. Basically, while most screens pixels go R-G-B in order, not all do. To make text look sharper, most font renders will try to abuse this sub-pixel order to get sharper-than-pixel fonts.
 
 clearly there's a lot to be considered here. A no compromise monitor can cost thousands of dollars, but nice 4k 27" monitors like mine can be found for <250 on sale, and I love them. Just figure out what you need and what would be the most beneficial for you and work from there
 
@@ -2939,7 +2946,7 @@ Krita
 
 Audacity
 
-Radium? Cadence
+DAW? QJackCTL?
 
 OBS
 
@@ -3245,7 +3252,11 @@ http://feed.grantcuster.com/
 
 
 https://www.youtube.com/watch?v=Cp5WWtMoeKg
-https://www.youtube.com/watch?v=M3iI2l0ltbE# Chapter 8 - Low Level Programming
+https://www.youtube.com/watch?v=M3iI2l0ltbE
+
+
+
+# Chapter 8 - Low Level Programming
 
 the stack, pointers, etc.
 
@@ -3354,53 +3365,214 @@ source patching, binary patching
 https://github.com/rby90/Project-Based-Tutorials-in-C
 # Chapter 9.1 - Other Languages of interest
 
-## Rust
+## Low Level
 
-## Go
+### Rust
 
-## Zig
+> Rust’s rich type system and ownership model guarantee memory-safety and thread-safety — enabling you to eliminate many classes of bugs at compile-time.
 
-## Crystal
+Basically, Rust doesn't let you screw up. It enforces writing code that's safe (except when you specify you want to do something unsafe). It has a lot of other really nice features and makes using efficient data structures easy. Another really nifty thing about Rust is that it has a sort of at compile time garbage collection of sorts, for lack of a better way to put it. Read more on that [here](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html#memory-and-allocation).
 
-## D
+I really recommend [A half-hour to learn Rust](https://fasterthanli.me/blog/2020/a-half-hour-to-learn-rust/) 
 
-## Nim
+[Nannou](https://nannou.cc/), is a creative coding framework for Rust that's pretty nifty too.
 
-## Hack
+To show the maturity, just check out https://www.redox-os.org/, a full OS written in Rust!
 
-## IO
+Also, it's worth noting Rust can be used to generate Web Assembly (more about that below)
 
-## 
 
-## Red
 
-## Javascript
+### Go
+
+> Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
+
+The big claim to fame for go is, well `go`, which let's you do really easy threading. (https://gobyexample.com/goroutines)
+
+
+
+### Zig
+
+> A general-purpose programming language and toolchain for maintaining **robust**, **optimal**, and **reusable** software.
+>
+> https://ziglang.org/
+
+[Zig: A programming language designed for robustness, optimality, and clarity – Andrew Kelley (YouTube)](https://www.youtube.com/watch?v=Z4oYSByyRak&list=WL&index=4&t=0s)
+
+
+
+### Crystal
+
+Crystal's big thing is a Ruby (a very fast to write language) that's compiled and fast. From the home page:
+
+```ruby
+# A very basic HTTP server
+require "http/server"
+
+server = HTTP::Server.new do |context|
+  context.response.content_type = "text/plain"
+  context.response.print "Hello world, got #{context.request.path}!"
+end
+
+puts "Listening on http://127.0.0.1:8080"
+server.listen(8080)
+```
+
+Seriously check it out at https://crystal-lang.org/
+
+
+
+### D
+
+A lesser used competitor to C++ mostly. It's very syntactically similar. Might be worth looking at.
+
+https://dlang.org
+
+
+
+### Nim
+
+> Nim is a statically typed compiled systems programming language. It combines successful concepts from mature languages like Python, Ada and Modula.
+>
+> https://nim-lang.org/
+
+Further, Nim allows for easy 'metaprogramming' which basically means you can [TODO]
+
+Nim's syntax is python-like-ish
+
+
+
+### Red
+
+To be honest, I'm not sure Red belongs in the low level category, as it can be ran as a JIT language. 
+
+> **Red** is a next-gen programming language, strongly inspired by [REBOL](http://rebol.com/). Main features are:
+>
+> 
+>
+> - **Human-friendly** [syntax](https://pointillistic.com/ren/)
+> - **[Homoiconic](http://en.wikipedia.org/wiki/Homoiconicity)** (Red is its own meta-language and own **[data-format](http://www.rebol.com/rebolsteps.html)**)
+> - **Functional**, imperative, **[reactive](http://www.red-lang.org/2016/06/061-reactive-programming.html)** and **symbolic** programming
+> - **Prototype**-based object support
+> - **Gradual and multi-**typing
+> - **[Macros](http://www.red-lang.org/2016/12/entering-world-of-macros.html)** system
+> - **Rich** set of built-in datatypes (50+)
+> - Both **statically** and **JIT**-**compiled** to native code
+> - **Cross-compilation** [done](https://github.com/red/red/blob/master/usage.txt) [right](https://github.com/red/red/blob/master/system/config.r)
+> - Produces executables of **less than 1MB**, with **no dependencies**
+> - **Concurrency** and **parallelism** strong support (actors, parallel collections)
+> - Low-level **system programming** abilities through the built-in Red/System [DSL](http://en.wikipedia.org/wiki/Domain-specific_language)
+> - Powerful **PEG [parser ](http://www.red-lang.org/2013/11/041-introducing-parse.html)**[DSL](http://www.red-lang.org/2013/11/041-introducing-parse.html) included
+> - **Cross-platform native [GUI ](http://www.red-lang.org/2016/03/060-red-gui-system.html)**[system](http://www.red-lang.org/2016/03/060-red-gui-system.html), with a [UI DSL](http://doc.red-lang.org/gui/VID.html) and [drawing DSL](http://doc.red-lang.org/gui/Draw.html)
+> - **Bridging** [to the JVM](https://github.com/red/red/blob/master/bridges/java/hello.red)
+> - High-level **scripting** and [**REPL**](http://en.wikipedia.org/wiki/Read-eval-print_loop) console included
+> - Visual Studio Code **[plugin](https://marketplace.visualstudio.com/items?itemName=red-auto.red)**, with many helpful features
+> - Highly **[embeddable](http://www.red-lang.org/2017/03/062-libred-and-macros.html)**
+> - **Low** memory footprint, **garbage collected**
+> - **[Single-file](http://www.red-lang.org/p/download.html)** (~1MB) contains whole toolchain, full standard library and REPL.
+> - **No install, no setup**
+> - **Fun** guaranteed!
+>
+> https://www.red-lang.org/p/about.html
+
+If you're interested, check out [Red's 'Getting Started' page](https://www.red-lang.org/p/getting-started.html).
+
+
+
+### Haxe
+
+> Haxe is an open source high-level strictly-typed programming language with a fast optimizing cross-compiler.
+>
+> https://haxe.org/
+
+
+
+### Java
+don't.
+but, here's why not to use Java:
+
+
+
+### WebAssembly
+
+> WebAssembly (abbreviated *Wasm*) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable target for compilation of high-level languages like C/C++/Rust, enabling deployment on the web for client and server applications.
+>
+> https://webassembly.org/
+
+While not technically a programming language, I wanted to bring it up and encourage you look into it to be used instead of JavaScript for real projects. 
+
+
+
+### Call for Contribution
+
+If I missed a language you think I should have mentioned or would like to write a nice guide to your language of choice to be included in this Opinionated Guide please submit a pull request. I'd love to expand the Rust, Go, and Zig sections significantly!
+
+---
+
+## High Level
+
+[TODO] probably going to need to break this out into it's own chapter
+
+### JavaScript
 
 Fine. I'll talk about JS. But, please. For the love of god do not use this to make an Electron App.
 
 Before going to far, I do want to mention that a chunk of my hatred for JS is solved using frameworks and that I totally acknowledge the utility of JS for making quick, often very cool, 'sketches'. The creative coding community is amazing. Further, JS, as much of a total dumpster fire as it is, is responsible for the Internet as it is today weather thats a good thing [or not](http://motherfuckingwebsite.com/).
 
-## Java
+#### CoffeeScript
+
+ https://coffeescript.org/
+
+#### TypeScript
+
+https://www.typescriptlang.org/
+
+#### Frameworks
+
+https://en.wikipedia.org/wiki/Comparison_of_JavaScript_frameworks
+
+##### Angular
+
+##### React
+
+##### Vue
+
+##### Node
+
+
+
+
+### PHP
 
 don't.
-
-but, here's why not to use Java:
-
-## PHP
-
-don't.
-
 but, here's why not to use PHP:
-
-## WebAssembly
-
+If you must, you might want to check out Hack: https://hacklang.org/
 
 
 
+### Ruby
 
-## Skript Kidd3s
+> A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
+>
+> https://www.ruby-lang.org/en/
+
+
+
+
+
+## For the Skript Kidd3s
+
+> In programming and hacking cultures, a **script kiddie**, **skiddie**, or **skid** is an unskilled individual who uses [scripts](https://en.wikipedia.org/wiki/Scripting_language) or programs developed by others to attack computer systems and networks and [deface websites](https://en.wikipedia.org/wiki/Website_defacement), such as a [web shell](https://en.wikipedia.org/wiki/Web_shell). It is generally assumed that most script kiddies are juveniles who lack the ability to write sophisticated programs or exploits on their own and that their objective is to try to impress their friends or gain credit in computer-enthusiast communities. However, the term does not relate to the actual age of the participant. The term is considered to be derogatory.
+>
+> from https://en.wikipedia.org/wiki/Script_kiddie
+
+But, really, some absolutely incredible code has been written in the following languages. They more than serve their purpose and are generally some of the fastest "I just need a quick and dirty solution" options out there. Not everything needs a blazing fast hand optimized C implementation, and code that's really just for personal use, to acomplish a one-off task, or that runs inside a bigger program (3D modeling software like Blender, Video editing software like Premier, Game development editors, etc.)  should probably be easy to read and modify quickly. Rapid prototyping certainly has it's place.
+
+Just don't think you should use these to write efficient, safe code.
 
 ### LUA
+
+#### MoonScript
 
 ### AHK
 
@@ -3717,8 +3889,6 @@ add motors, analog meters, various connection standards, radio, flex/pressure se
 
 Relate back to things like ADRS, Distortion, Reverb / Echo, Decibels (audio), etc. Use VCV RACK
 
-## 
-
 
 
 ## Continued Reading:
@@ -3864,8 +4034,6 @@ Fib, some pracice logical equliv, base conversion algo, overlapping lines, matri
 # Chapter 17 - Servers!
 
 [TODO]
-
-## 
 
 What's a homelab?
 
@@ -4207,6 +4375,8 @@ Before we start, I'll warn you this isn't easy, but it's also not as bad as it s
 
 While this book/guide/thing primarily focuses on the less mechancial-engieering-y side of things, it wouldn't make sense not to include at least a little about 3D printing, molding, materials, gears, springs, and the like. So, here goes:
 # Chapter 31 - Fine, I'll talk about AI
+# Chapter 31 - Ham Radio
+
 # Wrapping up - Where to go from here
 
 [TOOD]

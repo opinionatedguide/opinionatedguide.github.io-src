@@ -88,8 +88,6 @@ add motors, analog meters, various connection standards, radio, flex/pressure se
 
 Relate back to things like ADRS, Distortion, Reverb / Echo, Decibels (audio), etc. Use VCV RACK
 
-## 
-
 
 
 ## Continued Reading:

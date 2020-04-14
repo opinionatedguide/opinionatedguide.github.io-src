@@ -2,8 +2,6 @@
 
 [TODO]
 
-## 
-
 What's a homelab?
 
 ## Why build a server
