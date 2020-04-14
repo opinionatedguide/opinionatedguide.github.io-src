@@ -62,6 +62,10 @@ https://www.youtube.com/watch?v=wcJXA8IqYl8&t=474s
 
 [TODO]
 
+https://en.wikipedia.org/wiki/Fourier_transform
+
+Nyquist
+
 ## Active Filters
 
 http://sim.okawa-denshi.jp/en/

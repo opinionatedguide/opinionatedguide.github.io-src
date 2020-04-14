@@ -8,11 +8,11 @@
 
 [TODO]
 
-GDB with Gef, interpreted languages, embeded systems, non-code isssues (boot problems, glitchy behavior), hardware failures
+GDB with Gef, interpreted languages, embeded systems, non-code isssues (boot problems, glitchy behavior), hardware failures, valgrind, various trace programs, print debugging extended
 
 ### Hardware Dubugging
 
-common interfaces, simulation, serial/print debugging (slow), internal data logging, physical indicators of internal state
+common interfaces, simulation, serial/print debugging (slow), internal data logging, physical indicators of internal state, hardware to facilitate debugging (LED 'byte')
 
 ## Testing
 

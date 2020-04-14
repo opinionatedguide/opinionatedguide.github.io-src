@@ -149,5 +149,3 @@ How to read logorithmic first
 [TODO]
 
 https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/voltage
-
-https://en.wikipedia.org/wiki/Fourier_transform

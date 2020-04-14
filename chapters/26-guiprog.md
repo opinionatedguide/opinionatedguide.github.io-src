@@ -55,6 +55,6 @@ Before going further let's copy and paste the code into VSCode and run it:
 
 [TODO]
 
-C++ from scratch, JS electron app, Processing creative coding, Python Kivy or similar, Flutter (google lang), shaders
+C++ from scratch, JS electron app, Processing creative coding, Python Kivy or similar, Flutter (google lang), shaders (graphical editors), nimp, ronin, Nuklear
 
 ## GP-GPU

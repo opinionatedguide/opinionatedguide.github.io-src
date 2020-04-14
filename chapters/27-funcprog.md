@@ -2,4 +2,4 @@
 
 [TODO]
 
-Functional Programming, and other paradigms : lisp, haskell, luna-lang.org
+Functional Programming, and other paradigms : lisp, haskell, luna-lang.org, ronin

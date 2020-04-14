@@ -718,12 +718,6 @@ HID or Human Interface Device, is the standard over which most mice, keyboards, 
 
 5pin din, PS2, USB
 
-### Legacy Connections
-
-[TODO]
-
-Parallel, Serial, Tape, CD, gameport
-
 ## How to know what to buy
 
 [TODO - possibly move]

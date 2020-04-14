@@ -2,7 +2,7 @@
 
 ![Arch Logo](/home/vega/git/local/openg2/content/openg/archlogo.png)
 
-Unlike Windows or Mac which are primarily differentiated by versions (Windows XP, Vista, 7, 10...), Linux has two important things to look out for: The distribution and the kernel version number. Linux is actually just the name of the underlying 'core' of the system, known as the kernel, as such, there are literally thousands of Linux variations. Some of the well known variants include Ubuntu, Fedora, OpenSuse, and Arch (No disrespect to the other distros out there!). Each of these has a different target audience, with some meant for servers, some meant for casual users as an alternative to Windows, others as work station for hard core computing. They also ship with different software pre-installed to be accessed after the first boot. The other differentiating factor is the version of the Linux Kernel that they use. Some chose to use an older, battle hardened kernel that is known to be very, very stable, others chose a nice middle ground, while yet others continuously release an update to the newest available kernel. There are pros and cons to each model and each has its place; however, the one I'm going to have you install is know as one of the hardest to work with, but also one of the most powerful: Arch Linux. Arch is what's known as a rolling release distribution, which means it gets the bleeding edge features and the newest kernel pretty much as fast as possible, though really the biggest thing that makes Arch special is how bare bones it is out of the box, shipping with basically no pre-installed software. In fact, when you first start it up the only thing you'll see is a screen to type and run commands, and that's where we're going to start.
+Unlike Windows or Mac which are primarily differentiated by versions (Windows XP, Vista, 7, 10...), Linux has two important things to look out for: The distribution and the kernel version number. Linux is actually just the name of the underlying 'core' of the system, known as the kernel, as such, there are literally thousands of Linux variations. Some of the well known variants include Ubuntu, Fedora, OpenSuse, and Arch (No disrespect to the other distros out there!). Each of these has a different target audience, with some meant for servers, some meant for casual users as an alternative to Windows, others as work station for hard core computing. They also ship with different software pre-installed to be accessed after the first boot. The other differentiating factor is the version of the Linux Kernel that they use. Some chose to use an older, battle hardened kernel that is known to be very, very stable, others chose a nice middle ground, while yet others continuously release an update to the newest available kernel. There are pros and cons to each model and each has its place; however, the one I'm going to have you install is know as one of the hardest to work with, but also one of the most cutting edge, fun to tinker around in, and best documented: Arch Linux. Arch is what's known as a rolling release distribution, which means it gets the bleeding edge features and the newest kernel pretty much as fast as possible, though really the biggest thing that makes Arch special is how bare bones it is out of the box, shipping with basically no pre-installed software. In fact, when you first start it up the only thing you'll see is a screen to type and run commands, and that's where we're going to start.
 
 For most distros like Ubuntu or OpenSuse (feel free to look these up, this page isn't going anywhere) there's a nice graphical, point and click installer which helps you install the system and somewhat mitigates potential risk of killing your original OS (Mac/Win) or losing data; however, the goal of this guide is to learn. Arch's install process, entirely by typing commands in this terminal is hard, but that difficulty leads to a deeper understanding and respect for the system as a whole
 
@@ -257,8 +257,10 @@ where x is the same as the above x and y is the number of the partition with the
 
 Next up we need to install the base of the os to these drives, this is actually pretty easy just run
 
+[TODO] Arch linux's install has changed a bit since this was written. Now, more arguments are required at install time as the base Linux kernel is no longer included in base. I've changed this here slightly, but it's very likely still missing some things.
+
 ```bash
-pacstrap /mnt base base-devel
+pacstrap /mnt base base-devel linux systemd
 ```
 
 then, we need something that tells the system the names of our partitions and how to mount them at boot. Thankfully, the system can generate (most) of this for us, just run
@@ -586,6 +588,8 @@ chsh -s /bin/zsh
 ```
 
 from now on you can just open a terminal and type `yay` followed by your password to run updates.
+
+[TODO] Make NTFS drives accesible and auto mount
 
 ## So Why Did I do all of that exactly?
 

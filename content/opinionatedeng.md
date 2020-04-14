@@ -180,7 +180,7 @@ I mean, this was a real error message I got when trying to upgrade my system fro
 
 ![Arch Logo]({static}/openg/archlogo.png)
 
-Unlike Windows or Mac which are primarily differentiated by versions (Windows XP, Vista, 7, 10...), Linux has two important things to look out for: The distribution and the kernel version number. Linux is actually just the name of the underlying 'core' of the system, known as the kernel, as such, there are literally thousands of Linux variations. Some of the well known variants include Ubuntu, Fedora, OpenSuse, and Arch (No disrespect to the other distros out there!). Each of these has a different target audience, with some meant for servers, some meant for casual users as an alternative to Windows, others as work station for hard core computing. They also ship with different software pre-installed to be accessed after the first boot. The other differentiating factor is the version of the Linux Kernel that they use. Some chose to use an older, battle hardened kernel that is known to be very, very stable, others chose a nice middle ground, while yet others continuously release an update to the newest available kernel. There are pros and cons to each model and each has its place; however, the one I'm going to have you install is know as one of the hardest to work with, but also one of the most powerful: Arch Linux. Arch is what's known as a rolling release distribution, which means it gets the bleeding edge features and the newest kernel pretty much as fast as possible, though really the biggest thing that makes Arch special is how bare bones it is out of the box, shipping with basically no pre-installed software. In fact, when you first start it up the only thing you'll see is a screen to type and run commands, and that's where we're going to start.
+Unlike Windows or Mac which are primarily differentiated by versions (Windows XP, Vista, 7, 10...), Linux has two important things to look out for: The distribution and the kernel version number. Linux is actually just the name of the underlying 'core' of the system, known as the kernel, as such, there are literally thousands of Linux variations. Some of the well known variants include Ubuntu, Fedora, OpenSuse, and Arch (No disrespect to the other distros out there!). Each of these has a different target audience, with some meant for servers, some meant for casual users as an alternative to Windows, others as work station for hard core computing. They also ship with different software pre-installed to be accessed after the first boot. The other differentiating factor is the version of the Linux Kernel that they use. Some chose to use an older, battle hardened kernel that is known to be very, very stable, others chose a nice middle ground, while yet others continuously release an update to the newest available kernel. There are pros and cons to each model and each has its place; however, the one I'm going to have you install is know as one of the hardest to work with, but also one of the most cutting edge, fun to tinker around in, and best documented: Arch Linux. Arch is what's known as a rolling release distribution, which means it gets the bleeding edge features and the newest kernel pretty much as fast as possible, though really the biggest thing that makes Arch special is how bare bones it is out of the box, shipping with basically no pre-installed software. In fact, when you first start it up the only thing you'll see is a screen to type and run commands, and that's where we're going to start.
 
 For most distros like Ubuntu or OpenSuse (feel free to look these up, this page isn't going anywhere) there's a nice graphical, point and click installer which helps you install the system and somewhat mitigates potential risk of killing your original OS (Mac/Win) or losing data; however, the goal of this guide is to learn. Arch's install process, entirely by typing commands in this terminal is hard, but that difficulty leads to a deeper understanding and respect for the system as a whole
 
@@ -435,8 +435,10 @@ where x is the same as the above x and y is the number of the partition with the
 
 Next up we need to install the base of the os to these drives, this is actually pretty easy just run
 
+[TODO] Arch linux's install has changed a bit since this was written. Now, more arguments are required at install time as the base Linux kernel is no longer included in base. I've changed this here slightly, but it's very likely still missing some things.
+
 ```bash
-pacstrap /mnt base base-devel
+pacstrap /mnt base base-devel linux systemd
 ```
 
 then, we need something that tells the system the names of our partitions and how to mount them at boot. Thankfully, the system can generate (most) of this for us, just run
@@ -765,6 +767,8 @@ chsh -s /bin/zsh
 
 from now on you can just open a terminal and type `yay` followed by your password to run updates.
 
+[TODO] Make NTFS drives accesible and auto mount
+
 ## So Why Did I do all of that exactly?
 
 Linux makes development of code particularly easy, so, let's write some code!
@@ -1000,7 +1004,11 @@ Frankly the answer is complicated. The gist of it is that Linux actually exposes
 But more than that, Linux actually exposes the system to the user and doesn't try to hide it's inner workings, rather, for many things Linux implies that you should manually edit the config files, look at how programs use various resources, and peer into how the system actually handles any given task.
 
 You'll start to see this more as we move forward though these next few chapters. Speaking of...
-# Chapter 3 - Into the hardware
+# Chapter 3.1 - Legacy Hardware
+
+[TODO]
+
+Parallel, Serial, Tape, CD, gameport# Chapter 3 - Into the hardware
 
 One of the nifty things about Linux is you don't need to install extra software to check out the deeper parts of your hardware. While on windows you might need a tool like CPU-Z to look at information about the CPU on Linux you can do it out of the box. Let's get started on that then!
 
@@ -1720,16 +1728,9 @@ HID or Human Interface Device, is the standard over which most mice, keyboards, 
 
 5pin din, PS2, USB
 
-### Legacy Connections
-
-[TODO]
-
-Parallel, Serial, Tape, CD, gameport
-
 ## How to know what to buy
 
-[TODO - possibly move]
-# Chapter 4 - Back to the Root of Things
+[TODO - possibly move]# Chapter 4 - Back to the Root of Things
 
 We've been using file in /proc and /dev thoughout this, but we never really looked to see what else is in there. Let's do that.
 
@@ -2422,6 +2423,10 @@ As you can see, Linux gives us a lot of raw access to hardware. There are no tra
 
 symbolic links to usr explanation
 
+## /sys
+
+echoing to change settings, probabaly focus on device
+
 ## /usr
 
 [TODO]
@@ -2685,8 +2690,6 @@ How to read logorithmic first
 [TODO]
 
 https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/voltage
-
-https://en.wikipedia.org/wiki/Fourier_transform
 # Chapter 6 - Let's work on how we work
 
 ## The Terminal
@@ -3031,10 +3034,90 @@ Hello World!
 
 Anything you write to the interpreter can also be added to a file and ran that way. Try saving the examples above to a file called test.py, opening a terminal and running it with `python test.py`. 
 
+
+### Conditions using `if`, `elif` and `else`
+
+You often want code only to be executed, if a certain condition is met. For example, take a look at the following code:
+
+```python
+a = 13
+b = 27
+if a > b:
+    print("a is bigger")
+else:
+    print("b is bigger")
+```
+
+Using the `if` statement, connected with a logical condition, you can control the program flow. In this case, `a` is smaller than `b`, so python will skip the code inside of the `if` case and only execute what is within the `else` part.
+
+You can also combine multiple if cases like this:
+
+```python
+a = 3
+if a < 0:
+    print("a is negative")
+elif a == 0:
+    print("a is zero")
+else:
+    print("a is positive")
+```
+
+Using the `elif` statement, you can check for another condition if the one in the `if` statement was `false`.
+
+
+### Loops
+
+Some lines of codes have to be repeated very often. Instead of typing the same line over and over again, you can use loops.
+There are two types of loops: The `for` and the `while` loop. While they both basically do the same thing, sometimes it is more intuitive to use one over the other.
+
+
+#### The `for` loop
+
+The `for` loop iterates over a list of items and stores the current element in a variable.
+This is especially useful when working with lists, for example.
+
+```python
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print("I am eating a " + fruit)
+```
+
+If you are familiar with loops in other programming languages (such as Java or C), you're probably thinking: "That's not a for loop, that's a for-each!". This is true, in python all for loops are for-each loops. If you want to iterate over a range of numbers, use pythons `range()` function:
+
+```python
+for i in range(0, 100):
+    print(i)
+```
+
+
+#### The `while` loop
+
+The `for` loop is very useful, but sometimes, using the `while` loop is easier and more straightforward.
+For example, if you want to repeat something until a certain condition is met, using this loop is simple:
+
+```python
+i = 0
+while i < 10:
+    print(i)
+    i += 1
+```
+
+You can also combine the condition after the `while` keyword with an `else` statement:
+
+```python
+i = 11
+while i < 10:
+    print(i)
+    i += 1
+else:
+    print("i is bigger than 10!")
+```
+
 [TODO]
-if, while, for (and specialized), assignment, comparison, combined ops (+=), mod, exponent, floor,
+assignment, comparison, combined ops (+=), mod, exponent, floor,
 in/not in, is/is not, data types, functions
 libraries
+
 
 ## Common methods used
 
@@ -3043,6 +3126,7 @@ print debugging
 Recursion, object orientation
 while(true)
 try/catch
+
 
 ## Some simple programs
 
@@ -3268,11 +3352,113 @@ source patching, binary patching
 [TODO]
 
 https://github.com/rby90/Project-Based-Tutorials-in-C
+# Chapter 9.1 - Other Languages of interest
+
+## Rust
+
+## Go
+
+## Zig
+
+## Crystal
+
+## D
+
+## Nim
+
+## Hack
+
+## IO
+
+## 
+
+## Red
+
+## Javascript
+
+Fine. I'll talk about JS. But, please. For the love of god do not use this to make an Electron App.
+
+Before going to far, I do want to mention that a chunk of my hatred for JS is solved using frameworks and that I totally acknowledge the utility of JS for making quick, often very cool, 'sketches'. The creative coding community is amazing. Further, JS, as much of a total dumpster fire as it is, is responsible for the Internet as it is today weather thats a good thing [or not](http://motherfuckingwebsite.com/).
+
+## Java
+
+don't.
+
+but, here's why not to use Java:
+
+## PHP
+
+don't.
+
+but, here's why not to use PHP:
+
+## WebAssembly
+
+
+
+
+
+## Skript Kidd3s
+
+### LUA
+
+### AHK
+
+### Tasker (Android)
+
+### CMD.exe
+
+### Bash, ZSH, Fish, Xonsh, wut?
+
+### Node-Red
+
+### n8n
+
+
+
+## Is this even Programming anymore?
+
+### Pure-Data
+
+### vvvv
+
+### tooll.io
+
+### ORCΑ
+
+
+
+## Esolangs, the hole goes deeper
+
+https://en.wikipedia.org/wiki/Esoteric_programming_language
+
+https://esolangs.org
+
+
+
+## Graphics Programming
+
+look to chapter 26 for programming involving graphics, including node based shader editors and more
+
+## Functional Programming
+
+Look at Chapter 27 for Functional Programming
+
+> Lisp, Haskell, Luna, 
+
+## Database (SQL)
+
+Look at Chapter 18 for information on Databases
+
+
+
+[TODO]
+
+https://www.ioccc.org/
 
 https://doc.rust-lang.org/book/foreword.html
 
-https://tour.golang.org/welcome/1
-# Chapter 9 - Finishing up the project
+https://tour.golang.org/welcome/1# Chapter 9 - Finishing up the project
 
 ## Part 3, more advanced high level
 
@@ -3505,6 +3691,10 @@ https://www.youtube.com/watch?v=wcJXA8IqYl8&t=474s
 
 [TODO]
 
+https://en.wikipedia.org/wiki/Fourier_transform
+
+Nyquist
+
 ## Active Filters
 
 http://sim.okawa-denshi.jp/en/
@@ -3715,11 +3905,11 @@ Otherwise known as the chapter about sanitizing your inputs.
 
 [TODO]
 
-GDB with Gef, interpreted languages, embeded systems, non-code isssues (boot problems, glitchy behavior), hardware failures
+GDB with Gef, interpreted languages, embeded systems, non-code isssues (boot problems, glitchy behavior), hardware failures, valgrind, various trace programs, print debugging extended
 
 ### Hardware Dubugging
 
-common interfaces, simulation, serial/print debugging (slow), internal data logging, physical indicators of internal state
+common interfaces, simulation, serial/print debugging (slow), internal data logging, physical indicators of internal state, hardware to facilitate debugging (LED 'byte')
 
 ## Testing
 
@@ -3993,14 +4183,14 @@ Before going further let's copy and paste the code into VSCode and run it:
 
 [TODO]
 
-C++ from scratch, JS electron app, Processing creative coding, Python Kivy or similar, Flutter (google lang), shaders
+C++ from scratch, JS electron app, Processing creative coding, Python Kivy or similar, Flutter (google lang), shaders (graphical editors), nimp, ronin, Nuklear
 
 ## GP-GPU
 # Chapter 27 - (((())(()((()(()))))))
 
 [TODO]
 
-Functional Programming, and other paradigms : lisp, haskell, luna-lang.org
+Functional Programming, and other paradigms : lisp, haskell, luna-lang.org, ronin
 # Chapter 28 - Let's try out programmable logic
 
 [TODO]

@@ -691,6 +691,10 @@ As you can see, Linux gives us a lot of raw access to hardware. There are no tra
 
 symbolic links to usr explanation
 
+## /sys
+
+echoing to change settings, probabaly focus on device
+
 ## /usr
 
 [TODO]
