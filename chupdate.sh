@@ -7,6 +7,18 @@ for i in ./chapters/*md; do
     sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/openg/{static}\/openg/g' $i
 done
 
+for i in ./chapters/*md; do
+    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/opmusic/{static}\/opmusic/g' $i
+done
+
+for i in ./chapters/*md; do
+    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/gifs/{static}\/gifs/g' $i
+done
+
+for i in ./chapters/*md; do
+    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/opdesign/{static}\/opdesign/g' $i
+done
+
 #Build Chapters
 cat ./chapters/p?-* > ./chapters/x1.md
 wait
@@ -48,4 +60,16 @@ echo "sed paths back for editing"
 #Put back to normal syntax
 for j in ./chapters/*.md; do
     sed -i 's/{static}\/openg/\/home\/vega\/git\/local\/openg2\/content\/openg/g' $j
+done
+
+for j in ./chapters/*.md; do
+    sed -i 's/{static}\/opdesign/\/home\/vega\/git\/local\/openg2\/content\/opdesign/g' $j
+done
+
+for j in ./chapters/*.md; do
+    sed -i 's/{static}\/opmusic/\/home\/vega\/git\/local\/openg2\/content\/opmusic/g' $j
+done
+
+for j in ./chapters/*.md; do
+    sed -i 's/{static}\/gifs/\/home\/vega\/git\/local\/openg2\/content\/gifs/g' $j
 done

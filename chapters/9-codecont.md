@@ -32,6 +32,10 @@ To show the maturity, just check out https://www.redox-os.org/, a full OS writte
 
 Also, it's worth noting Rust can be used to generate Web Assembly (more about that below)
 
+Other sources to lean rust:
+
+- https://doc.rust-lang.org/book/foreword.html
+
 
 
 ### Go
@@ -39,6 +43,10 @@ Also, it's worth noting Rust can be used to generate Web Assembly (more about th
 > Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 
 The big claim to fame for go is, well `go`, which let's you do really easy threading. (https://gobyexample.com/goroutines)
+
+Other sources to learn Go:
+
+- https://tour.golang.org/welcome/1
 
 
 
@@ -276,10 +284,11 @@ Look at Chapter 18 for information on Databases
 
 
 
-[TODO]
+## Coding Challanges
 
 https://www.ioccc.org/
 
-https://doc.rust-lang.org/book/foreword.html
+<img src="/home/vega/git/local/openg2/content/openg/ginny.png" alt="ginny" style="zoom:50%;" />
 
-https://tour.golang.org/welcome/1
+> Source: https://gist.github.com/munificent/b1bcd969063da3e6c298be070a22b604
+

@@ -1,22 +1,12 @@
-Title: Opinionated Design
-Date: 2019-7-27 12:00
-Modified: 2019-7-27 12:00
-Category: Design
-Tags: Design
-Slug: OpinionatedDesign
-Authors: Vega Deftwing
-
-[TOC]
-
-# Preface
+# Chapter 34 - Art and Design
 
 Hey there.
 
 My name is Vega. I know there are plenty of tutorials and ways to learn online be it on YouTube, SkillShare, or online classes provided for free by various universities. The difference here is there is no bullshit, no babysitting, and lots of bias as a result of personal experience. My views of things like what cretive software is bad (Adobe) or what equipment you should buy to learn with will be expressed directly and bluntly. This isn't to say I won't explain my reasoning, just that I'm not going to be apologetic when I say things like "non display tablets are trash" - though I will still likely talk about the things I dislike and why.
 
-# Analog Art
+## Analog Art
 
-# Digital Art
+## Digital Art
 
 Dark Patterns -- don't be that guy
 
@@ -26,17 +16,17 @@ http://rainworldgame.com/
 
 
 
-# Blending the two
+## Blending the two
 
-# Links
+## Links
 
 https://colors.lol/
 
 https://lospec.com/palette-list
 
-## Software
+### Software
 
-## Inspirational Artists
+### Inspirational Artists
 
 https://twitter.com/FogleBird/status/954464508705234944
 

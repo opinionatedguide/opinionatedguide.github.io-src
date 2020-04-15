@@ -6,6 +6,8 @@
 
 ## What is an Embedded System?
 
+![pos](/home/vega/git/local/openg2/content/openg/pos.png)
+
 ## PWM, SPI, I2C, What's going on?!
 
 ## Playing around - Hello World and blink
