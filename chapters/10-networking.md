@@ -1,3 +1,5 @@
+
+
 # Chapter 10 - Networking
 
 [TODO] Add follow along making a network stack
@@ -90,6 +92,8 @@ Real time clocks, timezones, utc, etc.
 
 ### Nmap
 
-## Really weird Networking, because why not!
+# Chapter 10.1 - Weird Networking, because why not!
 
-Netsukuku, cjdns + hyperboria, Dat / Beaker, https://readhacker.news/s/3WJ75
+Netsukuku, cjdns + hyperboria, Dat / Beaker, [EVE Online internet](https://blog.benjojo.co.uk/post/eve-online-bgp-internet)
+
+Software Defined Networking, ActivityPub

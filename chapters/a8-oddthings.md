@@ -1,3 +1,5 @@
+
+
 # Other odd things:
 
 // Potentially move these elsewhere
@@ -16,18 +18,10 @@ generic midi use (paged out 002 pg 24)
 
 rop
 
-## Ham Radio
-
-LORA
-
-2.4Ghz patch antenna
-
-electronically tunable filters
-
 ## Blog posts that dont fit anywhere eles but that you should totally read
 
 https://hackaday.com/2020/02/20/we-ruined-status-leds-heres-why-that-needs-to-change/
 
-[Foone one weird adapters](https://twitter.com/Foone/status/1224206741602062336)
+[Foone one weird adapters (Twitter Thread)](https://twitter.com/Foone/status/1224206741602062336)
 
 

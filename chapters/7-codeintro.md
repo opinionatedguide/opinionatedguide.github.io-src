@@ -1,3 +1,5 @@
+
+
 # Chapter 7 - Let's write some Code
 
 From https://wiki.xxiivv.com/#development:
@@ -262,16 +264,14 @@ Weird projects
 
 https://twitter.com/Foone/status/1245610381600382976
 
-## Easing int Grahical Programming with Creative Coding
+## Easing int Graphical Programming with Creative Coding
 
 http://feed.grantcuster.com/
 
+[Coding Adventure: Ray Marching (YouTube)](https://www.youtube.com/watch?v=Cp5WWtMoeKg)
+[Coding Adventure: Marching Cubes(Youtube)](https://www.youtube.com/watch?v=M3iI2l0ltbE)
 
 
-
-
-https://www.youtube.com/watch?v=Cp5WWtMoeKg
-https://www.youtube.com/watch?v=M3iI2l0ltbE
 
 
 

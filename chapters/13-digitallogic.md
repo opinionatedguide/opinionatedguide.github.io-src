@@ -1,3 +1,5 @@
+
+
 # Chapter 13 - Digital Logic
 
 ## What is digital logic?
@@ -12,7 +14,7 @@ min/max terms, Don't cares, SOP/POS, multiple out
 
 #### Not
 
-Truth table, transistor implimentation pmos/nmos, cost, power consumption at switch
+Truth table, transistor implementation pmos/nmos, cost, power consumption at switch
 
 #### And, Nand
 
@@ -24,9 +26,9 @@ Truth table, transistor implimentation pmos/nmos, cost, power consumption at swi
 
 #### Mux, Demux, encoders
 
-## Basic combonational logic
+## Basic combinational logic
 
-propogation delay, fan in/out, POS/POS 
+propagation delay, fan in/out, POS/POS 
 
 ### 2's Compliment, Floating Pt, Math
 
@@ -42,7 +44,5 @@ SR, Dl, edge triggering, Dff, Tff, JKff,
 
 ## More Digital Logic resources
 
-We'll come back to look at more complex digital logic in ****chapter 28 "Let's try out programmable logic"**** and **29 "Let's make our own SOC"** , but if you're hungry for even more, here are some resources
-
-(TODO) https://twitter.com/Foone/status/1240011033395073024
+We'll come back to look at more complex digital logic in chapter 28 "Let's try out programmable logic" and **29 "Let's make our own SOC"** , but if you're hungry for even more, here are some resources
 

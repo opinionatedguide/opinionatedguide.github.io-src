@@ -1,3 +1,5 @@
+
+
 # Chapter 2 - Let's do it then, Installing Arch Linux
 
 ![Arch Logo](/home/vega/git/local/openg2/content/openg/archlogo.png)
@@ -826,6 +828,3 @@ Frankly the answer is complicated. The gist of it is that Linux actually exposes
 But more than that, Linux actually exposes the system to the user and doesn't try to hide it's inner workings, rather, for many things Linux implies that you should manually edit the config files, look at how programs use various resources, and peer into how the system actually handles any given task.
 
 You'll start to see this more as we move forward though these next few chapters. Speaking of...
-
-
-

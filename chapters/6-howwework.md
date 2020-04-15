@@ -1,3 +1,5 @@
+
+
 # Chapter 6 - Let's work on how we work
 
 ## The Terminal

@@ -1,8 +1,10 @@
+
+
 # History
 
 [TODO] Move this elsewhere
 
-https://www.youtube.com/watch?v=TfwKYUmoC-k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=17&t=0s
+[Adam Savage's Computer History Collection! (Youtube)](https://www.youtube.com/watch?v=TfwKYUmoC-k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=17)
 
 ## Perserving data
 

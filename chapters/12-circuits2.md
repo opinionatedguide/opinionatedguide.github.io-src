@@ -1,4 +1,6 @@
-# Chapter 12 - Diodes,  Transistors, and Integrated Circuits
+
+
+# Chapter 12 - Circuits Continued
 
 [TODO]
 
@@ -8,9 +10,7 @@ Possibly break up this chapter? Transistors, the opamp, etc alone may each justi
 
 That said, I don't want to get to in the mud of transistor physics. I really want to focus on how/when/why to use what, not how they work as the physics is both pretty hard to grasp and not super useful. Still would like to mention that switching is what uses power and like processe size things, but maybe not the chemistry or electron tunneling effects
 
-## Transformers, Variacs
-
-[TODO]
+# Chapter 12.1 - Semiconductors
 
 ## Diodes, the one way road
 
@@ -38,11 +38,13 @@ tubes and how they work
 [TODO]
 
 https://hackaday.com/2019/05/20/integrated-circuits-can-be-easy-to-understand-with-the-right-teachers/
-https://www.youtube.com/watch?v=VNzkhZBjo5k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=10&t=0s
+[Uncovering the Silicon: Demystifying How Chips are Built and How They Work (YouTube)](https://www.youtube.com/watch?v=VNzkhZBjo5k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 ### 555, OpAmp, 74-Series Logic
 
 potato semi
+
+# Chapter 12.2 - Opamps & Filters
 
 ## Optical Electronics
 
@@ -52,7 +54,7 @@ potato semi
 
 [TODO]
 
-https://www.youtube.com/watch?v=wcJXA8IqYl8&t=474s
+[Piezoelectricity - Why hitting crystals makes electricity (YouTube)](https://www.youtube.com/watch?v=wcJXA8IqYl8)
 
 ## PWM
 

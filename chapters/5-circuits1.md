@@ -1,4 +1,8 @@
-# Chapter 5 - Resistance, Capacitance, and Inductance
+
+
+# Chapter 5 - Intro to Angry Pixies
+
+
 
 ## The Tools of the Trade
 
@@ -123,6 +127,10 @@ potentiometer read from aduino full range (center tap or max resitor)
 [TODO]
 
 Motors
+
+## Transformers, Variacs
+
+[TODO]
 
 ## Buttons, Switches, and Knobs
 

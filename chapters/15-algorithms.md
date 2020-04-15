@@ -1,3 +1,5 @@
+
+
 # Chapter 15 - Discrete Math and Algorithms
 
 [TODO]
@@ -37,7 +39,7 @@ A ⋃ B = {1, 2, 3, 4, 5, 6}
 
 ## Complexity analsis
 
-+recursion analysis, https://www.youtube.com/watch?v=YX40hbAHx3s (p np)
++recursion analysis, [P vs. NP (YouTube)](https://www.youtube.com/watch?v=YX40hbAHx3s)
 
 ## Brute Force
 

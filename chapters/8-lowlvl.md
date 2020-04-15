@@ -1,4 +1,10 @@
+
+
 # Chapter 8 - Low Level Programming
+
+<iframe width="1277" height="727" src="https://www.youtube.com/embed/Snr113r5ocY?list=FLFMnqfaTa1se1LfbCB3peJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [Video Link: Program in C (YouTube)](https://www.youtube.com/watch?v=Snr113r5ocY&list=FLFMnqfaTa1se1LfbCB3peJQ&index=126)
 
 the stack, pointers, etc.
 
@@ -6,7 +12,6 @@ psuedo code, bitwise opererators, types, unsigned, signed bit, 1's compliment, 2
 
 ## Some simple programs, in C++
 
-https://www.youtube.com/watch?v=Snr113r5ocY&list=FLFMnqfaTa1se1LfbCB3peJQ&index=126&t=0s
 
 ### Hello World
 

@@ -1,3 +1,5 @@
+
+
 # Appendix D - Politics and Ethics
 
 > Don't feed the Trolls

@@ -33,6 +33,8 @@ I recommend this overview of the topics covered in CS: [Map of Computer Science]
 Also by Walliman, a video on [How to Read Math](https://www.youtube.com/watch?v=Kp2bYWRQylk) and the cheat sheet from it:
 
 [How To Read Math, Cheat Sheet](https://live.staticflickr.com/4671/40544016221_61cf8944d1_h.jpg)
+
+
 # Ⅰ - Community
 
 The only way to be successful in this journey is to make friends along the way. Some of this get's really, really difficult. You *will* get stuck. Having friends to help makes it possible. Find group chats on telegram, join IRC channels, get on some forums, and ask questions on Reddit. Working with people is a lot more fun and you'll learn so much more.
@@ -125,6 +127,8 @@ Further reading:
 [Assholes: A Probing Examination][https://www.nomachetejuggling.com/2019/06/03/dont-hire-assholes/] 
 
 [Death to Bullshit](https://deathtobullshit.com/) [(mirror)](https://web.archive.org/web/20191217003321/http://deathtobullshit.com/)
+
+
 # Ⅱ - Learn how to learn
 
 I'm going to keep this short and sweet: Nobody learns (effectively) by being shown what to do. You can watch hundreds of hours of people playing guitar, even explaining how they do it, but you wont be able to randomly pick one up and play if you never have before. Furthermore, as much as you can learn from direct reading and instruction, it has it's place and limits. This guide, book, whatever you want to call it, was never meant to be followed like instructions. You should go out on your own and poke around, get lost in the weeds as you go. If you find a topic dull, don't read it as in depth. I don't want you wasting your time. Break things. Make mistakes. By the end of this you should know what a burning resistor smells like, what it's like to try to recover from a Linux system that just won't boot, and how it feels when a bug has been eluding you for hours and your code still doesn't work. The only way that happens (unless I made a mistake which is also probable) is if you try ideas when you get them and do more than what's in this book.
@@ -133,7 +137,7 @@ This struggle is part of learning and proof that you're doing well. These experi
 
 To quote someone much smarted than myself:
 
-![Live Overflow Tips]({static}/openg/lotips.png)
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tips to really Master Something<br>1. Move away from basics as quickly as possible<br>2. Constantly expose yourself to stuff you don&#39;t understand and later revisit what you thought you understood (but actually didn&#39;t)<br>3. Do cross-disciplinary research to develop a deeper understanding <a href="https://t.co/vHm223qoYe">https://t.co/vHm223qoYe</a></p>&mdash; LiveOverflow 🔴 (@LiveOverflow) <a href="https://twitter.com/LiveOverflow/status/1037296510583689216?ref_src=twsrc%5Etfw">September 5, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Finally, there's
 
@@ -147,6 +151,8 @@ but note, you should keep in mind the standard warning that comes when first usi
 > 1) Respect the privacy of others.
 > 2) Think before you type.
 > 3) With great power comes great responsibility.
+
+
 # Chapter 1 - The first goal
 
 Every journey needs a place to start, and while many may like to start slow I think a head first approach is best. So that's exactly what we're gonna do. The very first thing we're going to do is install a new operating system (OS) on your computer.
@@ -176,6 +182,8 @@ I mean, this was a real error message I got when trying to upgrade my system fro
 ![somethinghappened]({static}/openg/somethinghappened.png)
 
 > [Image source](https://answers.microsoft.com/en-us/windows/forum/windows_10/unable-to-upgrade-to-windows-10-something-happened/be12b76d-af02-46a1-a00c-4e4af0c29588)
+
+
 # Chapter 2 - Let's do it then, Installing Arch Linux
 
 ![Arch Logo]({static}/openg/archlogo.png)
@@ -1006,12 +1014,7 @@ But more than that, Linux actually exposes the system to the user and doesn't tr
 You'll start to see this more as we move forward though these next few chapters. Speaking of...
 
 
-
-# Chapter 3.1 - Legacy Hardware
-
-[TODO]
-
-Parallel, Serial, Tape, CD, gameport# Chapter 3 - Into the hardware
+# Chapter 3 - Into the hardware
 
 One of the nifty things about Linux is you don't need to install extra software to check out the deeper parts of your hardware. While on windows you might need a tool like CPU-Z to look at information about the CPU on Linux you can do it out of the box. Let's get started on that then!
 
@@ -1731,9 +1734,21 @@ HID or Human Interface Device, is the standard over which most mice, keyboards, 
 
 5pin din, PS2, USB
 
-## How to know what to buy
 
-[TODO - possibly move]# Chapter 4 - Back to the Root of Things
+
+# Chapter 3.1 - How to know what to buy
+
+[TODO - possibly move]
+
+
+
+# Chapter 3.2 - Legacy Hardware
+
+[TODO]
+
+Parallel, Serial, Tape, CD, gameport
+
+# Chapter 4 - Back to the Root of Things
 
 We've been using file in /proc and /dev thoughout this, but we never really looked to see what else is in there. Let's do that.
 
@@ -2542,7 +2557,11 @@ init system: https://www.lifewire.com/how-to-use-the-init-command-in-linux-40669
 https://github.com/KnowNo/How-Linux-Works-2nd-Edition/blob/master/How.Linux.Works.What.Every.Superuser.Should.Know.2nd.Edition.PDF.pdf
 
 We'll explore more of the OS later, but for now I think the information overload is a bit much anyway, so lets move away from screens and into the world of hardware
-# Chapter 5 - Resistance, Capacitance, and Inductance
+
+
+# Chapter 5 - Intro to Angry Pixies
+
+
 
 ## The Tools of the Trade
 
@@ -2668,6 +2687,10 @@ potentiometer read from aduino full range (center tap or max resitor)
 
 Motors
 
+## Transformers, Variacs
+
+[TODO]
+
 ## Buttons, Switches, and Knobs
 
 [TODO] SPST DPST etc.  Pots V encoders, encoders with buttons, slider pots. (inc motorized) etc.
@@ -2693,6 +2716,8 @@ How to read logorithmic first
 [TODO]
 
 https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law/voltage
+
+
 # Chapter 6 - Let's work on how we work
 
 ## The Terminal
@@ -2979,6 +3004,8 @@ Vivaldi, Firefox, Syncthing, Beaker, IPFS, IRC - irssi, Telegram, Etherape, Wire
 **Shell Scripts**
 
 [TODO]
+
+
 # Chapter 7 - Let's write some Code
 
 From https://wiki.xxiivv.com/#development:
@@ -3243,20 +3270,24 @@ Weird projects
 
 https://twitter.com/Foone/status/1245610381600382976
 
-## Easing int Grahical Programming with Creative Coding
+## Easing int Graphical Programming with Creative Coding
 
 http://feed.grantcuster.com/
 
+[Coding Adventure: Ray Marching (YouTube)](https://www.youtube.com/watch?v=Cp5WWtMoeKg)
+[Coding Adventure: Marching Cubes(Youtube)](https://www.youtube.com/watch?v=M3iI2l0ltbE)
 
 
 
 
-https://www.youtube.com/watch?v=Cp5WWtMoeKg
-https://www.youtube.com/watch?v=M3iI2l0ltbE
 
 
 
 # Chapter 8 - Low Level Programming
+
+<iframe width="1277" height="727" src="https://www.youtube.com/embed/Snr113r5ocY?list=FLFMnqfaTa1se1LfbCB3peJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [Video Link: Program in C (YouTube)](https://www.youtube.com/watch?v=Snr113r5ocY&list=FLFMnqfaTa1se1LfbCB3peJQ&index=126)
 
 the stack, pointers, etc.
 
@@ -3264,7 +3295,6 @@ psuedo code, bitwise opererators, types, unsigned, signed bit, 1's compliment, 2
 
 ## Some simple programs, in C++
 
-https://www.youtube.com/watch?v=Snr113r5ocY&list=FLFMnqfaTa1se1LfbCB3peJQ&index=126&t=0s
 
 ### Hello World
 
@@ -3363,6 +3393,22 @@ source patching, binary patching
 [TODO]
 
 https://github.com/rby90/Project-Based-Tutorials-in-C
+
+
+# Chapter 9 - Finishing up the project
+
+## Part 3, more advanced high level
+
+Modify the original python program to support a pretty cli input in a pretty way to make entries and visulize the data collected, parallelize some things, finally add a config file using yaml
+
+## Part 4, getting our toes wet with embeded systems
+
+Finally, let's go back and add a com port to the C code and send data to an arduino (can be simulated) and a TFT to display the currently active task and time elapsed.
+
+## Part 5, Coding practice and compititons
+
+[Obfuscated C programs: Introduction (YouTube)](https://www.youtube.com/watch?v=rwOI1biZeD8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=15&t=0s) Obvuscated C, https://www.ioccc.org/
+
 # Chapter 9.1 - Other Languages of interest
 
 ## Low Level
@@ -3488,6 +3534,7 @@ If you're interested, check out [Red's 'Getting Started' page](https://www.red-l
 
 
 ### Java
+
 don't.
 but, here's why not to use Java:
 
@@ -3630,19 +3677,8 @@ https://www.ioccc.org/
 
 https://doc.rust-lang.org/book/foreword.html
 
-https://tour.golang.org/welcome/1# Chapter 9 - Finishing up the project
+https://tour.golang.org/welcome/1
 
-## Part 3, more advanced high level
-
-Modify the original python program to support a pretty cli input in a pretty way to make entries and visulize the data collected, parallelize some things, finally add a config file using yaml
-
-## Part 4, getting our toes wet with embeded systems
-
-Finally, let's go back and add a com port to the C code and send data to an arduino (can be simulated) and a TFT to display the currently active task and time elapsed.
-
-## Part 5, Coding practice and compititons
-
-https://www.youtube.com/watch?v=rwOI1biZeD8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=15&t=0s Obvuscated C, https://www.ioccc.org/
 # Chapter 10 - Networking
 
 [TODO] Add follow along making a network stack
@@ -3735,71 +3771,76 @@ Real time clocks, timezones, utc, etc.
 
 ### Nmap
 
-## Really weird Networking, because why not!
+# Chapter 10.1 - Weird Networking, because why not!
 
-Netsukuku, cjdns + hyperboria, Dat / Beaker, https://readhacker.news/s/3WJ75
+Netsukuku, cjdns + hyperboria, Dat / Beaker, [EVE Online internet](https://blog.benjojo.co.uk/post/eve-online-bgp-internet)
+
+Software Defined Networking, ActivityPub
+
 # Chapter 11 - High Level Overview of Math, Physics, and Chemistry (Sorry...)
 
 [TODO]
 
-## Ⅰ - Math
+# Chapter 11.1 - Math
 
 some motivation, Klien bottle guy
 
-### 1 - Algebra
+## 1 - Algebra
 
 Imaginary numbers, systems of equations
 
-### 2 - Discrete Math
+## 2 - Discrete Math
 
-### 3 - Trig
+## 3 - Trig
 
-### 4 - Calculus
+## 4 - Calculus
 
-3b1b: https://www.youtube.com/watch?v=WUvTyaaNkzM&t=12s
+3b1b: [The Essence of Calculus, Chapter 1 (YouTube, Series)](https://www.youtube.com/watch?v=WUvTyaaNkzM)
 
-### 5 - Differential Equations
+## 5 - Differential Equations
 
-3b1b: https://www.youtube.com/watch?v=p_di4Zn4wz4
+3b1b: [Differential equations, studying the unsolvable (YouTube, Series)](https://www.youtube.com/watch?v=p_di4Zn4wz4)
 
-### 6 - Matrix Theory / Linear Algebra
+## 6 - Matrix Theory / Linear Algebra
 
 https://readhacker.news/s/4aVPz
 
 https://readhacker.news/s/4aUb6
 
-3b1b: https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+3b1b: [Essence of linear algebra, chapter 1 -- Vectors (YouTube,Series)](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
-### 7 - Signals
+## 7 - Signals
 
-3b1b: https://www.youtube.com/watch?v=spUNpyF58BY
+3b1b: [But what is the Fourier Transform? A visual introduction. (YouTube)](https://www.youtube.com/watch?v=spUNpyF58BY)
 
 https://ocw.mit.edu/resources/res-6-007-signals-and-systems-spring-2011/
 
 https://en.wikibooks.org/wiki/Signals_and_Systems
 
-## Ⅱ - Physics
+# Chapter 11.2 - Physics
 
-### 1 - Newtonian
+## 1 - Newtonian
 
-### 2 - Electromagnetism
+## 2 - Electromagnetism
 
-### 3 - Relativity and the Quantum
+## 3 - Relativity and the Quantum
 
-## Ⅲ - Chem
+# Chapter 11.3 - Chem
 
-### 1 - Atomic Structure, Basics of the Table, Bonding
+## 1 - Atomic Structure, Basics of the Table, Bonding
 
-### 2 - Acid/base, Electrochem, Thermochem, Photochem
+## 2 - Acid/base, Electrochem, Thermochem, Photochem
 
-### 3 - Organic Chemistry
+## 3 - Organic Chemistry
 
-## Continued
+# Chapter 11.4 - 'The Rest'
 
-### Other sources, interesting videos, etc:
+## Other sources, interesting videos, etc:
 
 - Minute Physics, Thought Emporium, Cody's Lab, 3Blue1Brown
-# Chapter 12 - Diodes,  Transistors, and Integrated Circuits
+
+
+# Chapter 12 - Circuits Continued
 
 [TODO]
 
@@ -3809,9 +3850,7 @@ Possibly break up this chapter? Transistors, the opamp, etc alone may each justi
 
 That said, I don't want to get to in the mud of transistor physics. I really want to focus on how/when/why to use what, not how they work as the physics is both pretty hard to grasp and not super useful. Still would like to mention that switching is what uses power and like processe size things, but maybe not the chemistry or electron tunneling effects
 
-## Transformers, Variacs
-
-[TODO]
+# Chapter 12.1 - Semiconductors
 
 ## Diodes, the one way road
 
@@ -3839,11 +3878,13 @@ tubes and how they work
 [TODO]
 
 https://hackaday.com/2019/05/20/integrated-circuits-can-be-easy-to-understand-with-the-right-teachers/
-https://www.youtube.com/watch?v=VNzkhZBjo5k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=10&t=0s
+[Uncovering the Silicon: Demystifying How Chips are Built and How They Work (YouTube)](https://www.youtube.com/watch?v=VNzkhZBjo5k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 ### 555, OpAmp, 74-Series Logic
 
 potato semi
+
+# Chapter 12.2 - Opamps & Filters
 
 ## Optical Electronics
 
@@ -3853,7 +3894,7 @@ potato semi
 
 [TODO]
 
-https://www.youtube.com/watch?v=wcJXA8IqYl8&t=474s
+[Piezoelectricity - Why hitting crystals makes electricity (YouTube)](https://www.youtube.com/watch?v=wcJXA8IqYl8)
 
 ## PWM
 
@@ -3898,6 +3939,8 @@ Relate back to things like ADRS, Distortion, Reverb / Echo, Decibels (audio), et
 At this point I highly recommend *'Practical Electronics for Inventors'* ISBN 978-1259587542, namely chapters 2-12, and 15-16. It's a very large, detailed book that does it's best to keep things, well, practical.
 
 https://taleri.files.wordpress.com/2014/02/practical_electronics_for_inventors_-_scherz_paul.pdf
+
+
 # Chapter 13 - Digital Logic
 
 ## What is digital logic?
@@ -3912,7 +3955,7 @@ min/max terms, Don't cares, SOP/POS, multiple out
 
 #### Not
 
-Truth table, transistor implimentation pmos/nmos, cost, power consumption at switch
+Truth table, transistor implementation pmos/nmos, cost, power consumption at switch
 
 #### And, Nand
 
@@ -3924,9 +3967,9 @@ Truth table, transistor implimentation pmos/nmos, cost, power consumption at swi
 
 #### Mux, Demux, encoders
 
-## Basic combonational logic
+## Basic combinational logic
 
-propogation delay, fan in/out, POS/POS 
+propagation delay, fan in/out, POS/POS 
 
 ### 2's Compliment, Floating Pt, Math
 
@@ -3942,9 +3985,9 @@ SR, Dl, edge triggering, Dff, Tff, JKff,
 
 ## More Digital Logic resources
 
-We'll come back to look at more complex digital logic in ****chapter 28 "Let's try out programmable logic"**** and **29 "Let's make our own SOC"** , but if you're hungry for even more, here are some resources
+We'll come back to look at more complex digital logic in chapter 28 "Let's try out programmable logic" and **29 "Let's make our own SOC"** , but if you're hungry for even more, here are some resources
 
-(TODO) https://twitter.com/Foone/status/1240011033395073024
+
 
 # Chapter 14 - Embedded Systems
 
@@ -3970,9 +4013,11 @@ RIOT-OS, MBED, etc
 
 ## Other weird and cool projects:
 
-https://twitter.com/Foone/status/1247233159596367883
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">a lot of people have been mocking this video but having tried it, I can confirm this is actually the most reliable way to fake keyboard events on windows 10. <a href="https://t.co/kTz5a6YlTI">https://t.co/kTz5a6YlTI</a></p>&mdash; foone (@Foone) <a href="https://twitter.com/Foone/status/1247233159596367883?ref_src=twsrc%5Etfw">April 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-[Of Course It Leaks!](https://groups.google.com/forum/message/raw?msg=comp.lang.ada/E9bNCvDQ12k/1tezW24ZxdAJ)# Chapter 15 - Discrete Math and Algorithms
+[Of Course It Leaks!](https://groups.google.com/forum/message/raw?msg=comp.lang.ada/E9bNCvDQ12k/1tezW24ZxdAJ)
+
+# Chapter 15 - Discrete Math and Algorithms
 
 [TODO]
 
@@ -4011,7 +4056,7 @@ A ⋃ B = {1, 2, 3, 4, 5, 6}
 
 ## Complexity analsis
 
-+recursion analysis, https://www.youtube.com/watch?v=YX40hbAHx3s (p np)
++recursion analysis, [P vs. NP (YouTube)](https://www.youtube.com/watch?v=YX40hbAHx3s)
 
 ## Brute Force
 
@@ -4022,6 +4067,8 @@ trees, hashtables/maps, stacks
 ## Practice
 
 Fib, some pracice logical equliv, base conversion algo, overlapping lines, matrix multiplication
+
+
 # Chapter 16 - Writing a larger program
 
 [TODO]
@@ -4031,6 +4078,8 @@ Fib, some pracice logical equliv, base conversion algo, overlapping lines, matri
 ## Planning
 
 ## Software Engineering
+
+
 # Chapter 17 - Servers!
 
 [TODO]
@@ -4056,6 +4105,8 @@ Before we get to business there's some necessary viewing: http://motherfuckingwe
 ## Containerization
 
 ## Fault tollerence
+
+
 # Chapter 18 - Databases
 
 [TODO]
@@ -4063,6 +4114,8 @@ Before we get to business there's some necessary viewing: http://motherfuckingwe
 Otherwise known as the chapter about sanitizing your inputs.
 
 // insert xkcd drop tables
+
+
 # Chapter 19 - Debugging, Automated Building and Testing
 
 ## Automated Building
@@ -4094,6 +4147,8 @@ Fuzzing (sandsifter), make and alts, etc.
 ## Continuous Integration
 
 ## Continuous Deployment
+
+
 # Chapter 20 - Compilers and Assemblers
 
 [TODO]
@@ -4109,6 +4164,8 @@ https://medium.freecodecamp.org/the-programming-language-pipeline-91d3f449c919
 ## Continued Reading
 
 At this point I highly recommend '[The Art of Exploitation](https://nostarch.com/hacking2.htm)' by Jon Erickson
+
+
 # Chapter 21 - Exploitation
 
 Often when we think about Exploitation, better known as hacking, we conjur images of a more-punk-than-cyber cyberpunk person clicking away wildly on a keyboard as code flies by, like the [1995 movie, Hackers](https://en.wikipedia.org/wiki/Hackers_(film)), and to some extent this isn't wrong, as one look around the floor at [DefCon](https://www.defcon.org/), will show you. And honestly, that's to by accident. While there are strictly professional security experts, those that work at corperations and banks, a large number do it for the lolz, for fun, and to bring a little fun back into computing. Calling exploitation 'hacking' is almost a misnome, as hacking encompases a lot more than exploitation, and exploitation a lot more than hacking. For that reason, before we start, I recomend you watch [this video](https://www.youtube.com/watch?v=wjge1bVobN0), on speed running Super Mario 64, this is a prime example of exploitation in a non-harmful manner done for fun.
@@ -4268,33 +4325,43 @@ https://twitter.com/Foone/status/910217984098017281
 
 Never claim something is 'unhackable':
 https://techcrunch.com/2019/05/10/eyedisk-encrypted-flash-drive-unhackable/,
-![unhackable]({static}/openg/unhackable1.jpg)# Chapter 22 - Security
+![unhackable]({static}/openg/unhackable1.jpg)
+
+# Chapter 22 - Security
 
 [TODO]
 
 focus on how to write secure programs, protect hardware, etc.
+
+
 # Chapter 23 - Open Source, Licences, and Copyright
 
 [TODO]
 
 actually contribute on github, make an issue, submit a pull request, make a custom repo,
+
+
 # Chapter 24 - Let's make our own PCB
 
 [TODO]
 
 First things first, we're going to be using Kicad, so you'll want to go grab that from the repos. While that's downloading and installing give this a watch to get the basics down:
 
-https://www.youtube.com/watch?v=zK3rDhJqMu0&index=8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&t=0s
+[KiCad Quick Start Tutorial (YouTube)](https://www.youtube.com/watch?v=zK3rDhJqMu0&index=8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&t=0s)
 
 
 
 https://github.com/badgeek/svg2shenzhen
 
-https://llllllll.co/t/pcb-art-artfully-shaped-copper-traces/22027/2# Chapter 25 - We've got cores, let's use em'
+https://llllllll.co/t/pcb-art-artfully-shaped-copper-traces/22027/2
+
+# Chapter 25 - We've got cores, let's use em'
 
 [TODO]
 
-https://lemire.me/blog/2020/01/30/cost-of-a-thread-in-c-under-linux/# Chapter 26 - Graphical Programming
+https://lemire.me/blog/2020/01/30/cost-of-a-thread-in-c-under-linux/
+
+# Chapter 26 - Graphical Programming
 
 Let's start in a way that's incredibly simple, and abstract away all the hard stuff at first by using a tool kit called 'Processing', which is available under that name from the community repo in arch. The default IDE that comes with it is awful to work in though, so go ahead and open up VSCode and grab the [Processing Language](https://marketplace.visualstudio.com/items?itemName=Tobiah.language-pde) add on, then in VSCode open up a new workspace folder and make a file called processing.pde, then open VSCode's command pallete (CTRL+Shift+P) and run 'Processing: create task file', after that you'll want to open the tasks.json file and change the `command:` line to have `"command": "/usr/bin/processing-java",` after that you can easily try new code just by re-building project the project with CTRL+Shift+B
 
@@ -4354,38 +4421,61 @@ Before going further let's copy and paste the code into VSCode and run it:
 C++ from scratch, JS electron app, Processing creative coding, Python Kivy or similar, Flutter (google lang), shaders (graphical editors), nimp, ronin, Nuklear
 
 ## GP-GPU
+
+
 # Chapter 27 - (((())(()((()(()))))))
 
 [TODO]
 
 Functional Programming, and other paradigms : lisp, haskell, luna-lang.org, ronin
+
+
 # Chapter 28 - Let's try out programmable logic
 
 [TODO]
 
 Finite State Machines, VHDL, Verilog, FPGA & CPLD internals
+
+
 # Chapter 29 - Let's make our own SOC
 
 Before we start, I'll warn you this isn't easy, but it's also not as bad as it sounds, and it's certainly not as [bad](https://www.youtube.com/watch?v=C8txvmXUIJQ&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=141&t=0s) as it used to be
 
 [TODO]
+
+
 # Chapter 30 - 3D printing, CNC, and making things
 
 [TODO]
 
 While this book/guide/thing primarily focuses on the less mechancial-engieering-y side of things, it wouldn't make sense not to include at least a little about 3D printing, molding, materials, gears, springs, and the like. So, here goes:
+
+
 # Chapter 31 - Fine, I'll talk about AI
-# Chapter 31 - Ham Radio
+
+# Chapter 32 - Ham Radio
+
+LORA
+
+2.4Ghz patch antenna
+
+electronically tunable filters
+
+https://newhams.info/2017/02/17/rf-connector-types/
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">question of the day:<br>Analog TV is shut down in the US, right? so all the over-the-air TV is digital. And existing analog OTA frequencies are getting repurposed to other uses... so what am I seeing on UHF channel 60? it&#39;s got way more structure than the noise everywhere else. <a href="https://t.co/Jm9W9JsjgF">pic.twitter.com/Jm9W9JsjgF</a></p>&mdash; foone (@Foone) <a href="https://twitter.com/Foone/status/1240011033395073024?ref_src=twsrc%5Etfw">March 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # Wrapping up - Where to go from here
 
-[TOOD]
+[TODO]
 
 ## Integrating other interests
 
 ## Projects to work on
 
 ## Contributing to Open Source
+
+
 # Appendix A- Using the Linux Shell
 
 ## The Basic Commands
@@ -4861,6 +4951,8 @@ Ix , 0bin (pastebin)
 Mathics
 
 TaskWeb (TaskWarrior)
+
+
 # Appendix B - Common electrical parts (appearence and numbers)
 
 [TODO]
@@ -4872,6 +4964,8 @@ TaskWeb (TaskWarrior)
 * datasheets
   
   *
+
+
 # Appendix C - BOM
 
 [TODO - FINAL REVSION]
@@ -4941,6 +5035,8 @@ You can find a used Dell Poweredge r610 or poweredge 1950. Many of these will co
 ## Getting things for cheap
 
 salvage, auctions
+
+
 # Appendix D - Politics and Ethics
 
 > Don't feed the Trolls
@@ -5154,11 +5250,15 @@ If you've made it this far I just want to say thank you. We need more people to 
 ## TODO
 
 Education, college, prices, highschool homework and personal time, Drugs,
+
+
 # Appendix E - Fixing issues
 
 [TODO]
 
 ## Fix by working comparison
+
+
 # Other Great Resources
 
 https://news.ycombinator.com/
@@ -5308,15 +5408,19 @@ https://twitter.com/oshpark
 https://twitter.com/climagic
 https://archive.org/
 https://media.ccc.de/v/31c3_-_6373_-_en_-_saal_6_-_201412291600_-_the_only_thing_we_know_about_cyberspace_is_that_its_640x480_-_olia_lialina#t=621
+
+
 # History
 
 [TODO] Move this elsewhere
 
-https://www.youtube.com/watch?v=TfwKYUmoC-k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=17&t=0s
+[Adam Savage's Computer History Collection! (Youtube)](https://www.youtube.com/watch?v=TfwKYUmoC-k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=17)
 
 ## Perserving data
 
 https://media.ccc.de/v/31c3_-_6373_-_en_-_saal_6_-_201412291600_-_the_only_thing_we_know_about_cyberspace_is_that_its_640x480_-_olia_lialina#t=3641
+
+
 # Other odd things:
 
 // Potentially move these elsewhere
@@ -5335,18 +5439,10 @@ generic midi use (paged out 002 pg 24)
 
 rop
 
-## Ham Radio
-
-LORA
-
-2.4Ghz patch antenna
-
-electronically tunable filters
-
 ## Blog posts that dont fit anywhere eles but that you should totally read
 
 https://hackaday.com/2020/02/20/we-ruined-status-leds-heres-why-that-needs-to-change/
 
-[Foone one weird adapters](https://twitter.com/Foone/status/1224206741602062336)
+[Foone one weird adapters (Twitter Thread)](https://twitter.com/Foone/status/1224206741602062336)
 
 

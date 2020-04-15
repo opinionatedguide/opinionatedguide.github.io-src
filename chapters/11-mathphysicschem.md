@@ -1,61 +1,63 @@
+
+
 # Chapter 11 - High Level Overview of Math, Physics, and Chemistry (Sorry...)
 
 [TODO]
 
-## Ⅰ - Math
+# Chapter 11.1 - Math
 
 some motivation, Klien bottle guy
 
-### 1 - Algebra
+## 1 - Algebra
 
 Imaginary numbers, systems of equations
 
-### 2 - Discrete Math
+## 2 - Discrete Math
 
-### 3 - Trig
+## 3 - Trig
 
-### 4 - Calculus
+## 4 - Calculus
 
-3b1b: https://www.youtube.com/watch?v=WUvTyaaNkzM&t=12s
+3b1b: [The Essence of Calculus, Chapter 1 (YouTube, Series)](https://www.youtube.com/watch?v=WUvTyaaNkzM)
 
-### 5 - Differential Equations
+## 5 - Differential Equations
 
-3b1b: https://www.youtube.com/watch?v=p_di4Zn4wz4
+3b1b: [Differential equations, studying the unsolvable (YouTube, Series)](https://www.youtube.com/watch?v=p_di4Zn4wz4)
 
-### 6 - Matrix Theory / Linear Algebra
+## 6 - Matrix Theory / Linear Algebra
 
 https://readhacker.news/s/4aVPz
 
 https://readhacker.news/s/4aUb6
 
-3b1b: https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+3b1b: [Essence of linear algebra, chapter 1 -- Vectors (YouTube,Series)](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
-### 7 - Signals
+## 7 - Signals
 
-3b1b: https://www.youtube.com/watch?v=spUNpyF58BY
+3b1b: [But what is the Fourier Transform? A visual introduction. (YouTube)](https://www.youtube.com/watch?v=spUNpyF58BY)
 
 https://ocw.mit.edu/resources/res-6-007-signals-and-systems-spring-2011/
 
 https://en.wikibooks.org/wiki/Signals_and_Systems
 
-## Ⅱ - Physics
+# Chapter 11.2 - Physics
 
-### 1 - Newtonian
+## 1 - Newtonian
 
-### 2 - Electromagnetism
+## 2 - Electromagnetism
 
-### 3 - Relativity and the Quantum
+## 3 - Relativity and the Quantum
 
-## Ⅲ - Chem
+# Chapter 11.3 - Chem
 
-### 1 - Atomic Structure, Basics of the Table, Bonding
+## 1 - Atomic Structure, Basics of the Table, Bonding
 
-### 2 - Acid/base, Electrochem, Thermochem, Photochem
+## 2 - Acid/base, Electrochem, Thermochem, Photochem
 
-### 3 - Organic Chemistry
+## 3 - Organic Chemistry
 
-## Continued
+# Chapter 11.4 - 'The Rest'
 
-### Other sources, interesting videos, etc:
+## Other sources, interesting videos, etc:
 
 - Minute Physics, Thought Emporium, Cody's Lab, 3Blue1Brown

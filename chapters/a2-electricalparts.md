@@ -1,3 +1,5 @@
+
+
 # Appendix B - Common electrical parts (appearence and numbers)
 
 [TODO]
