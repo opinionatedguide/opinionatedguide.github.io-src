@@ -89,6 +89,8 @@ In general I've found site specific forms and Reddit to be the best platforms fo
 
 No matter what you care about, know there's a [wide range of communities](https://www.youtube.com/watch?v=0QO0yZldC2M&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=229&t=0s) that would be thrilled to have you, and you can always combine what you learn here with any of the other interests you have to make the things your passionate about better!
 
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/0QO0yZldC2M?list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Further reading:
 
 [Assholes: A Probing Examination][https://www.nomachetejuggling.com/2019/06/03/dont-hire-assholes/] 

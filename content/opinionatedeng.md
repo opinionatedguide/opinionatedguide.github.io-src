@@ -124,12 +124,13 @@ In general I've found site specific forms and Reddit to be the best platforms fo
 
 No matter what you care about, know there's a [wide range of communities](https://www.youtube.com/watch?v=0QO0yZldC2M&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=229&t=0s) that would be thrilled to have you, and you can always combine what you learn here with any of the other interests you have to make the things your passionate about better!
 
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/0QO0yZldC2M?list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Further reading:
 
 [Assholes: A Probing Examination][https://www.nomachetejuggling.com/2019/06/03/dont-hire-assholes/] 
 
 [Death to Bullshit](https://deathtobullshit.com/) [(mirror)](https://web.archive.org/web/20191217003321/http://deathtobullshit.com/)
-
 
 # Ⅱ - Learn how to learn
 
@@ -1637,6 +1638,8 @@ Finally, a quick note about Western Digital Green drives: Linux eats them. Thank
 > A  setting  of  30 seconds is recommended for Linux use.  Permitted values are from 8 to 12 seconds, and from 30 to 300 seconds in 30-second increments.  Specify a value of
 > zero (0) to disable the WD idle3 timer completely (NOT RECOMMENDED!).
 
+[Shouting in the Datacenter (YouTube)](https://www.youtube.com/watch?v=tDacjrSCeq4&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
 ### SSD
 
 Solid state drives, like HDDs, come in many capacites, speeds, and form factors; however, SSDs come in many, many more than HDDs. The primary two of note at the moment are SATA SSDs and NVMe SSDs. Sata SSDs are typically the same size and shape (though sometimes a bit thinner) as the normal 2.5" laptop hard drive; however, some other standards are used such as mSATA and m.2. Unfortunately, the m.2 spec is slightly confusing, with some drives being SATA based and some being NVMe based, and the m.2 slot itself supporting any mix (just SATA, just NVMe, or both), so when getting a drive you need to be careful that your motherboard's m.2 slot and the drive are compatible.
@@ -2563,7 +2566,7 @@ We'll explore more of the OS later, but for now I think the information overload
 
 # Chapter 5 - Intro to Angry Pixies
 
-
+[A simple guide to electronic components (YouTube)](https://www.youtube.com/watch?v=6Maq5IyHSuc&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 ## The Tools of the Trade
 
@@ -2645,6 +2648,8 @@ or a cheap, low resolution, low speed one from Ebay. For most uses, both of thes
 
 But what are these actually used for day to day, and why would you want one? [TODO]
 
+[Quake on an oscilloscope (YouTube)](https://www.youtube.com/watch?v=GIdiHh6mW58&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
 ### The Logic Analyzer
 
 Logic Analyzers... analyze logic. Who knew? But what does that mean? Well, in reality they are *somewhat* similar to an oscilloscope in that they show a voltage over time, the difference is they only show either on or off over time based on the set TTL (Transistor–transistor logic) voltage. This lets you eavesdrop on the digital communication going on over a wire. Here's an example output:
@@ -2683,9 +2688,17 @@ potentiometer read from aduino full range (center tap or max resitor)
 
 [TODO]
 
+[True, Reactive, Apparent & Deformed Power](https://www.youtube.com/watch?v=cxXmWZDwNEs&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
+[Why electrolytic capacitors are actually kinda shitty 💩 (YouTube)](https://www.youtube.com/watch?v=WytU5uj78-4&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
+
+
 ## Inductors
 
 [TODO]
+
+[RGB LED, Inductively Powered, Frequency Controlled (YouTube)](https://www.youtube.com/watch?v=3DeOPN1Cl1Y&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 Motors
 
@@ -3280,6 +3293,7 @@ http://feed.grantcuster.com/
 
 [Coding Adventure: Ray Marching (YouTube)](https://www.youtube.com/watch?v=Cp5WWtMoeKg)
 [Coding Adventure: Marching Cubes(Youtube)](https://www.youtube.com/watch?v=M3iI2l0ltbE)
+[Coding Adventure: Portals (YouTube)](https://www.youtube.com/watch?v=cWpFZbjtSQg&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 
 
@@ -3289,17 +3303,8 @@ http://feed.grantcuster.com/
 
 # Chapter 8 - Low Level Programming
 
-<div     float: none;
-    clear: both;
-    width: 100%;
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;>
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Snr113r5ocY?list=FLFMnqfaTa1se1LfbCB3peJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<iframe width="100%" height="450" src="https://www.youtube.com/embed/Snr113r5ocY?list=FLFMnqfaTa1se1LfbCB3peJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> width="1277" height="727"
 
 > [Video Link: Program in C (YouTube)](https://www.youtube.com/watch?v=Snr113r5ocY&list=FLFMnqfaTa1se1LfbCB3peJQ&index=126)
 
@@ -3418,10 +3423,6 @@ Modify the original python program to support a pretty cli input in a pretty way
 ## Part 4, getting our toes wet with embeded systems
 
 Finally, let's go back and add a com port to the C code and send data to an arduino (can be simulated) and a TFT to display the currently active task and time elapsed.
-
-## Part 5, Coding practice and compititons
-
-[Obfuscated C programs: Introduction (YouTube)](https://www.youtube.com/watch?v=rwOI1biZeD8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=15&t=0s) Obvuscated C, https://www.ioccc.org/
 
 # Chapter 9.1 - Other Languages of interest
 
@@ -3695,7 +3696,7 @@ Look at Chapter 18 for information on Databases
 
 ## Coding Challanges
 
-https://www.ioccc.org/
+[Obfuscated C programs: Introduction (YouTube)](https://www.youtube.com/watch?v=rwOI1biZeD8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=15&t=0s) Obvuscated C, https://www.ioccc.org/
 
 <img src="{static}/openg/ginny.png" alt="ginny" style="zoom:50%;" />
 
@@ -3859,6 +3860,10 @@ https://en.wikibooks.org/wiki/Signals_and_Systems
 
 # Chapter 11.4 - 'The Rest'
 
+## English
+
+[TODO] Because the majority of the Internet and most publications are in English
+
 ## Other sources, interesting videos, etc:
 
 - Minute Physics, Thought Emporium, Cody's Lab, 3Blue1Brown
@@ -3905,6 +3910,8 @@ https://hackaday.com/2019/05/20/integrated-circuits-can-be-easy-to-understand-wi
 [Uncovering the Silicon: Demystifying How Chips are Built and How They Work (YouTube)](https://www.youtube.com/watch?v=VNzkhZBjo5k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 ### 555, OpAmp, 74-Series Logic
+
+[555 Timer IC (YouTube)](https://www.youtube.com/watch?v=fLaexx-NMj8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 potato semi
 
@@ -4194,6 +4201,8 @@ At this point I highly recommend '[The Art of Exploitation](https://nostarch.com
 
 # Chapter 21 - Exploitation
 
+![STACK](https://imgs.xkcd.com/comics/stack.png)
+
 Often when we think about Exploitation, better known as hacking, we conjur images of a more-punk-than-cyber cyberpunk person clicking away wildly on a keyboard as code flies by, like the [1995 movie, Hackers](https://en.wikipedia.org/wiki/Hackers_(film)), and to some extent this isn't wrong, as one look around the floor at [DefCon](https://www.defcon.org/), will show you. And honestly, that's to by accident. While there are strictly professional security experts, those that work at corperations and banks, a large number do it for the lolz, for fun, and to bring a little fun back into computing. Calling exploitation 'hacking' is almost a misnome, as hacking encompases a lot more than exploitation, and exploitation a lot more than hacking. For that reason, before we start, I recomend you watch [this video](https://www.youtube.com/watch?v=wjge1bVobN0), on speed running Super Mario 64, this is a prime example of exploitation in a non-harmful manner done for fun.
 
 [TODO]
@@ -4241,6 +4250,8 @@ MAC/IP spoofing
 sniffing
 
 ### Hardware
+
+[Intro to Hardware Reversing: Finding a UART and getting a shell (YouTube)](https://www.youtube.com/watch?v=ZmZuKA-Rst0&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 Talk about CPU bugs
 
@@ -4352,6 +4363,12 @@ https://twitter.com/Foone/status/910217984098017281
 Never claim something is 'unhackable':
 https://techcrunch.com/2019/05/10/eyedisk-encrypted-flash-drive-unhackable/,
 ![unhackable]({static}/openg/unhackable1.jpg)
+
+[DEF CON 18 - Zoz - Pwned By The Owner: What Happens When You Steal A Hacker's Computer (YouTube)](https://www.youtube.com/watch?v=Jwpg-AwJ0Jc)
+
+[Diabetics Are Hacking Their Own Insulin Pumps (YouTube)](https://www.youtube.com/watch?v=bouYRMItWnI)
+
+
 
 # Chapter 22 - Security
 
@@ -4493,7 +4510,14 @@ Before we start, I'll warn you this isn't easy, but it's also not as bad as it s
 While this book/guide/thing primarily focuses on the less mechancial-engieering-y side of things, it wouldn't make sense not to include at least a little about 3D printing, molding, materials, gears, springs, and the like. So, here goes:
 
 
+
+[Giant Mechanical Iris! Cut on a CNC Router (YouTube)](https://www.youtube.com/watch?v=u9KHhsnLhfM&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
 # Chapter 31 - Fine, I'll talk about AI
+
+[Neural Network Architectures (YouTube)](https://www.youtube.com/watch?v=oJNHXPs0XDk&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
+
 
 # Chapter 32 - Ham Radio
 
@@ -4510,6 +4534,10 @@ electronically tunable filters
 https://newhams.info/2017/02/17/rf-connector-types/
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">question of the day:<br>Analog TV is shut down in the US, right? so all the over-the-air TV is digital. And existing analog OTA frequencies are getting repurposed to other uses... so what am I seeing on UHF channel 60? it&#39;s got way more structure than the noise everywhere else. <a href="https://t.co/Jm9W9JsjgF">pic.twitter.com/Jm9W9JsjgF</a></p>&mdash; foone (@Foone) <a href="https://twitter.com/Foone/status/1240011033395073024?ref_src=twsrc%5Etfw">March 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+[Waveguides Explained (YouTube)](https://www.youtube.com/watch?v=r9-m17IPOco)
+
+[How a Crystal Radio Works (YouTube)](https://www.youtube.com/watch?v=0-PParSmwtE&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 # Chapter 33 - Music
 
@@ -5815,8 +5843,10 @@ rop
 
 ## Blog posts that dont fit anywhere eles but that you should totally read
 
-https://hackaday.com/2020/02/20/we-ruined-status-leds-heres-why-that-needs-to-change/
-
-[Foone one weird adapters (Twitter Thread)](https://twitter.com/Foone/status/1224206741602062336)
+- https://hackaday.com/2020/02/20/we-ruined-status-leds-heres-why-that-needs-to-change/
+- [Foone one weird adapters (Twitter Thread)](https://twitter.com/Foone/status/1224206741602062336)
+- [Building the World's Weirdest Fan (YouTube)](https://www.youtube.com/watch?v=77Y7DHfoFOk&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+- [Minetest Circuit Challenge (YouTube)](https://www.youtube.com/watch?v=nI8Q1bqT8QU&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+- 
 
 

@@ -42,6 +42,8 @@ https://hackaday.com/2019/05/20/integrated-circuits-can-be-easy-to-understand-wi
 
 ### 555, OpAmp, 74-Series Logic
 
+[555 Timer IC (YouTube)](https://www.youtube.com/watch?v=fLaexx-NMj8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
 potato semi
 
 # Chapter 12.2 - Opamps & Filters

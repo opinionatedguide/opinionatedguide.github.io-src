@@ -2,7 +2,7 @@
 
 # Chapter 5 - Intro to Angry Pixies
 
-
+[A simple guide to electronic components (YouTube)](https://www.youtube.com/watch?v=6Maq5IyHSuc&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 ## The Tools of the Trade
 
@@ -84,6 +84,8 @@ or a cheap, low resolution, low speed one from Ebay. For most uses, both of thes
 
 But what are these actually used for day to day, and why would you want one? [TODO]
 
+[Quake on an oscilloscope (YouTube)](https://www.youtube.com/watch?v=GIdiHh6mW58&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
 ### The Logic Analyzer
 
 Logic Analyzers... analyze logic. Who knew? But what does that mean? Well, in reality they are *somewhat* similar to an oscilloscope in that they show a voltage over time, the difference is they only show either on or off over time based on the set TTL (Transistor–transistor logic) voltage. This lets you eavesdrop on the digital communication going on over a wire. Here's an example output:
@@ -122,9 +124,17 @@ potentiometer read from aduino full range (center tap or max resitor)
 
 [TODO]
 
+[True, Reactive, Apparent & Deformed Power](https://www.youtube.com/watch?v=cxXmWZDwNEs&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
+[Why electrolytic capacitors are actually kinda shitty 💩 (YouTube)](https://www.youtube.com/watch?v=WytU5uj78-4&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
+
+
 ## Inductors
 
 [TODO]
+
+[RGB LED, Inductively Powered, Frequency Controlled (YouTube)](https://www.youtube.com/watch?v=3DeOPN1Cl1Y&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 Motors
 
