@@ -173,8 +173,8 @@ When we installed arch we actually changed the default shell from bash to zsh, b
   * alternatives to `top`, doesn't suck
 * prettyping
   * alternative to `ping`, pretty
-* diff-so-fancy, icdiff
-  * alternative to `diff`, but fancy
+* diff-so-fancy, icdiff, [Delta](https://github.com/dandavison/delta)
+  * alternative to `diff`, but better
 * ncdu
   * while much slower than `du` it's great for finding out what's eating storage space
 * [choose](https://github.com/theryangeary/choose)

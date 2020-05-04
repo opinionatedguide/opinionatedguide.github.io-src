@@ -40,6 +40,10 @@ tubes and how they work
 https://hackaday.com/2019/05/20/integrated-circuits-can-be-easy-to-understand-with-the-right-teachers/
 [Uncovering the Silicon: Demystifying How Chips are Built and How They Work (YouTube)](https://www.youtube.com/watch?v=VNzkhZBjo5k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
+[Reverse-engineering the TL431](http://www.righto.com/2014/05/reverse-engineering-tl431-most-common.html)
+
+
+
 ### 555, OpAmp, 74-Series Logic
 
 [555 Timer IC (YouTube)](https://www.youtube.com/watch?v=fLaexx-NMj8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
