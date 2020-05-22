@@ -3,7 +3,7 @@ Date: 9/23/2018 11:11
 Modified: 9/23/2018 11:11
 Category: Engineering
 Tags: Interview
-Slug: An Interview with LoialOtter
+Slug: An Interview with LoialOtter 
 Authors: Vega Deftwing
 
 

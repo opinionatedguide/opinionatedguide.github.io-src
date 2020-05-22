@@ -45,7 +45,7 @@ MARKDOWN = {
 }
 
 PLUGIN_PATHS = ["plugins"]
-PLUGINS = ["render_math","filetime_from_git"]
+PLUGINS = ["render_math"]
 
 DEFAULT_PAGINATION = 10
 
