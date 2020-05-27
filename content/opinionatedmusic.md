@@ -24,7 +24,7 @@ Alright, with motivation out of the way, let's make some noise! To do that thoug
 Go download VCV Rack from https://vcvrack.com/ and depending on your OS you'll need some sound drivers, MAC guys, sorry, no idea. On Windows you'll want to use ASIO, if you don't know what that is just go grab http://www.asio4all.org/ and use that, on Linux you'll want to use Jack https://wiki.archlinux.org/index.php/JACK_Audio_Connection_Kit. On Linux you may need to use a tool like Catia to actually connect the jack devices together (VCV to System Out)
 
 Go ahead and fire up VCV and a template patch should have opened up that looks some thing like this:
-![vcv1default](../../../../../../../../home/vega/git/local/openg2/content/opmusic/vcv1default.png)
+![vcv1default](/home/vega/git/local/openg2/content/opmusic/vcv1default.png)
 
 Windows guys, set your sound device to ASIO and fiddle around until you have sound working, Linux people RTFM, Mac people ヽ( ´¬`)ノ.
 That default patch should respond to input when you mash keys so you can test your sound settings
@@ -39,7 +39,7 @@ Wait. Big words. Stapphh.
 
 Alright. I'll backup So VCV rack actually emulates real hardware systems called modular synthesizers. VCV emulates the Eurorack standard of modular synths in particular. Skipping some finer details for a moment, the standard defines one nice thing, and that's the idea of 1 Volt per Octave note control. (If you don't know anything about electronics that's fine, but it might help here) In a real eurorack system the voltage running though the wires can range from -10 to +10Volts. Any wire can really be patched into any hole to get surprising results and all the signals are technically interchangeable, but generally in eurorack there are two categories of signals CV or 'Control Voltage' and 'Audio Rate' signals. The most common form of CV is this V/oct signal, where each volt represents a one octave change. A stable 0v (the same as no input) signal is 'Middle C' or C4 where 'C' is the note and '4' is the octave number. This is only 'generally' the case, but just stick with it for now. When you strike a key on your keyboard VCV is interpreting that keypress as a MIDI event, and converting that MIDI signal to a virtual CV signal. So, if you happen to press the C note on the 4th octave, you'll get... 0v, no change, but if you were to hit the C note one octave higher (C5) the note should be noticeably higher pitch and the output from the V/oct port would be 1V. In fact because of how our music system works, an octave is exactly a doubling in frequency so while 'C4' is 261.63Hz 'C5' is 523.25Hz). If you hit a C#5 note though the output voltage will be  1.08333V because there are 12 notes per octave (A, A#, B, C, C#, D, D#, E, F, F#, G, G#) and 1/12 is .08333 which is added to the 1V from being up one octave from from middle C (C4)
 
-![Stinkbomb](../../../../../../../../home/vega/git/local/openg2/content/opmusic/Stinkbomb.jpg)
+![Stinkbomb](/home/vega/git/local/openg2/content/opmusic/Stinkbomb.jpg)
 
 > This is Stinkbomb's hardware Eurorack. Real Eurorack hardware is incredibly expensive!
 
@@ -55,7 +55,7 @@ Filters are a huge part of making good sounding music as often you'll have a goo
 
 The need for this may seem a bit weird at first, as if we're playing a note at exactly one frequency, say A at 220Hz, then why would we need to filter out anything? Well, most oscillators and real instruments alike will actually have multiple 'harmonics', that is it will play an A at 220, 440, 880, and so on with decreasing amplitude or even on other frequencies entirely that still have a musical influence on the signal. On the 'VCO-1' Oscillator loaded into the default patch here you can lessen these harmonics by switching the ANLG (Analog) and DIGI (Digital) switch on the right. This is because this oscillator can emulate either an 'ideal' digital oscillator which outputs a clean, sharp signal with less harmonics or an analog signal oscillator which includes a subtle amount of pitch drift and some smoothing of the output wave- of note, usually the analog characteristics, while technically flaws, are desirable.
 
-![harmonics](../../../../../../../../home/vega/git/local/openg2/content/opmusic/harmonics.png)
+![harmonics](/home/vega/git/local/openg2/content/opmusic/harmonics.png)
 
 > The top VCO is outputting an 'analog' emulating signal while the bottom is in digital mode. Look at how the Triangle output shape on the analog mode is smoothed out compared to the digital mode's sharp edges
 
@@ -65,11 +65,11 @@ So say we put the big 'FREQ' knob dead center, and give the 'FREQ' input jack wi
 
 Here, I'm showing modulating the filter frequency manually as well as showing what resonance is- it boots the signal right at the cut off frequency
 
-![filter](../../../../../../../../home/vega/git/local/openg2/content/gifs/filter.gif)
+![filter](/home/vega/git/local/openg2/content/gifs/filter.gif)
 
 Here, the input to the cut off frequency is modulated with an 'LFO' or Low Frequency Oscillator, which much like the VCO outputs a simple signal, but in this case the signal is low frequency, usually below human hearing range:
 
-![lfofilt](../../../../../../../../home/vega/git/local/openg2/content/gifs/lfofilt.gif)
+![lfofilt](/home/vega/git/local/openg2/content/gifs/lfofilt.gif)
 
 Alright, that's fine and all, but the cable going input to the 'FREQ' control on the VCF is coming from something called an 'ADSR'
 
@@ -79,7 +79,7 @@ So the adventure continues. 'ADSR' stands for 'Attack, Decay, Sustain, Release' 
 
 So, back to the 'ADSR' an ADSR generates a signal that looks like this:
 
-![adsr](../../../../../../../../home/vega/git/local/openg2/content/gifs/adsr.gif)
+![adsr](/home/vega/git/local/openg2/content/gifs/adsr.gif)
 
 That is, voltage will follow this shape over time. The 'Attack' knob sets how long it takes to reach the peak point, the Decay knob set's how long it will take to reach the sustain level, the sustain knob set's at what level the sustain should be held at, and the release knob set's how long the note should take to fade out from the sustain level after the key is released. Take note, the sustain knob controls a level, while the other three control time:
 
@@ -89,7 +89,7 @@ So, this output signal is fed to two places, the first is the frequency knob we 
 
 The mixer in this demo patch is super simple. It has 4 inputs, with one output. The sliders let you set the level of each input, and the 'CV' input of each slider let's you externally control the slider. Because the ADSR is fed into this input and the ADSR output is at 0V unless you hit a key the mixer actually mutes the signal until a key is pressed and then lets it play, fading out over the release period. The mixer also has one big volume knob ontop to set the master output volume of all 4 channels combined. Essentially the volume follows this shape of the ADSR signal over time. In times like this, the ADSR signal is called the 'envelope' for the sound. Really, the mixer is just a combination of multiple of a simpler component though, the VCA or Voltage Controlled Amplifier. This name is a bit misleading though, as really VCAs are usually used to bring a sounds volume down, like an attenuator. To show the simplest case I'll hook up a LFO to control a VCA's level, in turn changing the level of the signal passing though:
 
-![vcavult](../../../../../../../../home/vega/git/local/openg2/content/gifs/vcavult.gif)
+![vcavult](/home/vega/git/local/openg2/content/gifs/vcavult.gif)
 
 Also, above you'll see I used a 3rd party oscillator instead of the VCO-1 you've seen so far. Pictured is 'Basal' from the 'Vult-Free' collection of modules available on the VCV library page.
 
@@ -121,7 +121,7 @@ Oh, and the circle of fiths is a thing [TODO]
 
 Now that we have that mess out of the way let's talk shop and drop back into our rack. This time Let's start with a mostly clean slate. Make sure you can still get sound out, then remove every module except the Audio module. Alrighty, now we can get to business
 
-![phase](../../../../../../../../home/vega/git/local/openg2/content/opmusic/phase.png)
+![phase](/home/vega/git/local/openg2/content/opmusic/phase.png)
 
 
 
@@ -131,7 +131,7 @@ Now that we have that mess out of the way let's talk shop and drop back into our
 
 ### FM Synthesis
 
-![DX7 Operators](../../../../../../../../home/vega/git/local/openg2/content/opmusic/dx7.jpeg)
+![DX7 Operators](/home/vega/git/local/openg2/content/opmusic/dx7.jpeg)
 
 > [Source (Likely originally from the Yahmaha DX7 Manual)](https://scsynth.org/t/coding-fm-synthesis-algorithms/1381)
 
@@ -179,7 +179,7 @@ Panning, Widening
 
 ## Compression
 
-![compression](../../../../../../../../home/content/home/vega/git/local/openg2/content/gifs/compression.gif)
+![compression](/home/vega/git/local/openg2/content/gifs/compression.gif)
 
 <audio
     controls

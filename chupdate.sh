@@ -15,8 +15,21 @@ for i in ./chapters/*md; do
     sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/gifs/{static}\/gifs/g' $i
 done
 
-for i in ./chapters/*md; do
+for i in ./content/opinionateddesign.md; do
     sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/opdesign/{static}\/opdesign/g' $i
+done
+
+
+for i in ./content/opinionatedmusic.md; do
+    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/opmusic/{static}\/opmusic/g' $i
+done
+
+for i in ./content/opinionatedmusic.md; do
+    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/gifs/{static}\/gifs/g' $i
+done
+
+for i in ./content/opinionateddesign.md; do
+    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/gifs/{static}\/gifs/g' $i
 done
 
 #Build Chapters
@@ -51,7 +64,7 @@ echo "removed temp files"
 #sed 's/.\/imgs\//..\/imgs\//g' ./chapters/y.md > ./chapters/indev.md
 #echo "indev file generated"
 mv ./chapters/y.md ./content/opinionatedeng.md
-#echo "opininionatedeng.md replaced"
+#echo "opinionatedeng.md replaced"
 
 make html
 sleep 1
@@ -62,7 +75,7 @@ for j in ./chapters/*.md; do
     sed -i 's/{static}\/openg/\/home\/vega\/git\/local\/openg2\/content\/openg/g' $j
 done
 
-for j in ./chapters/*.md; do
+for j in ./content/opinionateddesign.md; do
     sed -i 's/{static}\/opdesign/\/home\/vega\/git\/local\/openg2\/content\/opdesign/g' $j
 done
 
@@ -71,5 +84,18 @@ for j in ./chapters/*.md; do
 done
 
 for j in ./chapters/*.md; do
+    sed -i 's/{static}\/gifs/\/home\/vega\/git\/local\/openg2\/content\/gifs/g' $j
+done
+
+
+for j in ./content/opinionatedmusic.md; do
+    sed -i 's/{static}\/opmusic/\/home\/vega\/git\/local\/openg2\/content\/opmusic/g' $j
+done
+
+for j in ./content/opinionatedmusic.md; do
+    sed -i 's/{static}\/gifs/\/home\/vega\/git\/local\/openg2\/content\/gifs/g' $j
+done
+
+for j in ./content/opinionateddesign.md; do
     sed -i 's/{static}\/gifs/\/home\/vega\/git\/local\/openg2\/content\/gifs/g' $j
 done
