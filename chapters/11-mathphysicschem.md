@@ -14,6 +14,8 @@ Imaginary numbers, systems of equations
 
 ## 2 - Discrete Math
 
+http://discrete.openmathbooks.org/dmoi3/
+
 ## 3 - Trig
 
 ## 4 - Calculus
@@ -33,6 +35,8 @@ https://readhacker.news/s/4aUb6
 3b1b: [Essence of linear algebra, chapter 1 -- Vectors (YouTube,Series)](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 ## 7 - Signals
+
+[An Interactive Introduction to the Fourier Transform](http://www.jezzamon.com/fourier/)
 
 3b1b: [But what is the Fourier Transform? A visual introduction. (YouTube)](https://www.youtube.com/watch?v=spUNpyF58BY)
 
@@ -55,6 +59,8 @@ https://en.wikibooks.org/wiki/Signals_and_Systems
 ## 2 - Acid/base, Electrochem, Thermochem, Photochem
 
 ## 3 - Organic Chemistry
+
+[Yeast that produce PENICILLIN - Whose Gene is it Anyway (YouTube)](https://youtu.be/X4lZo4Ogx-k?t=107)
 
 # Chapter 11.4 - 'The Rest'
 

@@ -205,14 +205,6 @@ Noise isolation both electrical and physical, headphone types (over, on, in), am
 
 ## Various Programs:
 
-**Git**
-
-[TODO]
-
-Show how to setup SSH keys, mention graphical git tools
-
-https://dhwthompson.com/2019/my-favourite-git-commit
-
 **Markdown**
 
 [TODO]
@@ -286,3 +278,11 @@ Vivaldi, Firefox, Syncthing, Beaker, IPFS, IRC - irssi, Telegram, Etherape, Wire
 **Shell Scripts**
 
 [TODO]
+
+# Chapter 6.1 - Git.
+
+[TODO]
+
+Show how to setup SSH keys, mention graphical git tools
+
+https://dhwthompson.com/2019/my-favourite-git-commit

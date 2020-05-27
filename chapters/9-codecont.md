@@ -10,6 +10,12 @@ Modify the original python program to support a pretty cli input in a pretty way
 
 Finally, let's go back and add a com port to the C code and send data to an arduino (can be simulated) and a TFT to display the currently active task and time elapsed.
 
+# Other resources and articles:
+
+[Good Coders Borrow, Great Coders Steal (StackOverflow Blog)](https://stackoverflow.blog/2020/05/20/good-coders-borrow-great-coders-steal/?cb=1)
+
+
+
 # Chapter 9.1 - Other Languages of interest
 
 ## Low Level

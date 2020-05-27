@@ -1,4 +1,12 @@
-# Chapter 34 - Art and Design
+Title: Opinionated Design
+Date: 2019-7-27 12:00
+Modified: 2020-5-27 12:00
+Category: Design
+Tags: Design
+Slug: OpinionatedDesign
+Authors: Vega Deftwing
+
+[TOC]
 
 Hey there.
 

@@ -128,6 +128,8 @@ potentiometer read from aduino full range (center tap or max resitor)
 
 [Why electrolytic capacitors are actually kinda shitty 💩 (YouTube)](https://www.youtube.com/watch?v=WytU5uj78-4&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
+[Ideal Capacitor's aren't real](https://en.wikipedia.org/wiki/Two_capacitor_paradox)
+
 
 
 ## Inductors

@@ -222,6 +222,10 @@ def is_prime(num):
 
 ## Making a full project
 
+### Part 0, Git
+
+Before we get started, I want to be sure you took the time to read the section on Git in Chapter 6.1 above. If you need to refer to a cheat sheet you can look in Apendix B.
+
 ### Part 1, Starting easy
 
 [TODO] guide to write an OO python program with libraries to read and write entries to a database-like file and a real database

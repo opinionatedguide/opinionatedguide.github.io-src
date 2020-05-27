@@ -193,7 +193,12 @@ https://arstechnica.com/tech-policy/2018/08/verizon-throttled-fire-departments-u
 
 ## An NSFW Note
 
-The 'Hacking' community in particular is usually very clear on sexual liberation/freedoms and given that technically minded people tend to have statistically significantly higher amounts of LGBTQIA+ people, it's relevant to mention. I don't want to go in depth or be your source of sex education, but I do think skipping over this would be doing the community some injustice. As such I'd also like to link to some videos providing sexual education, https://www.youtube.com/watch?v=L-q-tSHo9Ho&list=FLFMnqfaTa1se1LfbCB3peJQ&index=103&t=0s
+The 'Hacking' community in particular is usually very clear on sexual liberation/freedoms and given that technically minded people tend to have statistically significantly higher amounts of LGBTQIA+ people, it's relevant to mention. I don't want to go in depth or be your source of sex education, but I do think skipping over this would be doing the community some injustice. As such I'd also like to link to some videos providing sexual education, [The truth about unwanted arousal | Emily Nagoski , YouTube](https://www.youtube.com/watch?v=L-q-tSHo9Ho&list=FLFMnqfaTa1se1LfbCB3peJQ&index=103&t=0s)
+
+```bash
+TypeError:
+no implicit conversion of Gender into Boolean
+```
 
 Finally, a little less NSFW, the Maker and engineering communities also tend to overlap rather heavily with more artistically minded and sub-culture heavy groups, ranging from those obsessed with comics to anime nerds or furries. I really recommend you do at least a little research into various sub cultures and geek culture to better understand some of the people you'll probably interact with. You might just find something new you enjoy while you're at it.
 
@@ -208,6 +213,8 @@ If you've made it this far I just want to say thank you. We need more people to 
 
 [Please Consider My Application to Give You Labor So I Can Stay Alive](https://www.mcsweeneys.net/articles/please-consider-my-application-to-give-you-labor-so-i-can-stay-alive)
 
+[The Great Asshole Fallacy](https://500ish.com/the-great-asshole-fallacy-82e108a755c7)
+
 [Ameyama's Values Update](https://ameyama.com/blog/values-update)
 
 [How to Dropout](http://ranprieur.com/essays/dropout.html)
@@ -219,3 +226,6 @@ If you've made it this far I just want to say thank you. We need more people to 
 ## TODO
 
 Education, college, prices, highschool homework and personal time, Drugs,
+
+[Should I block ads?](https://shouldiblockads.com/)
+

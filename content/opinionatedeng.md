@@ -2692,6 +2692,8 @@ potentiometer read from aduino full range (center tap or max resitor)
 
 [Why electrolytic capacitors are actually kinda shitty 💩 (YouTube)](https://www.youtube.com/watch?v=WytU5uj78-4&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
+[Ideal Capacitor's aren't real](https://en.wikipedia.org/wiki/Two_capacitor_paradox)
+
 
 
 ## Inductors
@@ -2938,14 +2940,6 @@ Noise isolation both electrical and physical, headphone types (over, on, in), am
 
 ## Various Programs:
 
-**Git**
-
-[TODO]
-
-Show how to setup SSH keys, mention graphical git tools
-
-https://dhwthompson.com/2019/my-favourite-git-commit
-
 **Markdown**
 
 [TODO]
@@ -3020,6 +3014,13 @@ Vivaldi, Firefox, Syncthing, Beaker, IPFS, IRC - irssi, Telegram, Etherape, Wire
 
 [TODO]
 
+# Chapter 6.1 - Git.
+
+[TODO]
+
+Show how to setup SSH keys, mention graphical git tools
+
+https://dhwthompson.com/2019/my-favourite-git-commit
 
 # Chapter 7 - Let's write some Code
 
@@ -3243,6 +3244,10 @@ def is_prime(num):
 
 ## Making a full project
 
+### Part 0, Git
+
+Before we get started, I want to be sure you took the time to read the section on Git in Chapter 6.1 above. If you need to refer to a cheat sheet you can look in Apendix B.
+
 ### Part 1, Starting easy
 
 [TODO] guide to write an OO python program with libraries to read and write entries to a database-like file and a real database
@@ -3385,7 +3390,7 @@ using a code editor, header files, libraries, writing and using a Make file, std
 
 [TODO]
 
-gdb + gef
+gdb + gef, gdbfrontend, Valgrind, https://cdecl.org/, etc.
 
 overflows
 
@@ -3423,6 +3428,12 @@ Modify the original python program to support a pretty cli input in a pretty way
 ## Part 4, getting our toes wet with embeded systems
 
 Finally, let's go back and add a com port to the C code and send data to an arduino (can be simulated) and a TFT to display the currently active task and time elapsed.
+
+# Other resources and articles:
+
+[Good Coders Borrow, Great Coders Steal (StackOverflow Blog)](https://stackoverflow.blog/2020/05/20/good-coders-borrow-great-coders-steal/?cb=1)
+
+
 
 # Chapter 9.1 - Other Languages of interest
 
@@ -3816,6 +3827,8 @@ Imaginary numbers, systems of equations
 
 ## 2 - Discrete Math
 
+http://discrete.openmathbooks.org/dmoi3/
+
 ## 3 - Trig
 
 ## 4 - Calculus
@@ -3835,6 +3848,8 @@ https://readhacker.news/s/4aUb6
 3b1b: [Essence of linear algebra, chapter 1 -- Vectors (YouTube,Series)](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 ## 7 - Signals
+
+[An Interactive Introduction to the Fourier Transform](http://www.jezzamon.com/fourier/)
 
 3b1b: [But what is the Fourier Transform? A visual introduction. (YouTube)](https://www.youtube.com/watch?v=spUNpyF58BY)
 
@@ -3857,6 +3872,8 @@ https://en.wikibooks.org/wiki/Signals_and_Systems
 ## 2 - Acid/base, Electrochem, Thermochem, Photochem
 
 ## 3 - Organic Chemistry
+
+[Yeast that produce PENICILLIN - Whose Gene is it Anyway (YouTube)](https://youtu.be/X4lZo4Ogx-k?t=107)
 
 # Chapter 11.4 - 'The Rest'
 
@@ -3975,6 +3992,7 @@ At this point I highly recommend *'Practical Electronics for Inventors'* ISBN 97
 
 https://taleri.files.wordpress.com/2014/02/practical_electronics_for_inventors_-_scherz_paul.pdf
 
+[Hardware isn't generally copyrightable](https://web.archive.org/web/20120114234704/http://wiki.openhardware.org/Hardware_Isn't_Generally_Copyrightable)
 
 # Chapter 13 - Digital Logic
 
@@ -4371,6 +4389,8 @@ https://techcrunch.com/2019/05/10/eyedisk-encrypted-flash-drive-unhackable/,
 [DEF CON 18 - Zoz - Pwned By The Owner: What Happens When You Steal A Hacker's Computer (YouTube)](https://www.youtube.com/watch?v=Jwpg-AwJ0Jc)
 
 [Diabetics Are Hacking Their Own Insulin Pumps (YouTube)](https://www.youtube.com/watch?v=bouYRMItWnI)
+
+[Big List of Naughty Strings (Github)](https://github.com/minimaxir/big-list-of-naughty-strings)
 
 
 
@@ -5206,6 +5226,11 @@ Before we start, I'll warn you this isn't easy, but it's also not as bad as it s
 
 [TODO]
 
+[FPGA Linux Kernel drivers](https://www.kernel.org/doc/html/latest/driver-api/fpga/index.html)
+
+[An FPGA that only plays Doom](https://twitter.com/sylefeb/status/1258808333265514497)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The DooM-chip! It will run E1M1 till the end of times (or till power runs out, whichever comes first).<br>Algorithm is burned into wires, LUTs and flip-flops on an <a href="https://twitter.com/hashtag/FPGA?src=hash&amp;ref_src=twsrc%5Etfw">#FPGA</a>: no CPU, no opcodes, no instruction counter. <br>Running on Altera CycloneV + SDRAM. (1/n) <a href="https://t.co/wd7j4JnfWn">pic.twitter.com/wd7j4JnfWn</a></p>&mdash; Sylvain Lefebvre (@sylefeb) <a href="https://twitter.com/sylefeb/status/1258808333265514497?ref_src=twsrc%5Etfw">May 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 # Chapter 30 - 3D printing, CNC, and making things
 
@@ -5225,7 +5250,7 @@ While this book/guide/thing primarily focuses on the less mechancial-engieering-
 
 # Chapter 32 - Ham Radio
 
-<img src="/home/vega/git/local/openg2/content/openg/radioart.png" alt="radioart" style="zoom:50%;" />
+<img src=" /home/vega/git/local/openg2/content/openg/radioart.png " alt="radioart" style="zoom:50%;" />
 
 > '137Mhz' by u/CashewHut
 
@@ -5242,328 +5267,6 @@ https://newhams.info/2017/02/17/rf-connector-types/
 [Waveguides Explained (YouTube)](https://www.youtube.com/watch?v=r9-m17IPOco)
 
 [How a Crystal Radio Works (YouTube)](https://www.youtube.com/watch?v=0-PParSmwtE&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
-
-# Chapter 33 - Music
-
-## Why?
-
-This isn't to say I won't explain my reasoning, just that I'm not going to be apologetic when I say a lot of the audiophile gear is trash or that hating on digital music is misguided - though I will still likely talk about these things.
-
-## Getting Started
-
-Here's the part where I'm supposed to explain how to read music or something boring like that. Really though, that's not why you're here. So let me start by giving you a bit of motivation. In a bit I'll be going though how to use VCV Rack, a free (with paid addons, but those aren't necessary) program for making music. But as we go though each bit is going to look so -basic- that it's hard to see the bigger picture. So, here's that bigger picture: This track was made entirely with VCV rack:
-
-<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=3503666064/size=small/bgcol=ffffff/linkcol=0687f5/track=3864536185/transparent=true/" seamless><a href="http://vegadeftwing.bandcamp.com/album/content-2">Content by Vega Deftwing</a></iframe>
-
-Alright, with motivation out of the way, let's make some noise! To do that though we're gonna need just a few things:
-Go download VCV Rack from https://vcvrack.com/ and depending on your OS you'll need some sound drivers, MAC guys, sorry, no idea. On Windows you'll want to use ASIO, if you don't know what that is just go grab http://www.asio4all.org/ and use that, on Linux you'll want to use Jack https://wiki.archlinux.org/index.php/JACK_Audio_Connection_Kit. On Linux you may need to use a tool like Catia to actually connect the jack devices together (VCV to System Out)
-
-Go ahead and fire up VCV and a template patch should have opened up that looks some thing like this:
-![vcv1default]({static}/opmusic/vcv1default.png)
-
-Windows guys, set your sound device to ASIO and fiddle around until you have sound working, Linux people RTFM, Mac people ヽ( ´¬`)ノ.
-That default patch should respond to input when you mash keys so you can test your sound settings
-
-Final note on that, sound cards and their drivers/software (asio/jack/etc.) have a few important settings you should know about. First, is the 'buffer size'. Frankly, this isn't all the important to understand from a technical perspective but the gist is the lower the buffer size the lower the latency, and higher the higher the latency (latency is how long it takes for sound to come out after you hit a key and is bad); however, the lower the buffer size the more likely you are to have audio underuns, this makes your sound do this weird robotty sound like it was recorded on an Atari2600, make nasty beeps, or cut out entirely. The size you can set your buffer to will vary depending on the hardware you have in your computer, but generally I can get away with 128 and I'll bump it up to 256 when working on large projects if I notice the above issues. You may need to try up to 512 or 1024 though.
-
-Alright, that pita outa the way, lets *actually* make some noise.
-
-The reason we're starting in VCV rack is it exposes a lot of the raw ideas and fundamentals of how music works behind the scenes, raw frequencies and modulation open to see. In that default patch there we start with a MIDI (Musical Instrument Digital Interface) input which outputs a 'voltage' from the V/oct (Volt per Octave) output, which is fed into an VCO's (Voltage Controlled Oscillator) V/oct input.
-
-Wait. Big words. Stapphh.
-
-Alright. I'll backup So VCV rack actually emulates real hardware systems called modular synthesizers. VCV emulates the Eurorack standard of modular synths in particular. Skipping some finer details for a moment, the standard defines one nice thing, and that's the idea of 1 Volt per Octave note control. (If you don't know anything about electronics that's fine, but it might help here) In a real eurorack system the voltage running though the wires can range from -10 to +10Volts. Any wire can really be patched into any hole to get surprising results and all the signals are technically interchangeable, but generally in eurorack there are two categories of signals CV or 'Control Voltage' and 'Audio Rate' signals. The most common form of CV is this V/oct signal, where each volt represents a one octave change. A stable 0v (the same as no input) signal is 'Middle C' or C4 where 'C' is the note and '4' is the octave number. This is only 'generally' the case, but just stick with it for now. When you strike a key on your keyboard VCV is interpreting that keypress as a MIDI event, and converting that MIDI signal to a virtual CV signal. So, if you happen to press the C note on the 4th octave, you'll get... 0v, no change, but if you were to hit the C note one octave higher (C5) the note should be noticeably higher pitch and the output from the V/oct port would be 1V. In fact because of how our music system works, an octave is exactly a doubling in frequency so while 'C4' is 261.63Hz 'C5' is 523.25Hz). If you hit a C#5 note though the output voltage will be  1.08333V because there are 12 notes per octave (A, A#, B, C, C#, D, D#, E, F, F#, G, G#) and 1/12 is .08333 which is added to the 1V from being up one octave from from middle C (C4)
-
-![Stinkbomb]({static}/opmusic/Stinkbomb.jpg)
-
-> This is Stinkbomb's hardware Eurorack. Real Eurorack hardware is incredibly expensive!
-
-Alright. Fuck that's complicated. So, to boil that into a digestible chunk, you press a higher key, a higher voltage comes out, lower key, lower voltage. Keys above C4 will output a positive voltage, keys below a negative voltage.
-
-So we hit a key, voltage comes from V/oct on the MIDI->CV interface and goes to the Voltage Controlled Oscillator, which, as it's name suggests uses these voltages to control how it oscillates (moves). The V/oct input directly manipulates the frequency, but there's also this big honking frequency knob just begging to be twisted. That knob can be used to make it so 0V corresponds to a different note. For example, if we right click the frequency knob to enter a value directly, and enter '440' Hz that would make 0V into an 'A4' note (A is a common reference pitch, as it's just multiples of 110Hz so it's easy to remember) Now each key will just be 'transposed' that is they'll all be shifted over a few notes.
-
-You can also turn this knob to something out of tune to get things completely out of the classical scale. The fine knob below does the same thing, but gives you fine control (obviously)
-
-Alright, we'll come back to the VCO later, but let's follow the signal path a bit further. The VCO has a wire coming from the Saw wave output into a VCF or 'Voltage Controlled Filter'.
-
-Filters are a huge part of making good sounding music as often you'll have a good sound but it'll have too much low or high end and you just want to cut it out. This filter actually has 2 outputs, one for a 'High Pass Filter' (HPF) and one for a 'Low Pass Filter' (LPF) as the names imply, a HPF lets high frequencies though and cuts the low end and a LPF cuts the high end but lets the low though. LPFs are generally used more as usually it's more desirable to cut the harsh highs out of a sound than the humming, thumping lows. This is exactly what has been done in the default patch here. The final basic (filters get really complicated) thing you should know about a filter is how they have have a cut-off frequency. That is the point at which the filter starts cutting the sound. This is adjustable, so say with a Low Pass Filter we could set the frequency really low and only let though the lowest frequency sounds or set in nice and open to just cut out the really hissy stuff. We'll talk about more complex stuff like resonance in a bit.
-
-The need for this may seem a bit weird at first, as if we're playing a note at exactly one frequency, say A at 220Hz, then why would we need to filter out anything? Well, most oscillators and real instruments alike will actually have multiple 'harmonics', that is it will play an A at 220, 440, 880, and so on with decreasing amplitude or even on other frequencies entirely that still have a musical influence on the signal. On the 'VCO-1' Oscillator loaded into the default patch here you can lessen these harmonics by switching the ANLG (Analog) and DIGI (Digital) switch on the right. This is because this oscillator can emulate either an 'ideal' digital oscillator which outputs a clean, sharp signal with less harmonics or an analog signal oscillator which includes a subtle amount of pitch drift and some smoothing of the output wave- of note, usually the analog characteristics, while technically flaws, are desirable.
-
-![harmonics]({static}/opmusic/harmonics.png)
-
-> The top VCO is outputting an 'analog' emulating signal while the bottom is in digital mode. Look at how the Triangle output shape on the analog mode is smoothed out compared to the digital mode's sharp edges
-
-You'll also notice there's a third wire running into the filter though- into an input labeled 'freq'. This input modulates the filter's cut off frequency. You wont visually see the knob change but you will hear the filter's cut off change based on the signal applied to this input but only if the 'Freq CV' knob is turned up. The 'Freq CV' knob is what's known as an attenuverter (a portamento of 'Attenuator' and 'Inverter'). This knob, when facing dead center says 'let nothing though' while all the way right lets the full signal (from the freq input) though, and all the way left lets the full signal though but inverts it first. Leaning right but not all the way will 'Attenuate' or weaken the signal first. I think you get the idea.
-
-So say we put the big 'FREQ' knob dead center, and give the 'FREQ' input jack wire carrying a very slow sine wave that goes between 0 and 10V, and set the 'FREQ CV' knob all the way right: This will bring the cut off higher and higher from it's starting position, and then bring it back to the starting level. If we instead turn the 'FREQ CV' knob all the way left, it'll bring the cut off frequency lower before turning back around and coming to it's starting position. Putting it at a slight lean right will still do the same as we started with, but will have less of an impact, making the sound much less 'jumpy' and tame. Really, that's what attenuverter's are for, taming an input signal.
-
-Here, I'm showing modulating the filter frequency manually as well as showing what resonance is- it boots the signal right at the cut off frequency
-
-![filter]({static}/gifs/filter.gif)
-
-Here, the input to the cut off frequency is modulated with an 'LFO' or Low Frequency Oscillator, which much like the VCO outputs a simple signal, but in this case the signal is low frequency, usually below human hearing range:
-
-![lfofilt]({static}/gifs/lfofilt.gif)
-
-Alright, that's fine and all, but the cable going input to the 'FREQ' control on the VCF is coming from something called an 'ADSR'
-
-So the adventure continues. 'ADSR' stands for 'Attack, Decay, Sustain, Release' and it does exactly that. But before we understand the output of an ADSR we have to look at it's input- 'Gate' and 'Retrig'
-
-'Gates', in modular, are simply a positive (sometimes needing to be 5V or higher) signals that represent that something is happening. Usually, that a key is being held. And that's exactly what's going on here. When you hold a key the 'Gate' output of  the MIDI->CV module is active. When you release it, the output goes off. You can see this by looking at the green indicator light where the gate output is on the MIDI->CV module when you hold or release a key. 'Retrig' is similar, though it only outputs a short pulse every time you press a key. This is handy because you may press a second key while already holding one key, meaning the gate output should stay on, but the retrig output will have sent a pulse each time you pressed a key (once when you pressed the key your holding, another time when you press a different key while still holding the original key).
-
-So, back to the 'ADSR' an ADSR generates a signal that looks like this:
-
-![adsr]({static}/gifs/adsr.gif)
-
-That is, voltage will follow this shape over time. The 'Attack' knob sets how long it takes to reach the peak point, the Decay knob set's how long it will take to reach the sustain level, the sustain knob set's at what level the sustain should be held at, and the release knob set's how long the note should take to fade out from the sustain level after the key is released. Take note, the sustain knob controls a level, while the other three control time:
-
-Alright, so when the ADSR get's a gate signal it'll go though the Attack and Decay stages and wait at the Sustain level until the Gate is released or a Retrig signal is sent telling the ADSR to repeat the Attack and Decay stages.
-
-So, this output signal is fed to two places, the first is the frequency knob we saw before. This will result in the frequency cutoff going high then coming down to a reasonable level, then cutting down to just low frequencies as a note is released. The other place the signal goes is into the mixer:
-
-The mixer in this demo patch is super simple. It has 4 inputs, with one output. The sliders let you set the level of each input, and the 'CV' input of each slider let's you externally control the slider. Because the ADSR is fed into this input and the ADSR output is at 0V unless you hit a key the mixer actually mutes the signal until a key is pressed and then lets it play, fading out over the release period. The mixer also has one big volume knob ontop to set the master output volume of all 4 channels combined. Essentially the volume follows this shape of the ADSR signal over time. In times like this, the ADSR signal is called the 'envelope' for the sound. Really, the mixer is just a combination of multiple of a simpler component though, the VCA or Voltage Controlled Amplifier. This name is a bit misleading though, as really VCAs are usually used to bring a sounds volume down, like an attenuator. To show the simplest case I'll hook up a LFO to control a VCA's level, in turn changing the level of the signal passing though:
-
-![vcavult]({static}/gifs/vcavult.gif)
-
-Also, above you'll see I used a 3rd party oscillator instead of the VCO-1 you've seen so far. Pictured is 'Basal' from the 'Vult-Free' collection of modules available on the VCV library page.
-
-Finally, the output of just the first channel of the mixer is fed into the scope so that when you press a key you can see the signal your generating. To understan this it's easiest to just drag the cable coming out of the VCO's 'SAW' output to the VCO's 'Sine' Output. Now when you press a key instead of seeing a saw wave you should see a sine wave.
-
-Finally, I want to mention that at least by default this setup is 'Monophonic' (Mono = One , Phonic = Voice) meaning that even if you hit 2 keys at once you'll only hear the note from the last key you pressed. We'll explore Polyphonic (Many Vocie) and Paraphonic (Para = beside, or side by side) systems later.
-
-## Theory
-
-I'm going to be honest. I can't read music and I don't know scales. Why, then, would I in any way think I'm qualified to write anything about music? Well, let me stop you right there, I'm not. I make music for fun. However, I like to think that people enjoy my music and I enjoy listening to it myself as I make it, and though my experience I've picked up a little here and there to make sure things don't sound awful. Furthermore, my background is primarily technically and there's actually an insane amount of overlap with the incredibly technical and music. Fundamentally music is just doing math with frequencies after all.
-
-Our ears are weird. They're incredibly good at math. We hear things logarithmically, that's why 10watts of speaker output power is only about twice as loud as 1watt and we can tell if two notes are even slightly off a perfect ratio even if we're not thinking about it. (If you hear one tone at 220Hz and another at 441Hz, only 1hz off of correct, you'll probably be able to tell)
-
-Out ears also like integer devisions of musical ratios- I'm sure you've heard the term 'perfect fifth'. And though our lives our ears get accustomed to hearing and feeling things associated with chord progressions. Even someone whose never written music or tried to learn anything about music theory can pick up on how a chord with more complex ratios creates tension that begs to be resolved to something simper (Think the Duuun-uh of the Jaw's theme).
-
-On the other hand perfection is boring, our ears and minds beg for stimulation, for surprise, for shock. Drums make complex sounds, that, while tuned, aren't playing a constant note and we want our music to have sufficient progression, not just repeat the same sequence endlessly. A gnarly drop in some Dubstep or the cannon fire in the 1812 Overture both serve functionally a similar purpose.
-
-The most common scale worldwide, the chromatic scale, uses 12 notes in an octave tuned to an equal temperament [TODO link] as to make as many chords as possible sound good is by far the most common but only one of an infinite ways that music can be represented. On the extreme end is Microtonal music, such as is possible on fretless [TODO link guitar, and this keyboard https://www.youtube.com/watch?v=APtJsaPxNgo] instruments. Furthermore, our choice of centering out keyboard with A set to 440Hz is realatively arbitrary (not that it's a bad thing: https://www.youtube.com/watch?v=EKTZ151yLnk).
-
-In the chromatic scale there are many other, more 'refined' scales like Minor, Major, Pentatonic, etc. These scales may be transposed to be centered around any note (or any frequency, since notes are just agreed upon frequencies and the ratios between them)
-
-And honestly? That's about all you need to know. Basically music is math and math makes music.
-
-Oh, and the circle of fiths is a thing [TODO]
-
-[TODO] Just V equal Temperment here is confusing
-
-## Back To VCV Rack
-
-Now that we have that mess out of the way let's talk shop and drop back into our rack. This time Let's start with a mostly clean slate. Make sure you can still get sound out, then remove every module except the Audio module. Alrighty, now we can get to business
-
-![phase](../content/opmusic/phase.png)
-
-
-
-## Methods of making noise
-
-[TODO, reorder these]
-
-### FM Synthesis
-
-![DX7 Operators]({static}/opmusic/dx7.jpeg)
-
-> [Source (Likely originally from the Yahmaha DX7 Manual)](https://scsynth.org/t/coding-fm-synthesis-algorithms/1381)
-
-
-
-### Granular Synthesis
-
-### Wavetables
-
-### Samples
-
-start, stop, fade, pitch shift, (ableton simpler)
-
-### Live Input
-
-quantization, tracking
-
-## Audio Effects
-
-### Reverb
-
-plate, room, gated
-
-### Delay
-
-Clock synced
-
-### Distortion
-
-Tube, Bitcrush
-
-### Chorus
-
-### Flanger
-
-### Phaser
-
-### Stereo Effects
-
-Panning, Widening
-
-### Glitch, Granular, and Pitch
-
-## Compression
-
-![compression](../content/{static}/gifs/compression.gif)
-
-<audio
-    controls
-    src="{static}/audio/Compression.mp3">
-        Your browser does not support the
-        <code>audio</code> element.
-</audio>
-
-
-reverb, delay, pan, tremello, overdrive, distortion
-
-## Sequencing
-
-random, sample/hold, probability
-
-## MIDI effects
-
-Arp, velocity, pitch bend, mod, sustain
-
-## Drums
-
-TR808, syth, short ADSR, noise, snare, tom, kick, hat, clap, bell,
-
-## Strings
-
-guitar, lute, dulcimer, dual/single string, acoustic, electric, electroacoustic
-
-## Mixing and Mastering
-
-eq, pan, quadraphonic
-
-## Live Code
-
-## Software
-
-## DAWs
-
-## VSTs
-
-## Other
-
-## Hardware
-
-### MIDI
-
-MPE, aftertouch, vel
-
-## Synths
-
-Modular, semi-modular, software
-
-## Audio Interfaces
-
-## Headphones/speakers
-
-## List of All link mentioned
-
-### Software and tools
-
-\$ - Paid
-! - Require paid software
-
-* - Has paid features
-
-https://github.com/cannc4/Siren -Siren- Tracker meets live coding
-https://tidalcycles.org/index.php/Welcome -Tidal- Live coding enviroment
-! https://github.com/carrierdown/mutate4l -Mutate4l- Live coding in Ableton Live
--ORCΛ- Live Coding in a game-of-life esque edditor
-
-\* https://vcvrack.com/ -VCV Rack- Modular Synth Software
-\* https://www.modulargrid.net/ -Modular Grid- an online tool for dreaming about hardware setups
-
-\$ -Abletone Live-
-\$ -Renoise-
-\$ -Reaper
-\$ -FL Studio-
-
-### Cool People
-
-https://twitter.com/RichardDevine
-https://twitter.com/LOOKMUMNOCMPUTR
-
-https://t.me/vcvrackchat
-
-Neurotypique https://www.youtube.com/channel/UC4oBI5piGMznFMZdtEC0FhA
-
-Omri Cohen, a Rack Master's YouTube Channel: https://www.youtube.com/channel/UCuWKHSHTHMV_nVSeNH4gYAg
-
-Loopop
-RedMeansRecording
-AdamNeely
-AndrewHuang
-Rob Scallon https://www.youtube.com/watch?v=JeB3JnKp8To&list=FLFMnqfaTa1se1LfbCB3peJQ&index=4&t=116s, https://www.youtube.com/watch?v=48RVcbkhNHQ&list=FLFMnqfaTa1se1LfbCB3peJQ&index=26&t=879s,
-
-Reddit: https://www.reddit.com/r/vcvrack/ , https://www.reddit.com/r/synthesizers/ , https://www.reddit.com/r/synthdiy/ , https://www.reddit.com/r/modular/
-
-## Other Resources
-
-https://learningmusic.ableton.com/
-
-https://codepen.io/teropa/full/bRqYVj/# Chapter 34 - Art and Design
-
-Hey there.
-
-My name is Vega. I know there are plenty of tutorials and ways to learn online be it on YouTube, SkillShare, or online classes provided for free by various universities. The difference here is there is no bullshit, no babysitting, and lots of bias as a result of personal experience. My views of things like what cretive software is bad (Adobe) or what equipment you should buy to learn with will be expressed directly and bluntly. This isn't to say I won't explain my reasoning, just that I'm not going to be apologetic when I say things like "non display tablets are trash" - though I will still likely talk about the things I dislike and why.
-
-## Analog Art
-
-## Digital Art
-
-Dark Patterns -- don't be that guy
-
-Screen Considerations
-
-http://rainworldgame.com/
-
-
-
-## Blending the two
-
-## Links
-
-https://colors.lol/
-
-https://lospec.com/palette-list
-
-### Software
-
-### Inspirational Artists
-
-https://twitter.com/FogleBird/status/954464508705234944
-
-https://twitter.com/mwichary/status/898656890237759489
-
-https://twitter.com/tomality/status/875432469092331520
-
-https://twitter.com/more8bit/status/904107654196469761
-
-https://twitter.com/ShadowDropDev/status/898427789728137220
-
-https://elosilla.tumblr.com/post/84414400172/pixel-art-by-mark-ferrari
-
- /// Caution some are NSFW ///
-https://twitter.com/halphelt
-https://twitter.com/Hushabye_Valley
-https://twitter.com/koidrake
-https://twitter.com/managore
-https://twitter.com/inconvergent
-http://electricsheepcomix.com/almostguy/
-https://www.youtube.com/watch?v=7g1pmHSWHe0&list=FLFMnqfaTa1se1LfbCB3peJQ&index=74&t=0s
-https://www.youtube.com/watch?v=K9KLZ8C9DrY&list=FLFMnqfaTa1se1LfbCB3peJQ&index=82&t=353s
 
 # Wrapping up - Where to go from here
 
@@ -6053,7 +5756,9 @@ Mathics
 TaskWeb (TaskWarrior)
 
 
-# Appendix B - Common electrical parts (appearence and numbers)
+# Appendix B - Cheat Sheets and quick info
+
+## Electrical Part Tables
 
 [TODO]
 
@@ -6064,6 +5769,66 @@ TaskWeb (TaskWarrior)
 * datasheets
   
   *
+
+## Git
+
+
+
+## Markdown
+
+```html
+# heading1
+## heading2
+### heading3
+
+--- on it's own line will give you a diveder line
+
+* for a bulleted list
+*
+alternatively,
+- works too
+- 
+
+~~The world is flat.~~ for a strike though,
+**to bold**
+*to itilicize* 
+
+1. for a numbered list
+2.
+
+​```python
+
+​```
+
+for a code box, where 'python' can be whatever language you want syntax highlighting for
+
+`single backticks (note, these aren't apostrophes) for in line code too`
+
+> lets you make a block quote
+
+markdown also lets you use inline HTML, so, depending on the intent to render out to a pdf or webpage, you may be able to embed YouTube Videos or Tweets or whatever like I have through out this guide.
+
+[title](https://www.example.com) for links
+![alt text](image.jpg) for images
+
+| Tables | Can     |
+| ------ | ------- |
+| Be     | Made    |
+| Like   | This    |
+
+Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+
+- [x] This is a task list
+- [ ] As we go down this page
+- [ ] Some of this syntax may not be supported
+
+$ may let you type inline math in \LaTeX $, and $$$ for blocks, same as the code syntax
+
+1^2 or 1~2 may let you write super and sub-script text as well.
+```
+
 
 
 # Appendix C - BOM
@@ -6330,7 +6095,12 @@ https://arstechnica.com/tech-policy/2018/08/verizon-throttled-fire-departments-u
 
 ## An NSFW Note
 
-The 'Hacking' community in particular is usually very clear on sexual liberation/freedoms and given that technically minded people tend to have statistically significantly higher amounts of LGBTQIA+ people, it's relevant to mention. I don't want to go in depth or be your source of sex education, but I do think skipping over this would be doing the community some injustice. As such I'd also like to link to some videos providing sexual education, https://www.youtube.com/watch?v=L-q-tSHo9Ho&list=FLFMnqfaTa1se1LfbCB3peJQ&index=103&t=0s
+The 'Hacking' community in particular is usually very clear on sexual liberation/freedoms and given that technically minded people tend to have statistically significantly higher amounts of LGBTQIA+ people, it's relevant to mention. I don't want to go in depth or be your source of sex education, but I do think skipping over this would be doing the community some injustice. As such I'd also like to link to some videos providing sexual education, [The truth about unwanted arousal | Emily Nagoski , YouTube](https://www.youtube.com/watch?v=L-q-tSHo9Ho&list=FLFMnqfaTa1se1LfbCB3peJQ&index=103&t=0s)
+
+```bash
+TypeError:
+no implicit conversion of Gender into Boolean
+```
 
 Finally, a little less NSFW, the Maker and engineering communities also tend to overlap rather heavily with more artistically minded and sub-culture heavy groups, ranging from those obsessed with comics to anime nerds or furries. I really recommend you do at least a little research into various sub cultures and geek culture to better understand some of the people you'll probably interact with. You might just find something new you enjoy while you're at it.
 
@@ -6345,6 +6115,8 @@ If you've made it this far I just want to say thank you. We need more people to 
 
 [Please Consider My Application to Give You Labor So I Can Stay Alive](https://www.mcsweeneys.net/articles/please-consider-my-application-to-give-you-labor-so-i-can-stay-alive)
 
+[The Great Asshole Fallacy](https://500ish.com/the-great-asshole-fallacy-82e108a755c7)
+
 [Ameyama's Values Update](https://ameyama.com/blog/values-update)
 
 [How to Dropout](http://ranprieur.com/essays/dropout.html)
@@ -6356,6 +6128,9 @@ If you've made it this far I just want to say thank you. We need more people to 
 ## TODO
 
 Education, college, prices, highschool homework and personal time, Drugs,
+
+[Should I block ads?](https://shouldiblockads.com/)
+
 
 
 # Appendix E - Fixing issues
@@ -6551,6 +6326,7 @@ rop
 - [Foone one weird adapters (Twitter Thread)](https://twitter.com/Foone/status/1224206741602062336)
 - [Building the World's Weirdest Fan (YouTube)](https://www.youtube.com/watch?v=77Y7DHfoFOk&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 - [Minetest Circuit Challenge (YouTube)](https://www.youtube.com/watch?v=nI8Q1bqT8QU&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+- [A post by the guy who made Task Manager](https://old.reddit.com/r/techsupport/comments/gqb915/i_wrote_task_manager_and_i_just_remembered/)
 - 
 
 

@@ -84,7 +84,7 @@ using a code editor, header files, libraries, writing and using a Make file, std
 
 [TODO]
 
-gdb + gef
+gdb + gef, gdbfrontend, Valgrind, https://cdecl.org/, etc.
 
 overflows
 
