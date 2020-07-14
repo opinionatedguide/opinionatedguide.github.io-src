@@ -22,7 +22,7 @@ The first two are terminal based `nano` and `vim`,
 
 nano, is the most simplistic of all the editors I'll list here. It's stupid simple to use and for quick just opening a text file and changing one line, probably the fastest. It clearly prints it's instructions at the bottom of the terminal:
 
-![nano](/home/vega/git/local/openg2/content/openg/nano.png)
+![nano](../content/openg/nano.png)
 
 where ^ is the ctrl key, and M the alt key. However, you'll quickly find nano rather limiting, so onto vim!
 
@@ -36,13 +36,13 @@ Graphically I recommend Visual Studio Code with Platform IO, Bracket Pair Colori
 
 This gives you a pretty kick butt editor on bar with most full Integrated Development Environments or IDEs. I recommend you try out IDEs, especially if for some unholy reason you want to write in Java, but otherwise this will do fine.
 
-![code](/home/vega/git/local/openg2/content/openg/code.png)
+![code](../content/openg/code.png)
 
 ## The Desktop Envrioment
 
 This is the biggest change, I'm going to recommend switching from KDE, which we installed when we setup arch, to i3. i3 is a tiling window manager, this means it looks something like this:
 
-![i3](/home/vega/git/local/openg2/content/openg/i3.png)
+![i3](../content/openg/i3.png)
 
 This is with 3 windows open: Marktext (the program I'm writing this in), a file manager, and an terminal I used to launch the program (scrot) to take the screenshot. What's cool about i3 is how it will always use space as efficiently as possible by tiling the windows, and you can navigate between the windows (or multiple monitors) entirely by keyboard (mouse still works obviously) and open multiple virtual workspaces. When programming and using a computer for advanced things it's not uncommon to have a dozen windows open and having things organized like this can be a life saver.
 
@@ -85,7 +85,7 @@ If you're looking for more ways to make your setup the best it can be or config 
 
 ## The Physical Enviroment & Hardware
 
-![penv](/home/vega/git/local/openg2/content/openg/physicalenv.jpg)
+![penv](../content/openg/physicalenv.jpg)
 
 Working on a laptop with a mushy membrane keyboard is totally fine for some people, but when you're deep into some complicated work having the best possible setup can save a lot of time, frustration, and mental overhead.
 
@@ -161,7 +161,7 @@ Another thing to mention is red-light filters. While I dont personally use one m
 
 Probably the most important thing you can do for your workspace is getting a nice keyboard. If you're rocking a rubber dome or membrane keyboard, moving to a mechanical keyboard will make a massive difference.
 
-![keycomp](/home/vega/git/local/openg2/content/openg/mechkey.png)
+![keycomp](../content/openg/mechkey.png)
 
 ([source](https://commons.wikimedia.org/wiki/File:Keyboard_Construction_Button_Press.JPG))
 
@@ -179,7 +179,7 @@ really it's all a matter of preference, I'm actually using a switch not listed h
 
 Furthermore, there are other types of switches like IBM's old Model M line which use a buckling spring, which are quite stiff and have a very unique, heavy feeling. If you don't want to use a 20 year old keyboard Unicomp makes clones that are quite nice.
 
-You should also consider they layout of your keyboard. Some people absolutely need a number pad while others are happy to omit it and have the shorted hand travel to their mouse. Even still others want an extravagant number of keys or a weird split keyboard like mine:![keeb](/home/vega/git/local/openg2/content/openg/splitkeeb.jpg)
+You should also consider they layout of your keyboard. Some people absolutely need a number pad while others are happy to omit it and have the shorted hand travel to their mouse. Even still others want an extravagant number of keys or a weird split keyboard like mine:![keeb](../content/openg/splitkeeb.jpg)
 
 > This is a custom built ErgoDone keyboard, The Ergodox-ez can be purchased for ~300 USD, or you can build one like mine for a bit under 200
 
@@ -202,6 +202,18 @@ Speaking of dragging things around slowly: The mouse
 Noise isolation both electrical and physical, headphone types (over, on, in), amplifiers, dacs, ASIO/ sound hardware, connection types
 
 **The Desk and Chair**
+
+
+
+**Lighting**
+
+
+
+**Air Quality**
+
+[This Is Your Brain On Stale Air (YouTube)](https://www.youtube.com/watch?v=1Nh_vxpycEA&list=FLFMnqfaTa1se1LfbCB3peJQ)
+
+
 
 ## Various Programs:
 

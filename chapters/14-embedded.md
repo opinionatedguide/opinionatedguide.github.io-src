@@ -6,7 +6,7 @@
 
 ## What is an Embedded System?
 
-![pos](/home/vega/git/local/openg2/content/openg/pos.png)
+![pos](../content/openg/pos.png)
 
 ## PWM, SPI, I2C, What's going on?!
 
@@ -23,6 +23,8 @@ adapted from floppy drives, but less expensive
 ## Real Time Operating Systems
 
 RIOT-OS, MBED, etc
+
+talk about scheduling (CFS, etc)
 
 ## Other weird and cool projects:
 

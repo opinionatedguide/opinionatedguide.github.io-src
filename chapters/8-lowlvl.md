@@ -84,7 +84,7 @@ using a code editor, header files, libraries, writing and using a Make file, std
 
 [TODO]
 
-gdb + gef, gdbfrontend, Valgrind, https://cdecl.org/, etc.
+gdb + gef, gdbfrontend, Valgrind, https://cdecl.org/, etc. Mention Virtual v Physical adressing/translation
 
 overflows
 
@@ -106,8 +106,11 @@ source patching, binary patching
 
 [TODO] wav is easy, mp3 is hard.. show this. WAV format on 767 of POC||GTFO
 
-## Where to get more pracice with low level programming
+## Where to get more practice with low level programming
 
 [TODO]
 
 https://github.com/rby90/Project-Based-Tutorials-in-C
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Five Seconds of Donkey Kong. <a href="https://twitter.com/hashtag/plottertwitter?src=hash&amp;ref_src=twsrc%5Etfw">#plottertwitter</a><br><br>The NES has 2048 bytes of RAM. I snapshotted the RAM at each frame (60 fps) during 5 seconds of gameplay and plotted time series of the ones that changed at least once. <a href="https://t.co/rtPT0mHiLD">pic.twitter.com/rtPT0mHiLD</a></p>&mdash; Michael Fogleman (@FogleBird) <a href="https://twitter.com/FogleBird/status/954464508705234944?ref_src=twsrc%5Etfw">January 19, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+

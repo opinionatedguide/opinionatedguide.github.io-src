@@ -116,6 +116,8 @@ Though the one I was stressing here was really Ⅳ, you should **always** check 
 
 TLDR: RTFM & STFW http://www.catb.org/esr/faqs/smart-questions.html#rtfm
 
+![Arch Logo]({static}/openg/xkcdtime.jpg)
+
 **Finally, **and I can't stress this enough, I think balancing your creativity among other interests and looking for ties between them can lead to more good than any of thing mentioned above. I enjoy playing music, reading, and writing, so I find inspiration in these media. There are countless electrical hardware and software tools that use hands on programming when playing music. In books I find ideas for what an author may have thought only futuristic when written. I never know when my mind will strike similar gold when writing for myself. Find a hobby and bend it to this as you go along. Like photography? Lean about the internals of a camera. Like cars? Look up how the ODB2 interface actually works. Nothing is magic and the internet will likely have answers and give you ways to apply this knowledge that you care about.
 
 In general I've found site specific forms and Reddit to be the best platforms for most things, with some others finding their main following in other places though. For example I'm in a large technical chat group with Furries on Telegram and some open source tools still thrive on IRC. Also, if your reaction to that is "Furries? How can that be relevent?" Well, normally it's not. Most of what we talk about is just normal engineering-y topics, but having something else in common helps. That said, there's more cross over in any community than you might think:
@@ -1954,6 +1956,8 @@ Less commonly you may see 'l', 'c', or 'b', as we do here in the /dev folder.
 
 'c' is a character special file, 'b' is a special block file.
 
+Finally, you may also see either 'p' or '|' here for named pipes- more about that in a bit too.
+
 There are other possibilities here two, of which you can learn about by running `info ls`
 
 The vast majority of the time you will only see 'd' or '-' designating a file or directory though
@@ -2525,6 +2529,8 @@ udev rules
 
 Inodes, Raid, fuse, ext4, ntfs, zfs, tmpfs, fat/fat32/exfat, ...
 
+include bit about named pipes
+
 ## Processes and Memory
 
 [TODO]
@@ -2937,6 +2943,18 @@ Speaking of dragging things around slowly: The mouse
 Noise isolation both electrical and physical, headphone types (over, on, in), amplifiers, dacs, ASIO/ sound hardware, connection types
 
 **The Desk and Chair**
+
+
+
+**Lighting**
+
+
+
+**Air Quality**
+
+[This Is Your Brain On Stale Air (YouTube)](https://www.youtube.com/watch?v=1Nh_vxpycEA&list=FLFMnqfaTa1se1LfbCB3peJQ)
+
+
 
 ## Various Programs:
 
@@ -3390,7 +3408,7 @@ using a code editor, header files, libraries, writing and using a Make file, std
 
 [TODO]
 
-gdb + gef, gdbfrontend, Valgrind, https://cdecl.org/, etc.
+gdb + gef, gdbfrontend, Valgrind, https://cdecl.org/, etc. Mention Virtual v Physical adressing/translation
 
 overflows
 
@@ -3412,11 +3430,14 @@ source patching, binary patching
 
 [TODO] wav is easy, mp3 is hard.. show this. WAV format on 767 of POC||GTFO
 
-## Where to get more pracice with low level programming
+## Where to get more practice with low level programming
 
 [TODO]
 
 https://github.com/rby90/Project-Based-Tutorials-in-C
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Five Seconds of Donkey Kong. <a href="https://twitter.com/hashtag/plottertwitter?src=hash&amp;ref_src=twsrc%5Etfw">#plottertwitter</a><br><br>The NES has 2048 bytes of RAM. I snapshotted the RAM at each frame (60 fps) during 5 seconds of gameplay and plotted time series of the ones that changed at least once. <a href="https://t.co/rtPT0mHiLD">pic.twitter.com/rtPT0mHiLD</a></p>&mdash; Michael Fogleman (@FogleBird) <a href="https://twitter.com/FogleBird/status/954464508705234944?ref_src=twsrc%5Etfw">January 19, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 
 # Chapter 9 - Finishing up the project
@@ -3432,6 +3453,8 @@ Finally, let's go back and add a com port to the C code and send data to an ardu
 # Other resources and articles:
 
 [Good Coders Borrow, Great Coders Steal (StackOverflow Blog)](https://stackoverflow.blog/2020/05/20/good-coders-borrow-great-coders-steal/?cb=1)
+
+[The Art of Code - Dylan Beattie (YouTube)](https://www.youtube.com/watch?v=6avJHaC3C2U&list=FLFMnqfaTa1se1LfbCB3peJQ)
 
 
 
@@ -4065,6 +4088,8 @@ adapted from floppy drives, but less expensive
 ## Real Time Operating Systems
 
 RIOT-OS, MBED, etc
+
+talk about scheduling (CFS, etc)
 
 ## Other weird and cool projects:
 
@@ -5144,6 +5169,10 @@ https://github.com/badgeek/svg2shenzhen
 
 https://lemire.me/blog/2020/01/30/cost-of-a-thread-in-c-under-linux/
 
+C++ coroutines
+
+not really threading, but process children
+
 # Chapter 26 - Graphical Programming
 
 Let's start in a way that's incredibly simple, and abstract away all the hard stuff at first by using a tool kit called 'Processing', which is available under that name from the community repo in arch. The default IDE that comes with it is awful to work in though, so go ahead and open up VSCode and grab the [Processing Language](https://marketplace.visualstudio.com/items?itemName=Tobiah.language-pde) add on, then in VSCode open up a new workspace folder and make a file called processing.pde, then open VSCode's command pallete (CTRL+Shift+P) and run 'Processing: create task file', after that you'll want to open the tasks.json file and change the `command:` line to have `"command": "/usr/bin/processing-java",` after that you can easily try new code just by re-building project the project with CTRL+Shift+B
@@ -5242,11 +5271,13 @@ While this book/guide/thing primarily focuses on the less mechancial-engieering-
 
 [Giant Mechanical Iris! Cut on a CNC Router (YouTube)](https://www.youtube.com/watch?v=u9KHhsnLhfM&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
+[Topology Optimization makes for some cool shelves (YouTube)](https://www.youtube.com/watch?v=3smr5CEdksc)
+
 # Chapter 31 - Fine, I'll talk about AI
 
 [Neural Network Architectures (YouTube)](https://www.youtube.com/watch?v=oJNHXPs0XDk&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
-
+https://hific.github.io/
 
 # Chapter 32 - Ham Radio
 
@@ -5358,7 +5389,7 @@ for the hard core, you can read good documentation here: https://www.tldp.org/LD
 
 Note, `&>` redirects both stderr and stdout
 
-* pipes ( | )
+* pipes ( | ) and [nammed pipes](https://www.networkworld.com/article/3251853/why-use-named-pipes-on-linux.html)
 
 Finally, the weirdest and rarely used `<>` operator can be used to directly attch file descriptions and read/write files dirctly, this is rearely used as it's kind of a pita, but if you need to script something advanced it's available. Stollen from the above advanced link:
 
@@ -6105,7 +6136,7 @@ no implicit conversion of Gender into Boolean
 Finally, a little less NSFW, the Maker and engineering communities also tend to overlap rather heavily with more artistically minded and sub-culture heavy groups, ranging from those obsessed with comics to anime nerds or furries. I really recommend you do at least a little research into various sub cultures and geek culture to better understand some of the people you'll probably interact with. You might just find something new you enjoy while you're at it.
 
 Also, because this got a bit heavy for a bit, let's touch on Rule 34. We all know it, but where does it come from? 4Chan of course. Here's the full set:
-![irules](.{static}/openg/irules.jpg)
+![irules]({static}/openg/irules.jpg)
 
 ## Thank you
 
@@ -6124,6 +6155,12 @@ If you've made it this far I just want to say thank you. We need more people to 
 [A Sick Giant](https://waitbutwhy.com/2020/01/sick-giant.html)
 
 [Metaphors We Believe By](https://aaronzlewis.com/blog/2019/07/25/metaphors-we-believe-by/)
+
+[Hope In Every Box (YouTube)](https://www.youtube.com/watch?v=K9KLZ8C9DrY)
+
+[And Then We'll be okay (YouTube)](https://www.youtube.com/watch?v=7g1pmHSWHe0)
+
+[The Guy I Almost Was (Comic)](http://electricsheepcomix.com/almostguy/)
 
 ## TODO
 
@@ -6327,6 +6364,6 @@ rop
 - [Building the World's Weirdest Fan (YouTube)](https://www.youtube.com/watch?v=77Y7DHfoFOk&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 - [Minetest Circuit Challenge (YouTube)](https://www.youtube.com/watch?v=nI8Q1bqT8QU&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 - [A post by the guy who made Task Manager](https://old.reddit.com/r/techsupport/comments/gqb915/i_wrote_task_manager_and_i_just_remembered/)
-- 
+- https://n-o-d-e.live/zine/NODE_VOL_02.pdf
 
 

@@ -4,32 +4,32 @@
 #echo "\n\n\n" >> ./chapters/*.md
 #change paths to correct for pelican
 for i in ./chapters/*md; do
-    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/openg/{static}\/openg/g' $i
+    sed -i 's/\..\/content\/openg/{static}\/openg/g' $i
 done
 
 for i in ./chapters/*md; do
-    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/opmusic/{static}\/opmusic/g' $i
+    sed -i 's/\..\/content\/opmusic/{static}\/opmusic/g' $i
 done
 
 for i in ./chapters/*md; do
-    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/gifs/{static}\/gifs/g' $i
+    sed -i 's/\..\/content\/gifs/{static}\/gifs/g' $i
 done
 
 for i in ./content/opinionateddesign.md; do
-    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/opdesign/{static}\/opdesign/g' $i
+    sed -i 's/\..\/content\/opdesign/{static}\/opdesign/g' $i
 done
 
 
 for i in ./content/opinionatedmusic.md; do
-    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/opmusic/{static}\/opmusic/g' $i
+    sed -i 's/\..\/content\/opmusic/{static}\/opmusic/g' $i
 done
 
 for i in ./content/opinionatedmusic.md; do
-    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/gifs/{static}\/gifs/g' $i
+    sed -i 's/\..\/content\/gifs/{static}\/gifs/g' $i
 done
 
 for i in ./content/opinionateddesign.md; do
-    sed -i 's/\/home\/vega\/git\/local\/openg2\/content\/gifs/{static}\/gifs/g' $i
+    sed -i 's/\..\/content\/gifs/{static}\/gifs/g' $i
 done
 
 #Build Chapters
@@ -72,30 +72,30 @@ echo "sed paths back for editing"
 
 #Put back to normal syntax
 for j in ./chapters/*.md; do
-    sed -i 's/{static}\/openg/\/home\/vega\/git\/local\/openg2\/content\/openg/g' $j
+    sed -i 's/{static}\/openg/\..\/content\/openg/g' $j
 done
 
 for j in ./content/opinionateddesign.md; do
-    sed -i 's/{static}\/opdesign/\/home\/vega\/git\/local\/openg2\/content\/opdesign/g' $j
+    sed -i 's/{static}\/opdesign/\..\/content\/opdesin/g' $j
 done
 
 for j in ./chapters/*.md; do
-    sed -i 's/{static}\/opmusic/\/home\/vega\/git\/local\/openg2\/content\/opmusic/g' $j
+    sed -i 's/{static}\/opmusic/\..\/content\/opmusic/g' $j
 done
 
 for j in ./chapters/*.md; do
-    sed -i 's/{static}\/gifs/\/home\/vega\/git\/local\/openg2\/content\/gifs/g' $j
+    sed -i 's/{static}\/gifs/\..\/content\/gifs/g' $j
 done
 
 
 for j in ./content/opinionatedmusic.md; do
-    sed -i 's/{static}\/opmusic/\/home\/vega\/git\/local\/openg2\/content\/opmusic/g' $j
+    sed -i 's/{static}\/opmusic/\..\/content\/opmusic/g' $j
 done
 
 for j in ./content/opinionatedmusic.md; do
-    sed -i 's/{static}\/gifs/\/home\/vega\/git\/local\/openg2\/content\/gifs/g' $j
+    sed -i 's/{static}\/gifs/\..\/content\/gifs/g' $j
 done
 
 for j in ./content/opinionateddesign.md; do
-    sed -i 's/{static}\/gifs/\/home\/vega\/git\/local\/openg2\/content\/gifs/g' $j
+    sed -i 's/{static}\/gifs/\..\/content\/gifs/g' $j
 done

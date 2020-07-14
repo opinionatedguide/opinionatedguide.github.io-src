@@ -14,6 +14,8 @@ Finally, let's go back and add a com port to the C code and send data to an ardu
 
 [Good Coders Borrow, Great Coders Steal (StackOverflow Blog)](https://stackoverflow.blog/2020/05/20/good-coders-borrow-great-coders-steal/?cb=1)
 
+[The Art of Code - Dylan Beattie (YouTube)](https://www.youtube.com/watch?v=6avJHaC3C2U&list=FLFMnqfaTa1se1LfbCB3peJQ)
+
 
 
 # Chapter 9.1 - Other Languages of interest
@@ -290,7 +292,7 @@ Look at Chapter 18 for information on Databases
 
 [Obfuscated C programs: Introduction (YouTube)](https://www.youtube.com/watch?v=rwOI1biZeD8&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz&index=15&t=0s) Obvuscated C, https://www.ioccc.org/
 
-<img src="/home/vega/git/local/openg2/content/openg/ginny.png" alt="ginny" style="zoom:50%;" />
+<img src="../content/openg/ginny.png" alt="ginny" style="zoom:50%;" />
 
 > Source: https://gist.github.com/munificent/b1bcd969063da3e6c298be070a22b604
 

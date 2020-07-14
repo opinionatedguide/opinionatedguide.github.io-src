@@ -19,7 +19,7 @@ Programming can seem scary at first but the more you exercise, the easier and mo
 
 ## Python
 
-![python](/home/vega/git/local/openg2/content/openg/python.png)
+![python](../content/openg/python.png)
 
 [TODO] Why start with python
 

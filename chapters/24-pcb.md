@@ -716,7 +716,7 @@ https://llllllll.co/t/pcb-art-artfully-shaped-copper-traces/22027/2
 
 # Chapter 24.1 - PCB 'Badges'
 
-![badges](/home/vega/git/local/openg2/content/openg/badges.jpeg)
+![badges](../content/openg/badges.jpeg)
 
 > Source: @AkioOhtori on Twitter
 

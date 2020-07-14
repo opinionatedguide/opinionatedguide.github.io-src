@@ -64,7 +64,7 @@ The OSI model of networking is
 
 ### HTTP
 
-![Codes](/home/vega/git/local/openg2/content/openg/http-status-codes.png)
+![Codes](../content/openg/http-status-codes.png)
 
 > https://www.monkeyuser.com/2017/http-status-codes/
 

@@ -9,3 +9,5 @@ While this book/guide/thing primarily focuses on the less mechancial-engieering-
 
 
 [Giant Mechanical Iris! Cut on a CNC Router (YouTube)](https://www.youtube.com/watch?v=u9KHhsnLhfM&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
+
+[Topology Optimization makes for some cool shelves (YouTube)](https://www.youtube.com/watch?v=3smr5CEdksc)
