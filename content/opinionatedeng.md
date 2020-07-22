@@ -826,13 +826,14 @@ the `>>>` is the prompt asking for input, go ahead and just try `1 + 1` for now
 2
 ```
 
-Okay, who cares though, right? let's try something a bit cooler. Say you wanted to add up all the odd numbers up to 72? This isn't something that's trivial to do on most calculators and would be a real pain by hand, but it's trivial to do in python. The code to run this in python is
+Okay, who cares though, right? let's try something a bit cooler. Say you wanted to add up all the odd integers up to 72? This isn't something that's trivial to do on most calculators and would be a real pain by hand, but it's trivial to do in python. The code to run this in python is
 
 ```python
-#note, this is to 73 becasue the range function include the first number and excludes the last
+#note, this is to 37 because we're multiplying i by 2 below, so we only have to go until 2*i = 72 or i = 36.
+#EXCEPT, the range function includes the first number and excludes the last, so we actually use range(1,37)
 sum = 0
-for i in range(1,73):
-    sum = sum + i
+for i in range(1,37):
+    sum = sum + (2*i+1)
 
 print(sum)
 ```

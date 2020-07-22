@@ -4,7 +4,7 @@ Modified: 9/23/2018 11:11
 Category: Engineering
 Tags: Interview
 Slug: An Interview with LoialOtter 
-Authors: Vega Deftwing
+Authors: Vega Deftwing, Loial Otter
 
 
 **Introduction:**
