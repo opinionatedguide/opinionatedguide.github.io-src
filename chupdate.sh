@@ -3,6 +3,9 @@
 #add 3 newlines to all .md files
 #echo "\n\n\n" >> ./chapters/*.md
 #change paths to correct for pelican
+# to make these, should the need changed, https://dwaves.org/tools/escape/
+# and https://sed.js.org/ were used, the first to check escaping
+# the latter to test validity
 for i in ./chapters/*md; do
     sed -i 's/\..\/content\/openg/{static}\/openg/g' $i
 done
