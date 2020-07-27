@@ -3883,7 +3883,7 @@ https://en.wikibooks.org/wiki/Signals_and_Systems
 
 # Chapter 11.2 - Physics
 
-## 1 - Newtonian
+## 1 - Newtonian (assume a spherical cow)
 
 ## 2 - Electromagnetism
 
@@ -3951,6 +3951,12 @@ https://hackaday.com/2019/05/20/integrated-circuits-can-be-easy-to-understand-wi
 [Uncovering the Silicon: Demystifying How Chips are Built and How They Work (YouTube)](https://www.youtube.com/watch?v=VNzkhZBjo5k&list=PL5cGwrD7cv8hK-qxPqRB25Dzs0BtLWhXz)
 
 [Reverse-engineering the TL431](http://www.righto.com/2014/05/reverse-engineering-tl431-most-common.html)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Distortion pedal with all homemade semiconductors, only one external component (cap for AC coupling) <a href="https://t.co/M7t3Gl1m5P">pic.twitter.com/M7t3Gl1m5P</a></p>&mdash; Sam Zeloof (@szeloof) <a href="https://twitter.com/szeloof/status/1280249239495479297?ref_src=twsrc%5Etfw">July 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Finally I learned how to do focus stacking with my macro (non-microscope) shots. 226 shots, 50µm camera shift per frame. Laowa 25mm F2.8@F4 on WeMacro rail. Stitched in Helicon Focus (pyramid, smoothing=1). 1 original photo for comparison. <a href="https://twitter.com/hashtag/WeMacro?src=hash&amp;ref_src=twsrc%5Etfw">#WeMacro</a> <a href="https://twitter.com/laowa_lens?ref_src=twsrc%5Etfw">@laowa_lens</a> <a href="https://twitter.com/hashtag/heliconfocus?src=hash&amp;ref_src=twsrc%5Etfw">#heliconfocus</a> <a href="https://t.co/yCdCIBXMRv">pic.twitter.com/yCdCIBXMRv</a></p>&mdash; Zeptobars (@Zeptobars) <a href="https://twitter.com/Zeptobars/status/1105594474036686852?ref_src=twsrc%5Etfw">March 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 
 
 
@@ -5143,8 +5149,11 @@ First things first, we're going to be using Kicad, so you'll want to go grab tha
 </svg>
 > Src: Foalyy @ https://forum.kicad.info/t/cheatsheet-for-kicad/5247
 
-
 https://llllllll.co/t/pcb-art-artfully-shaped-copper-traces/22027/2
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Always double check your footprints. 😬 <a href="https://t.co/BdTq9e9Byq">pic.twitter.com/BdTq9e9Byq</a></p>&mdash; Greg (@GregDavill) <a href="https://twitter.com/GregDavill/status/1252912461457420288?ref_src=twsrc%5Etfw">April 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 
 
 
@@ -6168,6 +6177,10 @@ If you've made it this far I just want to say thank you. We need more people to 
 Education, college, prices, highschool homework and personal time, Drugs,
 
 [Should I block ads?](https://shouldiblockads.com/)
+
+[Alexa without the creep](http://bjoernkarmann.dk/project_alias)
+
+
 
 
 
