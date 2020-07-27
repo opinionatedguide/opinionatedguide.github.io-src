@@ -235,3 +235,7 @@ Education, college, prices, highschool homework and personal time, Drugs,
 
 [Should I block ads?](https://shouldiblockads.com/)
 
+[Alexa without the creep](http://bjoernkarmann.dk/project_alias)
+
+
+

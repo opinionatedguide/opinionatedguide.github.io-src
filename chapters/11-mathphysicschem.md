@@ -46,7 +46,7 @@ https://en.wikibooks.org/wiki/Signals_and_Systems
 
 # Chapter 11.2 - Physics
 
-## 1 - Newtonian
+## 1 - Newtonian (assume a spherical cow)
 
 ## 2 - Electromagnetism
 

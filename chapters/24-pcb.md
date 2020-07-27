@@ -709,8 +709,11 @@ First things first, we're going to be using Kicad, so you'll want to go grab tha
 </svg>
 > Src: Foalyy @ https://forum.kicad.info/t/cheatsheet-for-kicad/5247
 
-
 https://llllllll.co/t/pcb-art-artfully-shaped-copper-traces/22027/2
+
+<blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">Always double check your footprints. 😬 <a href="https://t.co/BdTq9e9Byq">pic.twitter.com/BdTq9e9Byq</a></p>&mdash; Greg (@GregDavill) <a href="https://twitter.com/GregDavill/status/1252912461457420288?ref_src=twsrc%5Etfw">April 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 
 
 
