@@ -203,21 +203,35 @@ Stereo delays many have additional controls as well, most commonly offering a di
 
 Some delays may also allow for unity or higher feedback, which will cause the delay to be infinite or, if above unity, infinitely grow in volume until it's just a distorted clipping mess. This can actually be a lot of fun to play with.
 
-![vcv1default](../content/opmusic/chronblob.jpg)
+![Chronoblob](../content/opmusic/chronblob.jpg)
 
 > Quick Reference Card for the Chronblob^2 from Alright Devices, http://docs.alrightdevices.com/chronoblob2-manual.pdf 
 
 Some delays let you also insert other things into the feedback path. This means you could do things such as having each repetition be progressively more filtered, cutting out more and more high end each time or putting a delay in the delay. (yo dawg, I heard you like delay?).
 
-Some digital delays and most analog delays (especially bucket brigade delays) can produce interesting sounds if you change the delay time while audio is going through the buffer, resulting in a sort of pitch shift *whip* sound as the delay catches up or slows down.
+Some digital delays and most analog delays (especially bucket brigade delays[^BBD]) can produce interesting sounds if you change the delay time while audio is going through the buffer, resulting in a sort of pitch shift *whip* sound as the delay catches up or slows down.
 
-[TODO, granular delay, delay freeze, bbd delay, mention Kurplus Strong, Reverse'd and pitch shifted delay (each buffer affected)]
+[^BBD]: Bucket Brigade Delay is essentially a bunch of capacitors acting as the 'buckets' that are figuratively passed down the chain, moving from one bucket to the next each clock cycle, of course, this clock rate can be changed while it's running. The number of stages in a BBD determines how long of a delay you can get without having a massive determent to quality.
 
-### Phaser
+While not strictly something to do with delay, it's also worth noting that by making delay time very short and having gain near unity, sending a brief trigger (impulse) can make a sound that sounds like a string being plucked. This is called [Karplus-Strong Synthesis](https://en.wikipedia.org/wiki/Karplus–Strong_string_synthesis).
+
+![Quadravox](../content/opmusic/KarplusStrong.png)
+
+> Karplus-Strong Synthesis in VCV rack
+
+Finally, it's worth noting that there are a few interesting features some delays may have, such as letting the delay buffer be frozen to infinitely repeat what was playing at the time (unity gain, ignore input), reverse'd delay - having the initial sound play forward but each repeat play in reverse, pitch shifted delay- having each delay affected by a pitch shift, often done with octave up/down. Often, this pitch shifting is done via Granular Synthesis, as mentioned above. Using granular synthesis does allow for some other interesting options though, such as [Unfiltered Audio's Sandman Pro VST](https://www.unfilteredaudio.com/collections/plug-ins/products/sandman-pro).
+
+![Quadravox](../content/opmusic/Quadravox.png)
+
+> Screenshot of [Eventide's Quadravox VST](https://www.eventideaudio.com/products/effects/diatonic-pitch-shift/quadravox), with pitch shifted delays
+
+### Filters (LP, HP, BP, Notch)
+
+### Phaser (All-Pass Filter)
 
 ### Reverb
 
-plate, room, gated
+plate, room, gated, erbe verb video, convolutional, delay line + allpass, 
 
 ### Distortion
 
@@ -292,6 +306,8 @@ Digital Audio Workstations or 'DAWs' come in many flavors. Some of the more popu
 ## VSTs and other Plugins
 
 ## Other
+
+### Textures
 
 ## Hardware
 
