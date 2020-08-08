@@ -227,7 +227,13 @@ Finally, it's worth noting that there are a few interesting features some delays
 
 ### Filters (LP, HP, BP, Notch)
 
+different analog models
+
 ### Phaser (All-Pass Filter)
+
+### Comb Filters
+
+### AutoWah
 
 ### Reverb
 
@@ -235,19 +241,39 @@ plate, room, gated, erbe verb video, convolutional, delay line + allpass,
 
 ### Distortion
 
+#### Clipping (Soft & Hard)
+
+#### Waveshaping and Wavefolding
+
+#### Drive, and Tubes
+
+#### Bitcrushing & Comparators
+
 [Todo, fabfilter distortion video]
 
 [How Distortion Works in Music (Ben Sheron's Blog)](https://benmosheron.gitlab.io/blog/2020/04/26/distortion.html)
-
-Tube, Bitcrush
 
 ### Chorus
 
 ### Flanger
 
+Flanger works by taking a **very** short delay* which slowly modulated delay time and mixing this back with the original signal. This will result in some phase cancellation effects and give a similar sound to a phaser. The delay time modulation rate and depth, and delay feedback are the most commonly exposed controls. Flanger is probably most commonly used as an effect on guitar.
+
+*note, that delay, in this context, means an actual time delay, just a buffer that makes sound take longer to get through if that makes sense. Of course, with feedback and mixing the original this will have the same effect as a delay in the 'echo' sense.
+
+![Flanger](../content/opmusic/Flanger.jpg)
+
+> Flanger sort of makes a comb filter sound too, as you can see in the Spectrum Analyzer on the bottom.
+
+![Pyramids](../content/opmusic/Pyramids.jpg)
+
+> The '[Pyramids](https://www.earthquakerdevices.com/pyramids)' Flanger pedal from Earthquaker Devices.
+
 ### Stereo Effects
 
-Panning, Widening
+#### Panning
+
+#### Widening
 
 ### Compression
 
