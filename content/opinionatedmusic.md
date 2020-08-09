@@ -8,7 +8,7 @@ Authors: Vega Deftwing
 
 [TOC]
 
-# Chapter 33 - Music
+# Opinionated Music.
 
 Hey there.
 
@@ -147,7 +147,49 @@ anyway, so now the last relevant part of the above patch worth understanding is 
 
 ## Methods of making noise
 
-[TODO, reorder these]
+### Samples
+
+![Audacity](../content/opmusic/Audacity.png)
+
+> a snippet of a .wav file open in audacity
+
+A sample is exactly as the name implies- a 'sample' of audio. Sample is a pretty broad term though, so usually some more terms are applied to help categorize them. The easiest to explain is what is usually meant by sample: a small audio file that contains one sound, like one drum hit or one piano key press. These can either be samples made or collected for the sole purpose of use in later music (like hitting record, playing one drum hit, then stopping, to create a small drum sample) or a sample lifted (with often dubious legality) from another recording. It's worth noting that fair use is really not something you can rely on here, but it's also pretty common. #notlegaladvice
+
+The next kind of sample worth looking at is a loop. These are longer and are usually, well, loopable. If you play them on repeat they typically sound continuous. Often these will be of drums or guitar. The term 'loop' is often used broadly for audio snippets of this length though, so not all loops loop. Usually when using a loop it's best to do some mangling, swapping some beats or putting on destructive effects to transform it in some way. This prevents your audio from just sounding like layered tracks from another artist mashed together and is a good way to put creativity into what you make.  
+
+Another term you might hear are stems. Stems are just separate recordings of each part of a song - say the vocals as one audio file and the drums as another, these would make up the stems. 
+
+![wavfile](../content/opmusic/wavfile.png)
+
+> Zoomed in view of the snipped, showing the individual points in the sample
+
+Samples are also, sort of ironically, made of samples. But these words mean two different things in that sentence. The sample of sound is made up digitally of a bunch of different points in a wave, usually captured ~44 thousand times a second- whatever the sampling rate is (commonly 44.1, 48, or 96 [^Nyquist theorm]). This is what gives us the image above, where the originally pretty smooth looking wave, when zoomed in, we can see is made of these discrete points. This is particularly relevant to making music for multiple reasons: 
+
+* When change the speed/pitch by a non integer value, we have to 'interpolate' extra points into this.
+* When we slow down or make a sample lower pitch there's only so much data to use, at really low pitches the wave will start to sound sort of low-fi
+* When chopping a sample to start playback at any point, we want to chop at a 0-crossing to avoid a sharp transition (which equates to high pitch sound)
+
+[^Nyquist Theorm]: The [Nyquist-Shannon Sampling Therom](https://en.wikipedia.org/wiki/Nyquist–Shannon_sampling_theorem) , put very basically, just says your sampling rate needs to be twice as high as the highest frequency in your source to be reproduced exactly. Because human hearing ranges roughly from 20 to 20khz, sampling at 40khz or above should be sufficient. Unfortunately, there's more too it than that, especially as generating waves in a virtual synth can benefit in sound quality for various reason from 'oversampling' - running above 44.1 or 48khz. Unfortunately, the higher the sampling rate the more work the computer has to do.
+
+![sampler](../content/opmusic/sampler.png)
+
+> Bitwig Studio's Sampler. Here pitch tracking is enabled, making it so the sample can be played sped up or slowed down to pitch chromatically along the keyboard. Bitwig's Sampler is pretty similar to many other samplers in other DAWs like Ableton Live or modules like Simpliciter In VCV rack
+
+Here, we're looking at the sampler device in in Bitwig Studio, though most of this should be similar in other software. Starting with the obvious, the sample wave form in the middle. Here I have loaded a sample ([TODO, new picture, .wav]) which has multiple drum sound in it, but I've zoomed in on one sample and placed these yellow flags to denote the start an end points. Bitwig's sampler, like many others, will try to snap these points to aforementioned zero crossings.  You'll also see next to the file name that the keyboard icon is blue and says 100% and next to that the root is set to C3. This means that if I play the C3 key on my keyboard it will play the sample as is, but if I play a different key it will slow playback down or speed playback up to match the pitch to the key I'm playing. The root being C3 is because, say I hit and recorded the A4 key on my piano- it's nice to be able to correct for the pitch of the sample in the keyboard tracking.
+
+Still in the same section of the window but at the bottom now you'll see two icons for the flags with '[TODO]' time between them and after them, these are the times in the sample where the start and end flags are placed. Left of that you'll also see an arrow with an R over it, that's the button to tell it you want to play the sample in reverse.
+
+[TODO, a lot to go here]
+
+![simpliciter](../content/opmusic/simpliciter.png)
+
+> 'Simpliciter' module in VCV rack, a sampler with transient detection, Sound On Sound (SOS) looping, and variable speed (pitch) playback
+
+start, stop, fade, pitch shift, (ableton simpler)Live Input
+
+quantization, tracking
+
+### Wavetables
 
 ### FM Synthesis
 
@@ -159,7 +201,9 @@ Frequency Modulation or FM, is just the simply when you let the output of one os
 
 First, Let's start with linear vs exponential FM. It's worth noting that most pitch tracking is exponential since our music system itself is inherently exponential (each octave is a doubling, that is the frequency between C5 and C4 is twice the frequency between C3 and C4). This causes a problem though, if we modulate with exponential FM, say with a sine wave that is +/- 1V (2Vpp) and we start with an A4 at 440hz, then we'll swing up to 880hz and down to 220hz. Fine right? Not so much. If this modulation is meant to simply give us a more harmonically interesting A as we mix in different octaves that won't be the effect, as now we're (to oversimplify) at 880hz half the time and 220hz half the time, and if we average those $\frac{880+220}{2}$ then we don't still get the original A 440hz but rather we get 550Hz, so, we've detuned. Linear FM won't be able to follow the V/Oct standard (though some may use the Hz/V standard) but will keep you in tune as you modulate. This, however, begins to pose a more interesting problem. Imagine you want to modulate a 100hz signal by +/- 200hz. Clearly, that would mean going as high as 300hz, but what happens when we get past the first half of that negative signal and hit 0hz? Well, this is where having a Though Zero FM (TZFM) capability comes in handy, as this issue is solved sonically by actually inverting the phase of the signal when crossing the 0Hz point. While this may seem an odd solution, it does produce sounds that line up with what our ears expect.
 
-[Todo, why exponential isn't all bad]
+Exponential FM and V/Oct, assuming the same scaling, are the same thing though so sometimes you can actually view it more as a second V/Oct input. For example, you could use the Exp FM input to specify the note, and then the normal V/Oct input to change the octave. Of note however, this may not always work as the Exp FM input may be AC coupled, meaning that DC values, like note data, will not be able to get through and instead you'll just hear a "ping" as the pitch is modulated at the cutoff of the AC coupling filter, in these cases the Exp FM input will have a minimum frequency that the input signal can oscillate at to perform properly. 
+
+When talking about Linear FM, I mentioned that simple ratios are best. This isn't entirely true, but they will produce the least complicated harmonics. For example taking
 
 [Todo, Why simple ratios]
 
@@ -167,59 +211,168 @@ First, Let's start with linear vs exponential FM. It's worth noting that most pi
 
 ### Granular Synthesis
 
-### Wavetables
-
-### Samples
-
-![Audacity](../content/opmusic/Audacity.png)
-
-> a snippet of a .wav file open in audacity
-
-![wavfile](../content/opmusic/wavfile.png)
-
-> Zoomed in view of the snipped, showing the individual points in the sample
-
-![sampler](../content/opmusic/sampler.png)
-
-> Bitwig Studio's Sampler. Here pitch tracking is enabled, making it so the sample can be played sped up or slowed down to pitch chromatically along the keyboard. Bitwig's Sampler is pretty similar to many other samplers in other DAWs like Ableton Live or modules like Simpliciter In VCV rack
-
-![simpliciter](../content/opmusic/simpliciter.png)
-
-> 'Simpliciter' module in VCV rack, a sampler with transient detection, Sound On Sound (SOS) looping, and variable speed (pitch) playback
-
-start, stop, fade, pitch shift, (ableton simpler)Live Input
-
-quantization, tracking
-
 ## Audio Effects
 
-### Reverb
+### Tremolo
 
-plate, room, gated
+This is probably the easiest to understand audio effect. Put simply, fade the volume in and out automatically, usually pretty fast and with a bias so that the volume never completely cuts. It can also refer to a playing style where the same note is struck rapidly, leading to a similar effect. In VCV this can be done as simply as hooking up an LFO to a VCA's CV input like we did here, but turning up the frequency of the LFO-2 module (note, that here there is no bias so the volume does actually cut out):
+
+![vcavult](../content/gifs/vcavult.gif)
+
+### Vibrato
+
+Vibrato as an effect requires pitch shifting, which I suppose actually makes it akin to FM synthesis as described above, regardless, it's as simple as applying a, typically subtle, pitch 'wobble' into the sound. On a guitar this may be done with a pedal but more simply just by bending the string back and forth with the fingers.
 
 ### Delay
 
-Clock synced
+Delay is basically echo. Take a sound in, and repeat it it it. Normally the main controls on a delay are 'Time', which controls how long of a delay there is before each repeat, 'Feedback' which controls how much the level is reduced each time the delay repeats (and in turn, how many audible repetitions there are), and 'Dry/Wet' which controls how the signal is blended, entirely dry will have no delay, entirely wet may even miss the initial sound adding a weird latency before you hear what you're playing. Some delays have additional controls, obviously I can't cover every possible delay, but I'll try to cover most:
 
-### Distortion
+Some delays instead of letting you set a delay time or 'tap' a delay tempo in actually synchronize to a clock signal input which lets the delayed repetitions always be in time with the rest of the song.
 
-[How Distortion Works in Music (Ben Sheron's Blog)](https://benmosheron.gitlab.io/blog/2020/04/26/distortion.html)
+Stereo delays many have additional controls as well, most commonly offering a different delay time for the left and right channels. often a 'Ping Pong' mode will also be available where the left and right speaker alternate for the echo'd sound- 'ping' and 'ponging' out each side until the sound cuts out.
 
-Tube, Bitcrush
+Some delays may also allow for unity or higher feedback, which will cause the delay to be infinite or, if above unity, infinitely grow in volume until it's just a distorted clipping mess. This can actually be a lot of fun to play with.
 
-### Chorus
+![Chronoblob](../content/opmusic/chronblob.jpg)
 
-### Flanger
+> Quick Reference Card for the Chronblob^2 from Alright Devices, http://docs.alrightdevices.com/chronoblob2-manual.pdf 
+
+Some delays let you also insert other things into the feedback path. This means you could do things such as having each repetition be progressively more filtered, cutting out more and more high end each time or putting a delay in the delay. (yo dawg, I heard you like delay?).
+
+Some digital delays and most analog delays (especially bucket brigade delays[^BBD]) can produce interesting sounds if you change the delay time while audio is going through the buffer, resulting in a sort of pitch shift *whip* sound as the delay catches up or slows down.
+
+[^BBD]: Bucket Brigade Delay is essentially a bunch of capacitors acting as the 'buckets' that are figuratively passed down the chain, moving from one bucket to the next each clock cycle, of course, this clock rate can be changed while it's running. The number of stages in a BBD determines how long of a delay you can get without having a massive determent to quality.
+
+While not strictly something to do with delay, it's also worth noting that by making delay time very short and having gain near unity, sending a brief trigger (impulse) can make a sound that sounds like a string being plucked. This is called [Karplus-Strong Synthesis](https://en.wikipedia.org/wiki/Karplus–Strong_string_synthesis).
+
+![Quadravox](../content/opmusic/KarplusStrong.png)
+
+> Karplus-Strong Synthesis in VCV rack
+
+Finally, it's worth noting that there are a few interesting features some delays may have, such as letting the delay buffer be frozen to infinitely repeat what was playing at the time (unity gain, ignore input), reverse'd delay - having the initial sound play forward but each repeat play in reverse, pitch shifted delay- having each delay affected by a pitch shift, often done with octave up/down. Often, this pitch shifting is done via Granular Synthesis, as mentioned above. Using granular synthesis does allow for some other interesting options though, such as [Unfiltered Audio's Sandman Pro VST](https://www.unfilteredaudio.com/collections/plug-ins/products/sandman-pro).
+
+![Quadravox](../content/opmusic/Quadravox.png)
+
+> Screenshot of [Eventide's Quadravox VST](https://www.eventideaudio.com/products/effects/diatonic-pitch-shift/quadravox), with pitch shifted delays
+
+### Loopers
+
+Loopers are most commonly seen in hardware and can be seen as a sort of mix between samplers and delays. Essentially you just tap in when you start playing, play what you want, then tap out, then, the loop of whatever you played will play back to you. There may be additional settings, such as a half speed effect.
+
+### Filters (LP, HP, BP, Notch)
+
+https://www.perfectcircuit.com/signal/learning-synthesis-filters
+
+#### Low Pass Filters
+
+Low Pass filters do what you think, they let the low frequencies pass and cut out the high frequencies. As with most filters, this will typically not be a sharp cutoff but instead be a gradual fading of the higher frequencies. Despite this, there is still a point called the cut off frequency, which is defined as the point where the signal is cut by 3db (what this means is discussed below). It's also pretty common for Low pass filters to have some resonance, where the frequency right at the cut off has a bit of a bump, as can be seen in this gif:
+
+![lfofilt](../content/gifs/filter.gif)
+
+#### High Pass Filters
+
+High pass filters act pretty much the same as low pass filters, except they do they cut the lows and pass the highs. High pass filters are ironically often actually used to give a bump in the bass using the resonant peak.
+
+#### Band Pass Filters
+
+There's two kinds of bandpass filters, one, is a Lowpass and Highpass filter in series, where there's only a band left that can pass giving two potential resonant peaks, and then theres band pass filters which are more 'true' band pass filters that have a resonant peak in the middle.(need to confirm this)
+
+#### Notch Filters
+
+Again, as the name implies, notch filters create a notch in the sound. Often used to correct for an issue in the sound, such as removing a 60hz hum. In Notch filters the resonance control actually changes how steep the notch is, so low resonance (Low Q) will cause the notch to be wider as the slope isn't very steep, but a high resonance (Q) will let you really pick out a specific frequency.
+
+#### Comb Filters
+
+#### All-Pass Filters (Phaser)
+
+#### Types of Filters
+
+##### State Variable (Steiner-Parker)
+
+##### Transistor Ladder
+
+##### Diode Ladder
+
+##### Sallen-Key
+
+##### Operational Transconductance Amplifiers (OTA Filters)
+
+CEM3320
+
+##### Chebbychev
+
+##### SEM
+
+##### Wasp
+
+##### Formant Filters
+
+##### Polivoks
+
+#### Slope, Pole-Zero plots, dB
+
+different analog models
+
+#### Filter Resonance (Q)
+
+##### Pinging Filters
+
+##### Self Oscilation
+
+#### AutoWah
+
+### Equalizers
+
+#### Parametric
 
 ### Phaser
 
+### Flanger
+
+Flanger works by taking a **very** short delay* which slowly modulated delay time and mixing this back with the original signal. This will result in some phase cancellation effects and give a similar sound to a phaser. The delay time modulation rate and depth, and delay feedback are the most commonly exposed controls. Flanger is probably most commonly used as an effect on guitar.
+
+*note, that delay, in this context, means an actual time delay, just a buffer that makes sound take longer to get through if that makes sense. Of course, with feedback and mixing the original this will have the same effect as a delay in the 'echo' sense.
+
+![Flanger](../content/opmusic/Flanger.jpg)
+
+> Flanger sort of makes a comb filter sound too, as you can see in the Spectrum Analyzer on the bottom.
+
+![Pyramids](../content/opmusic/Pyramids.jpg)
+
+> The '[Pyramids](https://www.earthquakerdevices.com/pyramids)' Flanger pedal from Earthquaker Devices.
+> 
+
+### Chorus
+
+### Reverb
+
+plate, room, spring, gated, erbe verb video, convolutional, delay line + allpass, 
+
+### Distortion
+
+#### Clipping (Soft & Hard)
+
+#### Waveshaping and Wavefolding
+
+#### Drive, and Tubes
+
+#### Bitcrushing & Comparators
+
+[Todo, fabfilter distortion video]
+
+[How Distortion Works in Music (Ben Sheron's Blog)](https://benmosheron.gitlab.io/blog/2020/04/26/distortion.html)
+
 ### Stereo Effects
 
-Panning, Widening
+#### Panning
 
-### Glitch, Granular, and Pitch
+#### Widening
 
-## Compression
+### Noise Gating
+
+### Limiting
+
+### Compression
 
 ![compression](../content/gifs/compression.gif)
 
@@ -229,18 +382,33 @@ Panning, Widening
         Your browser does not support the
         <code>audio</code> element.
 </audio>
+Compression can mean multiple things when talking about music and sometimes this makes talking about it sometimes confusing. Usually, when talking about compression the meaning is for compression that changes the *dynamics* of the audio, making loud sounds quieter and quiet sounds louder sort of ~squishing~ the sound. The other, unrealetd, definiton of compression is data compression, for example .mp3 vs .wav. We'll go into that later.
 
+Usually compression has a few basic attributes that are relevent:
 
+The 'Threshold' is what level the compressor has to be over to do anything at all. 'Attack' is the time it takes for the signal to be affected. All compressors will have some minimum attack time if they're happening live (there are some compressors with 'Lookahead' that solve this problem) which lets the transients (sharp changes) of louder sounds, like the start of a drum hit, get through to some extent, but more attack will let more of the drum transient through. Tune to taste, release is similar idea, but controls how the compressor behaves as it falls below the treshold, letting the compressor fade out with a given time instead of having a sharp cut. Compressors can be used to make drums really stand out, give guitars a longer sustained sound, or just glue the mix together better.
+
+[Todo, add fabfilter guy video] 
+
+[Todo, Dynamic range compression, Parallel Compression, different analog models (ie Fets)]
 
 reverb, delay, pan, tremello, overdrive, distortion
 
+### Vocoders
+
+### Glitch, Granular, and Pitch
+
+## Mixers
+
+mixer front ends, preamps, etc. Software mixing, etc.
+
 ## Sequencing
 
-random, sample/hold, probability
+random, sample/hold, probability, piano rolls, trackers, AI based, euclidian, trigger/gate/len, humanization
 
 ## MIDI effects
 
-Arp, velocity, pitch bend, mod, sustain
+Arp, velocity, pitch bend, mod, sustain, generative,
 
 ## Drums
 
@@ -262,9 +430,13 @@ eq, pan, quadraphonic
 
 ## DAWs
 
-## VSTs
+Digital Audio Workstations or 'DAWs' come in many flavors. Some of the more popular include Ableton Live, FL Studio, Bitwig, Reaper, Garage Band, and Studio One, but there are many, many more- including some that are more nieche such as Trackers like Renoise, Sunvox, or Deflemask.
+
+## VSTs and other Plugins
 
 ## Other
+
+### Textures
 
 ## Hardware
 
@@ -346,3 +518,5 @@ Reddit: https://www.reddit.com/r/vcvrack/ , https://www.reddit.com/r/synthesizer
 https://learningmusic.ableton.com/
 
 https://codepen.io/teropa/full/bRqYVj/
+
+[^nyquist]: 
