@@ -280,6 +280,10 @@ Modular, semi-modular, software
 
 [TODO, ADAT, preamps, headphone amps, phantom48]
 
+> Weird side note:
+>
+> Some VOIP software (Discord, Zoom, etc.) may want you to use a Sample rate of 48Khz and a Buffer size of 192. No clue why.
+
 ## Headphones/speakers
 
 [TODO studio headphones V regular]
@@ -292,7 +296,7 @@ Modular, semi-modular, software
 
 ## List of All link mentioned
 
-### Software and tools
+### Software
 
 \$ - Paid
 ! - Require paid software
@@ -311,6 +315,12 @@ https://tidalcycles.org/index.php/Welcome -Tidal- Live coding enviroment
 \$ -Renoise-
 \$ -Reaper
 \$ -FL Studio-
+
+### Hardware
+
+[Blokas Midihub](https://blokas.io/midihub/)
+
+[Novation LaunchPad X](https://novationmusic.com/en/launch/launchpad-x)
 
 ### Cool People
 

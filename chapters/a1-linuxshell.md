@@ -111,6 +111,8 @@ Which while I could explain, I think just staring at that a little while should 
 
 regex can be used with a bunch of common tools like awk, sed, and grep. This means you can do fancy things like chain ls and grep together with a pipe to find any file matching a pattern or chain commands to rename any file containing characters which may be invalid in NTFS ( The file system used by Windows) to be valid before doing a transfer.
 
+Also, you may find [The Regular Expression Visualizer, Simulator & Cross-Compiler Tool](https://blog.robertelder.org/regular-expression-visualizer/) useful.
+
 ## Job Control
 
 [TODO]

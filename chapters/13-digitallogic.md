@@ -2,6 +2,8 @@
 
 # Chapter 13 - Digital Logic
 
+[Todo, insert intro about Minecraft redstone]
+
 ## What is digital logic?
 
 ignoring the analog world (10%/90%)
