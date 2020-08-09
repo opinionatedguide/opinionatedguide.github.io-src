@@ -1664,6 +1664,10 @@ Most fixed disk enclosures suck, albeit they can be less expensive. I'd recommen
 
 Most off-the-shelf flash drives have ass cooling and will over-heat them selves to death when you use them for things like installing operating systems regularly, so I recommend just getting a bulk pack of cheap, low capacity ones to toss when they finally kick the bucket and a few nice USB->SATA or USB->NVME adapter for  your main portable storage needs. Failing that, you can always use your phone if you've got a nice high capacity SD card in it or plenty of spare internal storage. The problem with that is MTP or 'Media Transfer Protocol' is a buggy, slow mess, and there's no other clean way to transfer things from a phone. So ¯\\_(ツ)_/¯
 
+<blockquote class="twitter-tweet"><p lang="ro" dir="ltr">Recuperación de datos de µSD nivel: F*cking Master of the Universe. <a href="https://t.co/B9egCrW4WJ">pic.twitter.com/B9egCrW4WJ</a></p>&mdash; ChuxMan Skywalker (@MrChuxMan) <a href="https://twitter.com/MrChuxMan/status/1288054419985248257?ref_src=twsrc%5Etfw">July 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
 ### The Past
 
 Floopy, Zip Disks, and Tape? Really? Yes. And yes, they're still used, so you should probably know at least a little about them.
@@ -1755,6 +1759,34 @@ HID or Human Interface Device, is the standard over which most mice, keyboards, 
 [TODO]
 
 Parallel, Serial, Tape, CD, gameport
+
+# Chapter 3.3 - Architectures
+
+From the README.md file at https://github.com/radareorg/radare2
+
+> ## Architectures
+>
+> i386, x86-64, ARM, MIPS, PowerPC, SPARC, RISC-V, SH, m68k, m680x, AVR, XAP, System Z, XCore, CR16, HPPA, ARC, Blackfin, Z80, H8/300, V810, V850, CRIS, XAP, PIC, LM32, 8051, 6502, i4004, i8080, Propeller, Tricore, CHIP-8, LH5801, T8200, GameBoy, SNES, SPC700, MSP430, Xtensa, NIOS II, Java, Dalvik, WebAssembly, MSIL, EBC, TMS320 (c54x, c55x, c55+, c66), Hexagon, Brainfuck, Malbolge, whitespace, DCPU16, LANAI, MCORE, mcs96, RSP, SuperH-4, VAX.
+
+Which is only further complicated by:
+
+> ## File Formats
+>
+> ELF, Mach-O, Fatmach-O, PE, PE+, MZ, COFF, OMF, TE, XBE, BIOS/UEFI, Dyldcache, DEX, ART, CGC, Java class, Android boot image, Plan9 executable, ZIMG, MBN/SBL bootloader, ELF coredump, MDMP (Windows minidump), WASM (WebAssembly binary), Commodore VICE emulator, QNX, Game Boy (Advance), Nintendo DS ROMs and Nintendo 3DS FIRMs, various filesystems.
+
+and
+
+> ## Operating Systems
+>
+> Windows (since XP), GNU/Linux, GNU/Darwin, GNU/Hurd, Apple's {Mac,i,iPad,watch}OS, [Dragonfly|Net|Free|Open]BSD, Android, QNX, Solaris, Haiku, FirefoxOS.
+
+plus, the above lists are by no means exhaustive. Clearly there's no shortage of CPU architectures (virtual or physical) that can be present on a system which can be running any of a number of operating systems which may use a variety of ways of actually storing the executable instructions, so, let's take a look at what all of this actually means. First, let's start with the different architectures you're likely to run into and what makes them different:
+
+[TODO]
+
+For more information on embedded architectures and in-depth comparisons look at Chapter 14.1. For info on Virtual machines (for hosting Linux or for languages like Java) look to Chapters 8 and 17
+
+
 
 # Chapter 4 - Back to the Root of Things
 
@@ -3443,6 +3475,18 @@ https://github.com/rby90/Project-Based-Tutorials-in-C
 
 # Chapter 9 - Finishing up the project
 
+> # Manifesto
+>
+> 1. **Everything should be a tool.** A tool transforms data without adding to its source limitations. It's a function: returns an output for a given input.
+> 2. **A great tool is [ambient](https://are.na/alex-singh/ambient-product-design).** It should disappear and flow through your actions. You should never need it because it's always at your hands. You should never ignore it because it's never in your way.
+> 3. **Tools should be adaptable, changeable and personalisable**. If a tool does not perfectly fit your needs, you should be able to change, mix or remove its parts.
+> 4. **Data should be reusable, text-editable, human-readable.** Produces a higher chance that (1.) is passed.
+> 5. **Tools should be lightweight, available and timeless.** Computing power or internet speed shouldn't be the limitation for most tasks. It works in the past and in the future.
+>
+> > "Only through open sources, open standards, human-readable formats and their independencies, might they survive this fleeting age of self-destructing informatics." ― Devine Lu Linvega
+
+[- Hunor Karamán @ hex22.org](https://hex22.org/)
+
 ## Part 3, more advanced high level
 
 Modify the original python program to support a pretty cli input in a pretty way to make entries and visulize the data collected, parallelize some things, finally add a config file using yaml
@@ -3480,6 +3524,7 @@ Also, it's worth noting Rust can be used to generate Web Assembly (more about th
 Other sources to lean rust:
 
 - https://doc.rust-lang.org/book/foreword.html
+- [Learning Rust the Dangerous Way (Cliff L. Biffle)](http://cliffle.com/p/dangerust/)
 
 
 
@@ -4026,6 +4071,8 @@ https://taleri.files.wordpress.com/2014/02/practical_electronics_for_inventors_-
 
 # Chapter 13 - Digital Logic
 
+[Todo, insert intro about Minecraft redstone]
+
 ## What is digital logic?
 
 ignoring the analog world (10%/90%)
@@ -4103,6 +4150,14 @@ talk about scheduling (CFS, etc)
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">a lot of people have been mocking this video but having tried it, I can confirm this is actually the most reliable way to fake keyboard events on windows 10. <a href="https://t.co/kTz5a6YlTI">https://t.co/kTz5a6YlTI</a></p>&mdash; foone (@Foone) <a href="https://twitter.com/Foone/status/1247233159596367883?ref_src=twsrc%5Etfw">April 6, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 [Of Course It Leaks!](https://groups.google.com/forum/message/raw?msg=comp.lang.ada/E9bNCvDQ12k/1tezW24ZxdAJ)
+
+# Chapter 14.1 - Embedded Hardware comparison
+
+[TODO, Pi V RockPi4 V Arduinos V x86, ref architecture information from chapter 3.3]
+
+mention pi sd card performance / stability limits and pi advantages in how common it is
+
+
 
 # Chapter 15 - Discrete Math and Algorithms
 
@@ -5430,6 +5485,8 @@ Regular Expressions or 'Regex' are an incredibly powerful tool used to match str
 Which while I could explain, I think just staring at that a little while should make it obvious and ideally the mental effort will lead to a better understanding. Regex can do a lot more than this though. Go ahead and checkout https://regex101.com and give it a shot.
 
 regex can be used with a bunch of common tools like awk, sed, and grep. This means you can do fancy things like chain ls and grep together with a pipe to find any file matching a pattern or chain commands to rename any file containing characters which may be invalid in NTFS ( The file system used by Windows) to be valid before doing a transfer.
+
+Also, you may find [The Regular Expression Visualizer, Simulator & Cross-Compiler Tool](https://blog.robertelder.org/regular-expression-visualizer/) useful.
 
 ## Job Control
 
