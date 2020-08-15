@@ -1,6 +1,6 @@
 
 
-# Other Great Resources
+# Appendix F - Other Great Resources
 
 https://news.ycombinator.com/
 
@@ -117,7 +117,7 @@ https://relevant.community/relevant/top
 
 ## Some really cool, inspirational people
 
-# Security
+## Security
 
 Netspooky @ https://twitter.com/netspooky , https://twitter.com/netspooky
 LiveOverflow @ https://twitter.com/LiveOverflow
@@ -133,7 +133,7 @@ https://twitter.com/0xCODEs
 https://twitter.com/zerosum0x0
 https://twitter.com/x0rz -- https://discord.0day.rocks/
 
-# Programming/Live coding
+## Programming/Live coding
 
 RavenKwok @ https://twitter.com/RavenKwok
 Neauoire & RekkaBell @ https://merveilles.town/@neauoire , http://100r.co/
@@ -141,7 +141,7 @@ https://twitter.com/RavenKwok
 https://twitter.com/generateme_blog
 https://twitter.com/manoloidee
 
-# Just generally nerdy
+## Just generally nerdy
 
 https://twitter.com/Level1Techs / https://twitter.com/tekwendell
 https://twitter.com/Snowden

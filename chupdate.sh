@@ -35,6 +35,15 @@ for i in ./content/opinionateddesign.md; do
     sed -i 's/\..\/content\/gifs/{static}\/gifs/g' $i
 done
 
+for i in ./content/opinionatedphilosophy.md; do
+    sed -i 's/\..\/content\/gifs/{static}\/gifs/g' $i
+done
+
+for i in ./content/opinionatedphilosophy.md; do
+    sed -i 's/\..\/content\/openg/{static}\/openg/g' $i
+done
+
+
 #Build Chapters
 cat ./chapters/p?-* > ./chapters/x1.md
 wait
@@ -101,4 +110,12 @@ done
 
 for j in ./content/opinionateddesign.md; do
     sed -i 's/{static}\/gifs/\..\/content\/gifs/g' $j
+done
+
+for j in ./content/opinionatedphilosophy.md; do
+    sed -i 's/{static}\/gifs/\..\/content\/gifs/g' $j
+done
+
+for j in ./content/opinionatedphilosophy.md; do
+    sed -i 's/{static}\/openg/\..\/content\/openg/g' $j
 done
