@@ -127,16 +127,30 @@ Also, you may find [The Regular Expression Visualizer, Simulator & Cross-Compile
 
 ## Shortcuts
 
-- ctrl-z to bg process, fg to resume last suspended job
-- jobs -l or ps -a to see jobs
+#### Jobs
+
+- Ctrl+z: suspend a job to the background.
+- Ctrl+c: sends a SIGNINT to the current running job and kills it; if sent before entering a command, it clears the current line in the prompt
+- Ctrl+d: sends a quit signal - can be used to exit certain applications or exit a terminal
+- jobs -l or ps -a: see jobs
+
+#### Screen 
+
+- Ctrl+l: clear screen except current line
+- Ctrl+u: clear current prompt line
+
+#### Command History
+
+- Ctrl+r: search through command history in reverse
+
+#### Directory Navigation
+
+- cd -: to last dir
+- cd: go to home if entered without arguments
+
 - reptyr to move
 - pushd/popd & dirs to use path stack
-- cd - to last dir
 - history, and !№ to run that cmd
-- ctrl-c/d to kill
-- ctrl-l to clearscrn
-- ctrl-u to clrline
-- ctrl-r to search hist
 - ctrl-left/right to nav args
 - expansion with mv /path/meh.{md,txt}
 
