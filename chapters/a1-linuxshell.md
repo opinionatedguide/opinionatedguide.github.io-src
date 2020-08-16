@@ -117,21 +117,17 @@ Also, you may find [The Regular Expression Visualizer, Simulator & Cross-Compile
 
 [TODO]
 
-* fg
+* fg: brings a specified suspended job from the background to foreground. 
 
-* bg
+* bg: send a specified job to the background or lists background jobs if no jobs are specified
 
-* jobs
+* jobs: list all running jobs 
 
-* & operator
-
-* Ctrl+z
-
-* Ctrl+c / +d
+* & operator: when added after a command, it runs the job in the background and outputs its PID. 
 
 ## Shortcuts
 
-- ctrl-z to bg process, fg to resume
+- ctrl-z to bg process, fg to resume last suspended job
 - jobs -l or ps -a to see jobs
 - reptyr to move
 - pushd/popd & dirs to use path stack
