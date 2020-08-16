@@ -117,34 +117,55 @@ Also, you may find [The Regular Expression Visualizer, Simulator & Cross-Compile
 
 [TODO]
 
-* fg
+* fg: brings a specified suspended job from the background to foreground. 
 
-* bg
+* bg: send a specified job to the background or lists background jobs if no jobs are specified
 
-* jobs
+* jobs: list all running jobs 
 
-* & operator
-
-* Ctrl+z
-
-* Ctrl+c / +d
+* & operator: when added after a command, it runs the job in the background and outputs its PID. 
 
 ## Shortcuts
 
-- ctrl-z to bg process, fg to resume
-- jobs -l or ps -a to see jobs
+#### Jobs
+
+- Ctrl+z: suspend a job to the background.
+- Ctrl+c: sends a SIGNINT to the current running job and kills it; if sent before entering a command, it clears the current line in the prompt
+- Ctrl+d: sends a quit signal - can be used to exit certain applications or exit a terminal
+- jobs -l or ps -a: see jobs
+
+#### Screen 
+
+- Ctrl+l: clear screen except current line
+- Ctrl+u: clear current prompt line
+
+#### Command History
+
+- Ctrl+r: search through command history in reverse
+
+#### Directory Navigation
+
+- cd -: to last dir
+- cd: go to home if entered without arguments
+
 - reptyr to move
 - pushd/popd & dirs to use path stack
-- cd - to last dir
 - history, and !№ to run that cmd
-- ctrl-c/d to kill
-- ctrl-l to clearscrn
-- ctrl-u to clrline
-- ctrl-r to search hist
 - ctrl-left/right to nav args
 - expansion with mv /path/meh.{md,txt}
 
 ## Aliases and customization
+
+### Aliases
+
+Aliases are custom names assigned to commands. The command `alias` will display the current aliases set in your shell. An alias maps to a specific command which is run when the alias in entered. 
+Aliases are useful if you have long commands that are used often. Entering `alias suinstall='sudo apt-get install'` will temporarily allow you to use `suinstall` instead of typing `sudo apt-get install`. Any switches and arguments the command takes can be used with the alias. The alias is lost when the current terminal session is closed.
+
+To make aliases permanent, add them to your shell's configuration file (.bashrc or .zshrc). 
+
+### Customization
+
+Aliases are one way to customize your shell. Most shell customization occurs in the shells configuration file, usually stored as a hidden file in the home directory. .bashrc and .zshrc are the configuration files for bash and zsh. The files are loaded every time a terminal is started up and can set up its environment by loading aliases and custom functions and setting terminal colors and variables like PATH and EDITOR.
 
 [TODO]
 
