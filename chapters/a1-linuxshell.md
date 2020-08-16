@@ -156,6 +156,17 @@ Also, you may find [The Regular Expression Visualizer, Simulator & Cross-Compile
 
 ## Aliases and customization
 
+### Aliases
+
+Aliases are custom names assigned to commands. The command `alias` will display the current aliases set in your shell. An alias maps to a specific command which is run when the alias in entered. 
+Aliases are useful if you have long commands that are used often. Entering `alias suinstall='sudo apt-get install'` will temporarily allow you to use `suinstall` instead of typing `sudo apt-get install`. Any switches and arguments the command takes can be used with the alias. The alias is lost when the current terminal session is closed.
+
+To make aliases permanent, add them to your shell's configuration file (.bashrc or .zshrc). 
+
+### Customization
+
+Aliases are one way to customize your shell. Most shell customization occurs in the shells configuration file, usually stored as a hidden file in the home directory. .bashrc and .zshrc are the configuration files for bash and zsh. The files are loaded every time a terminal is started up and can set up its environment by loading aliases and custom functions and setting terminal colors and variables like PATH and EDITOR.
+
 [TODO]
 
 ## Shell Scripting
